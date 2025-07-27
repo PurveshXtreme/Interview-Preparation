@@ -1,67 +1,125 @@
 # Introduction to SQL - Comprehensive Notes
 
-# Table of Contents 
-1. [ Database Fundamentals. ](#fundamentals)
-2. [ SQL Datatypes and Commands. ](#datatypes)
-3. [ Basic Queries and Operations. ](#basic)
-4. [ Advanced Querying Techniques. ](#advanced)
-5. [ Data Modification Operations. ](#modification)
-6. [ Table and Database Management. ](#management)
-7. [ Joins and Relationships. ](#joins)
-8. [ Advanced SQL Features. ](#features)
+## Table of Contents
+1. [Introduction to SQL](#introduction-to-sql)
+2. [What is Database?](#what-is-database)  
+3. [Types of Databases](#types-of-databases)
+4. [Database Structure](#database-structure)
+5. [What is Table?](#what-is-table)
+6. [Creating Our First Database](#creating-our-first-database)
+7. [Creating Our First Table](#creating-our-first-table)
+8. [SQL Datatypes](#sql-datatypes)
+9. [Types of SQL Commands](#types-of-sql-commands)
+10. [Database Related Queries](#database-related-queries)
+11. [Table Related Queries](#table-related-queries)
+12. [SELECT Command](#select-command)
+13. [INSERT Command](#insert-command)
+14. [Keys](#keys)
+15. [Constraints](#constraints)
+16. [SELECT Command in Detail](#select-command-in-detail)
+17. [WHERE Clause](#where-clause)
+18. [Operators](#operators)
+19. [LIMIT Clause](#limit-clause)
+20. [ORDER BY Clause](#order-by-clause)
+21. [Aggregate Functions](#aggregate-functions)
+22. [GROUP BY Clause](#group-by-clause)
+23. [HAVING Clause](#having-clause)
+24. [General Order of Commands](#general-order-of-commands)
+25. [UPDATE Command](#update-command)
+26. [DELETE Command](#delete-command)
+27. [Revisiting Foreign Keys](#revisiting-foreign-keys)
+28. [Cascading Foreign Keys](#cascading-foreign-keys)
+29. [ALTER Command](#alter-command)
+30. [CHANGE and MODIFY Commands](#change-and-modify-commands)
+31. [TRUNCATE Command](#truncate-command)
+32. [JOINS in SQL](#joins-in-sql)
+33. [UNION in SQL](#union-in-sql)
+34. [SQL Sub Queries](#sql-sub-queries)
+35. [MySQL Views](#mysql-views)
 
-<a name="fundamentals"></a>
-# 1. Database Fundamentals
+---
+
+## Introduction to SQL
+
+SQL (Structured Query Language) is a standard programming language designed for managing and manipulating relational databases. It provides a powerful and flexible way to create, read, update, and delete data in database systems.
+
+Key features of SQL:
+- Declarative language (specify what you want, not how to get it)
+- Standardized across different database systems
+- Powerful querying capabilities
+- Data integrity and security features
+- Support for complex operations and transactions
+
+---
 
 ## What is Database?
+
 A database is an organized collection of structured information, or data, typically stored electronically in a computer system. It is managed by a Database Management System (DBMS) which provides an interface for users to interact with the data.
 
-Key characteristics:
-- Organized storage of data
-- Easy retrieval and manipulation
-- Data integrity and security
-- Concurrent access by multiple users
-- Backup and recovery mechanisms
+### Key Characteristics:
+- **Organized storage of data** - Data is structured in a logical manner
+- **Easy retrieval and manipulation** - Efficient access to information
+- **Data integrity and security** - Ensures data accuracy and protection
+- **Concurrent access by multiple users** - Multiple users can access simultaneously
+- **Backup and recovery mechanisms** - Data protection and restoration capabilities
+
+### Database Benefits:
+- Eliminates data redundancy
+- Ensures data consistency
+- Provides data security
+- Enables data sharing
+- Maintains data integrity
+- Offers backup and recovery
+
+---
 
 ## Types of Databases
 
 ### Relational Databases (RDBMS)
-- Data stored in tables with rows and columns
-- Uses SQL for querying
-- ACID properties (Atomicity, Consistency, Isolation, Durability)
-- Examples: MySQL, PostgreSQL, Oracle, SQL Server
+- **Structure**: Data stored in tables with rows and columns
+- **Query Language**: Uses SQL for querying
+- **Properties**: ACID properties (Atomicity, Consistency, Isolation, Durability)
+- **Examples**: MySQL, PostgreSQL, Oracle, SQL Server, SQLite
+- **Best for**: Structured data with clear relationships
 
 ### NoSQL Databases
-- Non-relational databases
-- Flexible schema
-- Types include:
-  - Document databases (MongoDB)
-  - Key-value stores (Redis)
-  - Column-family (Cassandra)
-  - Graph databases (Neo4j)
+- **Structure**: Non-relational databases with flexible schema
+- **Types include**:
+  - **Document databases** (MongoDB) - Store data as documents
+  - **Key-value stores** (Redis) - Simple key-value pairs
+  - **Column-family** (Cassandra) - Wide column storage
+  - **Graph databases** (Neo4j) - Node and relationship based
+- **Best for**: Unstructured data, rapid scaling, flexible schema requirements
 
 ### Hierarchical Databases
-- Tree-like structure
-- Parent-child relationships
-- Limited flexibility
+- **Structure**: Tree-like structure with parent-child relationships
+- **Characteristics**: Limited flexibility, fast access to specific paths
+- **Use cases**: File systems, organizational charts
 
 ### Network Databases
-- Graph structure allowing multiple parent-child relationships
-- More flexible than hierarchical but complex
+- **Structure**: Graph structure allowing multiple parent-child relationships
+- **Characteristics**: More flexible than hierarchical but complex to manage
+- **Use cases**: Complex many-to-many relationships
+
+---
 
 ## Database Structure
 
 ### Database Hierarchy
-1. **Database Server** - The main system
-2. **Database** - Collection of related tables
-3. **Table** - Collection of related records
+1. **Database Server** - The main system hosting multiple databases
+2. **Database** - Collection of related tables and objects
+3. **Table** - Collection of related records/rows
 4. **Record/Row** - Individual entry in a table
 5. **Field/Column** - Individual data item in a record
 
-### Components
-- **Schema** - Logical structure of database
-- **Instance** - Actual data stored at a particular moment
-- **Metadata** - Data about data (structure information)
+### Key Components
+- **Schema** - Logical structure and organization of database
+- **Instance** - Actual data stored at a particular moment in time
+- **Metadata** - Data about data (structure information, constraints, etc.)
+- **Index** - Data structure that improves query performance
+- **View** - Virtual table based on query results
+
+---
 
 ## What is Table?
 
@@ -69,18 +127,33 @@ A table is a collection of related data organized in rows and columns within a d
 
 ### Table Components:
 - **Rows (Records/Tuples)** - Horizontal entries representing individual data items
-- **Columns (Fields/Attributes)** - Vertical entries representing data categories
+- **Columns (Fields/Attributes)** - Vertical entries representing data categories  
 - **Cell** - Intersection of row and column containing specific data value
 
 ### Table Properties:
-- Each table has a unique name
-- Columns have specific data types
-- Each row should be unique
+- Each table has a unique name within the database
+- Columns have specific data types and constraints
+- Each row should be uniquely identifiable
 - Order of rows and columns doesn't matter logically
+- Tables can have relationships with other tables
+
+### Table Example:
+```
+Students Table:
++----+----------+-----+------------------+
+| ID | Name     | Age | Email            |
++----+----------+-----+------------------+
+| 1  | John Doe | 20  | john@email.com   |
+| 2  | Jane Smith| 22  | jane@email.com   |
++----+----------+-----+------------------+
+```
+
+---
 
 ## Creating Our First Database
 
 ### Basic Database Operations:
+
 ```sql
 -- Create a new database
 CREATE DATABASE database_name;
@@ -91,18 +164,33 @@ USE database_name;
 -- Show all databases
 SHOW DATABASES;
 
--- Drop a database
+-- Drop a database (permanently delete)
 DROP DATABASE database_name;
+
+-- Check current database
+SELECT DATABASE();
+```
+
+### Example:
+```sql
+-- Create a school database
+CREATE DATABASE school;
+
+-- Switch to the school database
+USE school;
+
+-- Verify we're using the correct database
+SELECT DATABASE();
 ```
 
 ### Best Practices:
-- Use descriptive names
-- Follow naming conventions
-- Consider future scalability
+- Use descriptive and meaningful names
+- Follow consistent naming conventions (lowercase, underscores)
+- Consider future scalability requirements
 - Plan database structure before creation
+- Avoid reserved keywords as database names
 
-<a name="datatypes"></a>
-# 2. SQL Datatypes and Commands
+---
 
 ## Creating Our First Table
 
@@ -118,87 +206,117 @@ CREATE TABLE table_name (
 ### Example:
 ```sql
 CREATE TABLE students (
-    id INT PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(50) NOT NULL,
     age INT,
-    email VARCHAR(100) UNIQUE
+    email VARCHAR(100) UNIQUE,
+    enrollment_date DATE DEFAULT CURRENT_DATE
 );
 ```
 
-### Table Operations:
+### Table Management Commands:
 ```sql
--- Show all tables
+-- Show all tables in current database
 SHOW TABLES;
 
 -- Describe table structure
 DESCRIBE table_name;
+DESC table_name;  -- Shorthand
 
 -- Show table creation statement
 SHOW CREATE TABLE table_name;
+
+-- Show detailed table information
+SHOW TABLE STATUS LIKE 'table_name';
+
+-- Drop table (permanently delete)
+DROP TABLE table_name;
 ```
+
+---
 
 ## SQL Datatypes
 
 ### Numeric Types:
 - **INT** - Integer values (-2,147,483,648 to 2,147,483,647)
 - **BIGINT** - Large integer values
-- **DECIMAL(p,s)** - Fixed-point numbers
+- **DECIMAL(p,s)** - Fixed-point numbers (p=precision, s=scale)
 - **FLOAT** - Single precision floating-point
 - **DOUBLE** - Double precision floating-point
+- **TINYINT** - Very small integers (-128 to 127)
+- **SMALLINT** - Small integers (-32,768 to 32,767)
 
 ### String Types:
-- **CHAR(n)** - Fixed-length string
-- **VARCHAR(n)** - Variable-length string
-- **TEXT** - Large text data
-- **LONGTEXT** - Very large text data
+- **CHAR(n)** - Fixed-length string (padded with spaces)
+- **VARCHAR(n)** - Variable-length string (up to n characters)
+- **TEXT** - Large text data (up to 65,535 characters)
+- **LONGTEXT** - Very large text data (up to 4GB)
+- **ENUM** - String with predefined values
 
 ### Date and Time Types:
 - **DATE** - Date values (YYYY-MM-DD)
 - **TIME** - Time values (HH:MM:SS)
 - **DATETIME** - Date and time combination
-- **TIMESTAMP** - Timestamp values
-- **YEAR** - Year values
+- **TIMESTAMP** - Timestamp values (auto-updates)
+- **YEAR** - Year values (2 or 4 digit format)
 
 ### Other Types:
-- **BOOLEAN** - True/False values
+- **BOOLEAN** - True/False values (stored as TINYINT)
 - **BLOB** - Binary large objects
 - **JSON** - JSON data (MySQL 5.7+)
+
+### Examples:
+```sql
+CREATE TABLE products (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    price DECIMAL(10,2),
+    description TEXT,
+    is_active BOOLEAN DEFAULT TRUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
+
+---
 
 ## Types of SQL Commands
 
 ### DDL (Data Definition Language)
-Commands that define database structure:
-- **CREATE** - Create database objects
-- **ALTER** - Modify database objects
+Commands that define and modify database structure:
+- **CREATE** - Create database objects (tables, indexes, views)
+- **ALTER** - Modify existing database objects
 - **DROP** - Delete database objects
-- **TRUNCATE** - Remove all records from table
+- **TRUNCATE** - Remove all records from table (keeps structure)
 
 ### DML (Data Manipulation Language)
-Commands that manipulate data:
-- **SELECT** - Retrieve data
-- **INSERT** - Add new data
-- **UPDATE** - Modify existing data
-- **DELETE** - Remove data
+Commands that manipulate data within tables:
+- **SELECT** - Retrieve/query data
+- **INSERT** - Add new records
+- **UPDATE** - Modify existing records
+- **DELETE** - Remove records
 
 ### DCL (Data Control Language)
-Commands that control access:
-- **GRANT** - Give permissions
-- **REVOKE** - Remove permissions
+Commands that control access and permissions:
+- **GRANT** - Give permissions to users
+- **REVOKE** - Remove permissions from users
 
 ### TCL (Transaction Control Language)
-Commands that manage transactions:
-- **COMMIT** - Save transaction
-- **ROLLBACK** - Undo transaction
+Commands that manage database transactions:
+- **COMMIT** - Save transaction permanently
+- **ROLLBACK** - Undo transaction changes
 - **SAVEPOINT** - Set transaction savepoint
+- **START TRANSACTION** - Begin transaction
+
+---
 
 ## Database Related Queries
 
 ### Basic Database Operations:
 ```sql
--- Create database
-CREATE DATABASE company;
+-- Create database with character set
+CREATE DATABASE company CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
--- Select database
+-- Select/use database
 USE company;
 
 -- Show current database
@@ -207,76 +325,152 @@ SELECT DATABASE();
 -- Show all databases
 SHOW DATABASES;
 
--- Drop database
-DROP DATABASE company;
+-- Show databases with pattern
+SHOW DATABASES LIKE 'comp%';
+
+-- Drop database with confirmation
+DROP DATABASE IF EXISTS company;
 ```
 
-### Database Information:
+### Database Information Queries:
 ```sql
 -- Show database size
 SELECT 
     table_schema AS 'Database',
     ROUND(SUM(data_length + index_length) / 1024 / 1024, 2) AS 'Size (MB)'
 FROM information_schema.tables
+WHERE table_schema NOT IN ('information_schema', 'mysql', 'performance_schema', 'sys')
 GROUP BY table_schema;
+
+-- Show database creation info
+SELECT * FROM information_schema.schemata WHERE schema_name = 'your_database';
 ```
 
-<a name="basic"></a>
-# 3. Basic Queries and Operations
+---
 
 ## Table Related Queries
 
 ### Basic Table Operations:
 ```sql
--- Create table
+-- Create table with various constraints
 CREATE TABLE employees (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(100),
+    employee_code VARCHAR(10) UNIQUE NOT NULL,
+    name VARCHAR(100) NOT NULL,
     department VARCHAR(50),
-    salary DECIMAL(10,2)
+    salary DECIMAL(10,2) CHECK (salary > 0),
+    hire_date DATE DEFAULT CURRENT_DATE,
+    manager_id INT,
+    FOREIGN KEY (manager_id) REFERENCES employees(id)
 );
 
--- Show tables
+-- Show all tables
 SHOW TABLES;
 
--- Describe table
-DESCRIBE employees;
-DESC employees;
+-- Show tables with pattern
+SHOW TABLES LIKE 'emp%';
 
--- Show table info
+-- Describe table structure
+DESCRIBE employees;
+DESC employees;  -- Alternative syntax
+
+-- Show detailed table information
 SHOW TABLE STATUS LIKE 'employees';
 
--- Drop table
-DROP TABLE employees;
+-- Show table creation statement
+SHOW CREATE TABLE employees;
+
+-- Copy table structure
+CREATE TABLE employees_backup LIKE employees;
+
+-- Copy table with data
+CREATE TABLE employees_backup AS SELECT * FROM employees;
+
+-- Drop table safely
+DROP TABLE IF EXISTS employees;
 ```
+
+### Table Information Queries:
+```sql
+-- Get column information
+SELECT 
+    COLUMN_NAME,
+    DATA_TYPE,
+    IS_NULLABLE,
+    COLUMN_DEFAULT
+FROM information_schema.columns 
+WHERE table_name = 'employees' 
+    AND table_schema = 'your_database';
+
+-- Get table size
+SELECT 
+    table_name AS 'Table',
+    ROUND((data_length + index_length) / 1024 / 1024, 2) AS 'Size (MB)'
+FROM information_schema.tables
+WHERE table_schema = 'your_database'
+    AND table_name = 'employees';
+```
+
+---
 
 ## SELECT Command
 
-The SELECT statement retrieves data from database tables.
+The SELECT statement is used to retrieve data from database tables. It's the most commonly used SQL command.
 
 ### Basic Syntax:
 ```sql
 SELECT column1, column2, ...
 FROM table_name;
-
--- Select all columns
-SELECT * FROM table_name;
-
--- Select specific columns
-SELECT name, age FROM students;
 ```
 
 ### SELECT Variations:
 ```sql
--- Select distinct values
-SELECT DISTINCT column_name FROM table_name;
+-- Select all columns
+SELECT * FROM students;
+
+-- Select specific columns
+SELECT name, age FROM students;
+
+-- Select distinct values (remove duplicates)
+SELECT DISTINCT department FROM employees;
 
 -- Select with alias
 SELECT name AS student_name, age AS student_age FROM students;
 
 -- Select with calculations
 SELECT name, salary, salary * 12 AS annual_salary FROM employees;
+
+-- Select with string functions
+SELECT UPPER(name) AS name_upper, LENGTH(name) AS name_length FROM students;
+
+-- Select with conditional logic
+SELECT name,
+    CASE 
+        WHEN age < 18 THEN 'Minor'
+        WHEN age >= 18 AND age < 65 THEN 'Adult'
+        ELSE 'Senior'
+    END AS age_category
+FROM students;
 ```
+
+### Examples:
+```sql
+-- Basic selection
+SELECT id, name, email FROM users;
+
+-- Select with concatenation
+SELECT CONCAT(first_name, ' ', last_name) AS full_name FROM employees;
+
+-- Select with mathematical operations
+SELECT 
+    product_name,
+    price,
+    price * 0.1 AS tax,
+    price * 1.1 AS price_with_tax
+FROM products;
+```
+
+---
 
 ## INSERT Command
 
@@ -288,165 +482,310 @@ The INSERT statement adds new records to a table.
 INSERT INTO table_name (column1, column2, column3)
 VALUES (value1, value2, value3);
 
--- Insert all columns
+-- Insert all columns (match table structure)
 INSERT INTO table_name
 VALUES (value1, value2, value3, value4);
 ```
 
 ### INSERT Variations:
 ```sql
--- Insert multiple rows
+-- Insert single record
+INSERT INTO students (name, age, email)
+VALUES ('John Doe', 20, 'john@email.com');
+
+-- Insert multiple records
 INSERT INTO students (name, age, email)
 VALUES 
-    ('John', 20, 'john@email.com'),
-    ('Jane', 22, 'jane@email.com'),
-    ('Bob', 21, 'bob@email.com');
+    ('John Doe', 20, 'john@email.com'),
+    ('Jane Smith', 22, 'jane@email.com'),
+    ('Bob Johnson', 21, 'bob@email.com');
+
+-- Insert with default values
+INSERT INTO products (name, price)
+VALUES ('New Product', 99.99);  -- Other columns get default values
 
 -- Insert from another table
-INSERT INTO table1 (column1, column2)
-SELECT column1, column2 FROM table2
-WHERE condition;
+INSERT INTO archived_orders (customer_id, order_date, total)
+SELECT customer_id, order_date, total 
+FROM orders 
+WHERE order_date < '2023-01-01';
+
+-- Insert with subquery
+INSERT INTO high_performers (employee_id, name)
+SELECT id, name 
+FROM employees 
+WHERE salary > (SELECT AVG(salary) FROM employees);
 ```
+
+### INSERT Best Practices:
+- Always specify column names for clarity
+- Validate data before insertion
+- Use transactions for multiple related inserts
+- Handle duplicate key errors appropriately
+
+---
 
 ## Keys
 
+Keys are essential for maintaining data integrity and establishing relationships between tables.
+
 ### Primary Key
-- Uniquely identifies each record in a table
-- Cannot contain NULL values
-- Each table can have only one primary key
-- Can be composed of multiple columns (composite key)
+- **Purpose**: Uniquely identifies each record in a table
+- **Characteristics**: Cannot contain NULL values, must be unique
+- **Limitation**: Each table can have only one primary key
+- **Can be**: Single column or composite (multiple columns)
 
 ```sql
+-- Single column primary key
 CREATE TABLE students (
-    id INT PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(50)
 );
 
--- Or using constraint
-CREATE TABLE students (
-    id INT,
-    name VARCHAR(50),
-    PRIMARY KEY (id)
+-- Composite primary key
+CREATE TABLE order_items (
+    order_id INT,
+    product_id INT,
+    quantity INT,
+    PRIMARY KEY (order_id, product_id)
 );
+
+-- Adding primary key to existing table
+ALTER TABLE students ADD PRIMARY KEY (id);
 ```
 
 ### Foreign Key
-- Links two tables together
-- References primary key of another table
-- Maintains referential integrity
+- **Purpose**: Links two tables together, maintains referential integrity
+- **Characteristics**: References primary key of another table
+- **Benefits**: Prevents invalid data, maintains consistency
 
 ```sql
+-- Foreign key during table creation
 CREATE TABLE orders (
     order_id INT PRIMARY KEY,
     customer_id INT,
+    order_date DATE,
     FOREIGN KEY (customer_id) REFERENCES customers(id)
 );
+
+-- Adding foreign key to existing table
+ALTER TABLE orders 
+ADD FOREIGN KEY (customer_id) REFERENCES customers(id);
+
+-- Named foreign key constraint
+ALTER TABLE orders 
+ADD CONSTRAINT fk_customer 
+FOREIGN KEY (customer_id) REFERENCES customers(id);
 ```
 
 ### Unique Key
-- Ensures uniqueness of values
-- Can contain NULL values
-- Multiple unique keys allowed per table
+- **Purpose**: Ensures uniqueness of values in column(s)
+- **Characteristics**: Can contain NULL values (but only one NULL per column)
+- **Flexibility**: Multiple unique keys allowed per table
 
+```sql
+CREATE TABLE users (
+    id INT PRIMARY KEY,
+    email VARCHAR(100) UNIQUE,
+    username VARCHAR(50) UNIQUE,
+    phone VARCHAR(15) UNIQUE
+);
+
+-- Adding unique constraint
+ALTER TABLE users ADD UNIQUE (email);
+ALTER TABLE users ADD CONSTRAINT uk_username UNIQUE (username);
+```
+
+### Candidate Key
+- **Definition**: Set of attributes that can uniquely identify records
+- **Relationship**: Primary key is chosen from candidate keys
+- **Example**: In students table, both student_id and email could be candidate keys
+
+### Super Key
+- **Definition**: Set of attributes that can uniquely identify records
+- **Characteristics**: May contain additional attributes beyond candidate key
+- **Example**: {student_id, name, email} is a super key if student_id alone is candidate key
+
+---
+
+## Constraints
+
+Constraints enforce rules on data in tables to ensure data integrity and validity.
+
+### NOT NULL Constraint
+Ensures column cannot have empty/null values:
+```sql
+CREATE TABLE students (
+    id INT NOT NULL,
+    name VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL
+);
+
+-- Adding NOT NULL to existing column
+ALTER TABLE students MODIFY name VARCHAR(50) NOT NULL;
+```
+
+### UNIQUE Constraint
+Ensures all values in column are different:
 ```sql
 CREATE TABLE users (
     id INT PRIMARY KEY,
     email VARCHAR(100) UNIQUE,
     username VARCHAR(50) UNIQUE
 );
+
+-- Adding unique constraint
+ALTER TABLE users ADD UNIQUE (email);
+ALTER TABLE users ADD CONSTRAINT uk_email UNIQUE (email);
 ```
 
-### Candidate Key
-- Set of attributes that can uniquely identify records
-- Primary key is chosen from candidate keys
-
-### Super Key
-- Set of attributes that can uniquely identify records
-- Dependency on base tables
-
-- May contain additional attributes beyond candidate key
-
-## Constraints
-
-### NOT NULL
-Ensures column cannot have empty values:
-```sql
-CREATE TABLE students (
-    id INT NOT NULL,
-    name VARCHAR(50) NOT NULL
-);
-```
-
-### UNIQUE
-Ensures all values in column are different:
-```sql
-CREATE TABLE users (
-    email VARCHAR(100) UNIQUE
-);
-```
-
-### PRIMARY KEY
-Combination of NOT NULL and UNIQUE:
+### PRIMARY KEY Constraint
+Combination of NOT NULL and UNIQUE, identifies each record uniquely:
 ```sql
 CREATE TABLE products (
-    id INT PRIMARY KEY
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    product_code VARCHAR(20) PRIMARY KEY  -- Alternative approach
+);
+
+-- Composite primary key
+CREATE TABLE order_items (
+    order_id INT,
+    product_id INT,
+    PRIMARY KEY (order_id, product_id)
 );
 ```
 
-### FOREIGN KEY
-Maintains referential integrity:
+### FOREIGN KEY Constraint
+Maintains referential integrity between tables:
 ```sql
 CREATE TABLE orders (
     id INT PRIMARY KEY,
     customer_id INT,
+    product_id INT,
+    FOREIGN KEY (customer_id) REFERENCES customers(id),
+    FOREIGN KEY (product_id) REFERENCES products(id)
+);
+
+-- With referential actions
+CREATE TABLE orders (
+    id INT PRIMARY KEY,
+    customer_id INT,
     FOREIGN KEY (customer_id) REFERENCES customers(id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
 );
 ```
 
-### CHECK
-Ensures values meet specific condition:
+### CHECK Constraint
+Ensures values meet specific conditions:
 ```sql
 CREATE TABLE employees (
-    age INT CHECK (age >= 18),
-    salary DECIMAL CHECK (salary > 0)
+    id INT PRIMARY KEY,
+    age INT CHECK (age >= 18 AND age <= 65),
+    salary DECIMAL(10,2) CHECK (salary > 0),
+    gender CHAR(1) CHECK (gender IN ('M', 'F', 'O'))
 );
+
+-- Adding check constraint
+ALTER TABLE employees 
+ADD CONSTRAINT chk_salary CHECK (salary > 0);
 ```
 
-### DEFAULT
-Provides default value:
+### DEFAULT Constraint
+Provides default value when no value is specified:
 ```sql
 CREATE TABLE products (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
     status VARCHAR(20) DEFAULT 'active',
-    created_date DATE DEFAULT CURRENT_DATE
+    created_date DATE DEFAULT CURRENT_DATE,
+    price DECIMAL(10,2) DEFAULT 0.00
 );
+
+-- Adding default constraint
+ALTER TABLE products 
+ALTER COLUMN status SET DEFAULT 'active';
 ```
+
+---
 
 ## SELECT Command in Detail
 
 ### Advanced SELECT Features:
+
+#### Column Aliases
 ```sql
--- Column aliases
+-- Using AS keyword
 SELECT first_name AS 'First Name', last_name AS 'Last Name' FROM employees;
 
--- Calculated columns
-SELECT name, salary, salary * 0.1 AS tax FROM employees;
+-- Without AS keyword
+SELECT first_name 'First Name', last_name 'Last Name' FROM employees;
 
+-- For calculations
+SELECT name, salary, salary * 12 AS annual_salary FROM employees;
+```
+
+#### String Functions
+```sql
 -- Concatenation
 SELECT CONCAT(first_name, ' ', last_name) AS full_name FROM employees;
+SELECT CONCAT('Mr. ', name) AS formal_name FROM customers;
 
--- Case statements
-SELECT name,
+-- String manipulation
+SELECT 
+    UPPER(name) AS name_upper,
+    LOWER(email) AS email_lower,
+    LENGTH(name) AS name_length,
+    SUBSTRING(name, 1, 3) AS name_prefix
+FROM users;
+```
+
+#### Mathematical Operations
+```sql
+SELECT 
+    product_name,
+    price,
+    price * 0.18 AS tax,
+    price * 1.18 AS total_price,
+    ROUND(price * 1.18, 2) AS rounded_total
+FROM products;
+```
+
+#### Conditional Logic
+```sql
+SELECT 
+    name,
+    age,
     CASE 
         WHEN age < 18 THEN 'Minor'
-        WHEN age >= 18 AND age < 65 THEN 'Adult'
+        WHEN age BETWEEN 18 AND 65 THEN 'Adult'
         ELSE 'Senior'
-    END AS age_group
-FROM people;
+    END AS age_category,
+    CASE 
+        WHEN salary > 100000 THEN 'High'
+        WHEN salary > 50000 THEN 'Medium'
+        ELSE 'Low'
+    END AS salary_grade
+FROM employees;
 ```
+
+#### Date Functions
+```sql
+SELECT 
+    name,
+    hire_date,
+    YEAR(hire_date) AS hire_year,
+    MONTH(hire_date) AS hire_month,
+    DATEDIFF(CURRENT_DATE, hire_date) AS days_employed,
+    DATE_ADD(hire_date, INTERVAL 1 YEAR) AS first_anniversary
+FROM employees;
+```
+
+---
 
 ## WHERE Clause
 
-Filters records based on specified conditions:
+The WHERE clause filters records based on specified conditions.
 
 ### Basic Syntax:
 ```sql
@@ -455,29 +794,63 @@ FROM table_name
 WHERE condition;
 ```
 
-### Examples:
+### Comparison Examples:
 ```sql
--- Single condition
+-- Equality
+SELECT * FROM employees WHERE department = 'IT';
+
+-- Inequality
+SELECT * FROM products WHERE price != 0;
+SELECT * FROM products WHERE price <> 0;  -- Alternative syntax
+
+-- Numerical comparisons
 SELECT * FROM employees WHERE salary > 50000;
-
--- Multiple conditions
-SELECT * FROM employees WHERE department = 'IT' AND salary > 60000;
-
--- Pattern matching
-SELECT * FROM employees WHERE name LIKE 'J%';
-
--- Range
-SELECT * FROM products WHERE price BETWEEN 100 AND 500;
-
--- List
-SELECT * FROM employees WHERE department IN ('IT', 'HR', 'Finance');
+SELECT * FROM employees WHERE age >= 25;
+SELECT * FROM products WHERE price <= 100;
 ```
+
+### Multiple Conditions:
+```sql
+-- AND operator
+SELECT * FROM employees 
+WHERE department = 'IT' AND salary > 60000;
+
+-- OR operator
+SELECT * FROM employees 
+WHERE department = 'IT' OR department = 'HR';
+
+-- NOT operator
+SELECT * FROM employees 
+WHERE NOT department = 'IT';
+
+-- Complex combinations with parentheses
+SELECT * FROM employees 
+WHERE (department = 'IT' OR department = 'HR') 
+    AND salary > 50000;
+```
+
+### Advanced WHERE Conditions:
+```sql
+-- NULL checks
+SELECT * FROM customers WHERE phone IS NULL;
+SELECT * FROM customers WHERE phone IS NOT NULL;
+
+-- Empty string checks
+SELECT * FROM customers WHERE email != '';
+SELECT * FROM customers WHERE TRIM(name) != '';
+
+-- Date conditions
+SELECT * FROM orders WHERE order_date >= '2024-01-01';
+SELECT * FROM employees WHERE hire_date BETWEEN '2020-01-01' AND '2023-12-31';
+```
+
+---
 
 ## Operators
 
 ### Comparison Operators:
 - **=** Equal to
-- **!=** or **<>** Not equal to
+- **!=** or **<>** Not equal to  
 - **>** Greater than
 - **<** Less than
 - **>=** Greater than or equal to
@@ -486,38 +859,63 @@ SELECT * FROM employees WHERE department IN ('IT', 'HR', 'Finance');
 ### Logical Operators:
 - **AND** - Both conditions must be true
 - **OR** - At least one condition must be true
-- **NOT** - Condition must be false
+- **NOT** - Negates the condition
 
-### Pattern Matching:
-- **LIKE** - Pattern matching with wildcards
-  - **%** - Zero or more characters
-  - **_** - Single character
-
-### Range Operators:
-- **BETWEEN** - Value within range
-- **IN** - Value in list
-- **IS NULL** - Check for null values
-- **IS NOT NULL** - Check for non-null values
-
-### Examples:
+### Pattern Matching Operators:
 ```sql
-SELECT * FROM employees WHERE name LIKE 'A%';
-SELECT * FROM products WHERE price BETWEEN 100 AND 500;
-SELECT * FROM employees WHERE department IN ('IT', 'HR');
-SELECT * FROM customers WHERE phone IS NOT NULL;
+-- LIKE operator with wildcards
+SELECT * FROM employees WHERE name LIKE 'J%';      -- Starts with 'J'
+SELECT * FROM employees WHERE name LIKE '%son';    -- Ends with 'son'
+SELECT * FROM employees WHERE name LIKE '%an%';    -- Contains 'an'
+SELECT * FROM employees WHERE name LIKE 'J_hn';    -- 'J', any char, 'hn'
+
+-- REGEXP for complex patterns
+SELECT * FROM employees WHERE name REGEXP '^[A-M]';  -- Starts with A-M
+SELECT * FROM products WHERE code REGEXP '[0-9]{3}'; -- Contains 3 digits
 ```
+
+### Range and List Operators:
+```sql
+-- BETWEEN operator
+SELECT * FROM products WHERE price BETWEEN 100 AND 500;
+SELECT * FROM employees WHERE hire_date BETWEEN '2020-01-01' AND '2023-12-31';
+
+-- IN operator
+SELECT * FROM employees WHERE department IN ('IT', 'HR', 'Finance');
+SELECT * FROM products WHERE category_id IN (1, 3, 5, 7);
+
+-- NOT IN operator
+SELECT * FROM employees WHERE department NOT IN ('IT', 'HR');
+```
+
+### NULL Handling Operators:
+```sql
+-- IS NULL / IS NOT NULL
+SELECT * FROM customers WHERE phone IS NULL;
+SELECT * FROM orders WHERE shipped_date IS NOT NULL;
+
+-- COALESCE (return first non-null value)
+SELECT name, COALESCE(phone, email, 'No contact') AS contact_info
+FROM customers;
+
+-- IFNULL (MySQL specific)
+SELECT name, IFNULL(phone, 'No phone') AS phone_display
+FROM customers;
+```
+
+---
 
 ## LIMIT Clause
 
-Restricts number of records returned:
+The LIMIT clause restricts the number of records returned by a query.
 
-### Syntax:
+### Basic Syntax:
 ```sql
 SELECT column1, column2
 FROM table_name
 LIMIT number;
 
--- With offset
+-- With offset (skip rows)
 SELECT column1, column2
 FROM table_name
 LIMIT offset, count;
@@ -531,84 +929,197 @@ SELECT * FROM employees LIMIT 5;
 -- Get records 6-10 (skip first 5, then get 5)
 SELECT * FROM employees LIMIT 5, 5;
 
--- Pagination example
-SELECT * FROM products LIMIT 20, 10; -- Page 3, 10 items per page
+-- Get records 11-15
+SELECT * FROM employees LIMIT 10, 5;
+
+-- Pagination example (page 3, 10 items per page)
+SELECT * FROM products LIMIT 20, 10;  -- Skip 20, get 10
 ```
+
+### Practical Use Cases:
+```sql
+-- Top performers
+SELECT name, salary FROM employees 
+ORDER BY salary DESC 
+LIMIT 10;
+
+-- Recent orders
+SELECT * FROM orders 
+ORDER BY order_date DESC 
+LIMIT 20;
+
+-- Sample data for testing
+SELECT * FROM large_table LIMIT 100;
+
+-- Pagination with calculation
+-- Page number: 3, Items per page: 10
+-- Offset = (page - 1) * items_per_page = (3-1) * 10 = 20
+SELECT * FROM products LIMIT 20, 10;
+```
+
+---
 
 ## ORDER BY Clause
 
-Sorts result set by specified columns:
+The ORDER BY clause sorts the result set by one or more columns.
 
-### Syntax:
+### Basic Syntax:
 ```sql
 SELECT column1, column2
 FROM table_name
 ORDER BY column1 ASC|DESC, column2 ASC|DESC;
 ```
 
+### Sorting Options:
+- **ASC** - Ascending order (default)
+- **DESC** - Descending order
+
 ### Examples:
 ```sql
 -- Sort by single column
 SELECT * FROM employees ORDER BY salary DESC;
+SELECT * FROM products ORDER BY name ASC;  -- ASC is optional
 
 -- Sort by multiple columns
-SELECT * FROM employees ORDER BY department ASC, salary DESC;
+SELECT * FROM employees 
+ORDER BY department ASC, salary DESC;
 
--- Sort by column position
-SELECT name, salary FROM employees ORDER BY 2 DESC;
+-- Sort by column position (not recommended)
+SELECT name, salary FROM employees ORDER BY 2 DESC;  -- Sort by salary
 
--- Sort with expressions
-SELECT name, salary FROM employees ORDER BY salary * 12 DESC;
+-- Sort by calculated column
+SELECT name, salary, salary * 12 AS annual_salary 
+FROM employees 
+ORDER BY annual_salary DESC;
+
+-- Sort by expression
+SELECT product_name, price 
+FROM products 
+ORDER BY price * quantity DESC;
 ```
+
+### Advanced Sorting:
+```sql
+-- Custom sort order
+SELECT * FROM employees 
+ORDER BY 
+    CASE department
+        WHEN 'CEO' THEN 1
+        WHEN 'Management' THEN 2
+        WHEN 'IT' THEN 3
+        ELSE 4
+    END,
+    salary DESC;
+
+-- Sort with NULL handling
+SELECT name, phone FROM customers 
+ORDER BY phone IS NULL, phone;  -- NULLs last
+
+-- Sort by string length
+SELECT name FROM employees 
+ORDER BY LENGTH(name) DESC;
+
+-- Random order
+SELECT * FROM products ORDER BY RAND() LIMIT 10;
+```
+
+---
 
 ## Aggregate Functions
 
-Perform calculations on multiple rows and return single value:
+Aggregate functions perform calculations on multiple rows and return a single value.
 
 ### Common Aggregate Functions:
-- **COUNT()** - Count number of rows
-- **SUM()** - Sum of numeric values
-- **AVG()** - Average of numeric values
-- **MAX()** - Maximum value
-- **MIN()** - Minimum value
 
-### Examples:
+#### COUNT Function
 ```sql
--- Count all employees
+-- Count all rows
 SELECT COUNT(*) FROM employees;
 
 -- Count non-null values
 SELECT COUNT(email) FROM employees;
 
+-- Count distinct values
+SELECT COUNT(DISTINCT department) FROM employees;
+
+-- Count with condition
+SELECT COUNT(*) FROM employees WHERE salary > 50000;
+```
+
+#### SUM Function
+```sql
 -- Sum of all salaries
 SELECT SUM(salary) FROM employees;
 
+-- Sum with condition
+SELECT SUM(salary) FROM employees WHERE department = 'IT';
+
+-- Sum of calculated values
+SELECT SUM(price * quantity) AS total_revenue FROM order_items;
+```
+
+#### AVG Function
+```sql
 -- Average salary
 SELECT AVG(salary) FROM employees;
 
+-- Average with rounding
+SELECT ROUND(AVG(salary), 2) AS avg_salary FROM employees;
+
+-- Average by group
+SELECT department, AVG(salary) FROM employees GROUP BY department;
+```
+
+#### MAX and MIN Functions
+```sql
 -- Highest and lowest salary
 SELECT MAX(salary), MIN(salary) FROM employees;
 
--- Multiple aggregates
-SELECT 
-    COUNT(*) as total_employees,
-    AVG(salary) as avg_salary,
-    MAX(salary) as max_salary
+-- Latest and earliest dates
+SELECT MAX(order_date) AS latest_order, MIN(order_date) AS first_order 
+FROM orders;
+
+-- String MAX/MIN (alphabetical)
+SELECT MAX(name) AS last_alphabetically, MIN(name) AS first_alphabetically 
 FROM employees;
 ```
 
+### Multiple Aggregates:
+```sql
+SELECT 
+    COUNT(*) as total_employees,
+    COUNT(DISTINCT department) as departments,
+    AVG(salary) as avg_salary,
+    MAX(salary) as max_salary,
+    MIN(salary) as min_salary,
+    SUM(salary) as total_payroll
+FROM employees;
+```
+
+### Aggregate with Conditions:
+```sql
+-- Conditional aggregation
+SELECT 
+    COUNT(CASE WHEN salary > 50000 THEN 1 END) as high_earners,
+    COUNT(CASE WHEN salary <= 50000 THEN 1 END) as regular_earners,
+    AVG(CASE WHEN department = 'IT' THEN salary END) as avg_it_salary
+FROM employees;
+```
+
+---
+
 ## GROUP BY Clause
 
-Groups rows with same values and allows aggregate functions on each group:
+The GROUP BY clause groups rows with the same values and allows aggregate functions to be applied to each group.
 
-### Syntax:
+### Basic Syntax:
 ```sql
 SELECT column1, aggregate_function(column2)
 FROM table_name
 GROUP BY column1;
 ```
 
-### Examples:
+### Simple Grouping:
 ```sql
 -- Count employees by department
 SELECT department, COUNT(*) as employee_count
@@ -620,582 +1131,17 @@ SELECT department, AVG(salary) as avg_salary
 FROM employees
 GROUP BY department;
 
--- Multiple grouping columns
-SELECT department, job_title, COUNT(*) as count
+-- Sum of sales by product
+SELECT product_id, SUM(quantity) as total_sold
+FROM order_items
+GROUP BY product_id;
+```
+
+### Multiple Column Grouping:
+```sql
+-- Group by department and job title
+SELECT department, job_title, COUNT(*) as count, AVG(salary) as avg_salary
 FROM employees
 GROUP BY department, job_title;
 
--- Group by expression
-SELECT 
-    YEAR(hire_date) as hire_year,
-    COUNT(*) as employees_hired
-FROM employees
-GROUP BY YEAR(hire_date);
-```
-
-## HAVING Clause
-
-Filters groups created by GROUP BY (WHERE filters individual rows, HAVING filters groups):
-
-### Syntax:
-```sql
-SELECT column1, aggregate_function(column2)
-FROM table_name
-GROUP BY column1
-HAVING condition;
-```
-
-### Examples:
-```sql
--- Departments with more than 5 employees
-SELECT department, COUNT(*) as employee_count
-FROM employees
-GROUP BY department
-HAVING COUNT(*) > 5;
-
--- Departments with average salary > 60000
-SELECT department, AVG(salary) as avg_salary
-FROM employees
-GROUP BY department
-HAVING AVG(salary) > 60000;
-
--- Combined WHERE and HAVING
-SELECT department, AVG(salary) as avg_salary
-FROM employees
-WHERE hire_date > '2020-01-01'
-GROUP BY department
-HAVING AVG(salary) > 50000;
-```
-
-## General Order of Commands
-
-SQL commands must be written in specific order:
-
-### Standard Order:
-1. **SELECT** - Columns to retrieve
-2. **FROM** - Tables to query
-3. **WHERE** - Filter individual rows
-4. **GROUP BY** - Group rows
-5. **HAVING** - Filter groups
-6. **ORDER BY** - Sort results
-7. **LIMIT** - Restrict number of results
-
-### Example:
-```sql
-SELECT department, AVG(salary) as avg_salary
-FROM employees
-WHERE hire_date > '2020-01-01'
-GROUP BY department
-HAVING AVG(salary) > 50000
-ORDER BY avg_salary DESC
-LIMIT 5;
-```
-
-<a name="advanced"></a>
-# 4. Advanced Querying Techniques
-
-<a name="modification"></a>
-# 5. Data Modification Operations
-
-## UPDATE Command
-
-Modifies existing records in a table:
-
-### Syntax:
-```sql
-UPDATE table_name
-SET column1 = value1, column2 = value2, ...
-WHERE condition;
-```
-
-### Examples:
-```sql
--- Update single record
-UPDATE employees
-SET salary = 75000
-WHERE id = 1;
-
--- Update multiple columns
-UPDATE employees
-SET salary = salary * 1.1, department = 'Senior IT'
-WHERE department = 'IT' AND experience > 5;
-
--- Update with subquery
-UPDATE employees
-SET salary = (SELECT AVG(salary) FROM employees WHERE department = 'IT')
-WHERE id = 1;
-
--- Update all records (be careful!)
-UPDATE products
-SET status = 'discontinued';
-```
-
-### Safety Tips:
-- Always use WHERE clause unless updating all records intentionally
-- Test with SELECT first
-- Use transactions for critical updates
-- Backup data before major updates
-
-## DELETE Command
-
-Removes records from a table:
-
-### Syntax:
-```sql
-DELETE FROM table_name
-WHERE condition;
-```
-
-### Examples:
-```sql
--- Delete specific record
-DELETE FROM employees
-WHERE id = 1;
-
--- Delete multiple records
-DELETE FROM employees
-WHERE department = 'IT' AND salary < 40000;
-
--- Delete with subquery
-DELETE FROM orders
-WHERE customer_id IN (SELECT id FROM customers WHERE status = 'inactive');
-
--- Delete all records (keeps table structure)
-DELETE FROM temp_table;
-```
-
-### DELETE vs TRUNCATE vs DROP:
-- **DELETE** - Removes rows, can use WHERE, slower, can rollback
-- **TRUNCATE** - Removes all rows, faster, cannot rollback
-- **DROP** - Removes entire table structure
-
-## Revisiting Foreign Keys
-
-Foreign keys maintain referential integrity between tables:
-
-### Creating Foreign Keys:
-```sql
--- During table creation
-CREATE TABLE orders (
-    id INT PRIMARY KEY,
-    customer_id INT,
-    product_id INT,
-    FOREIGN KEY (customer_id) REFERENCES customers(id),
-    FOREIGN KEY (product_id) REFERENCES products(id)
-);
-
--- Adding foreign key to existing table
-ALTER TABLE orders
-ADD FOREIGN KEY (customer_id) REFERENCES customers(id);
-```
-
-### Foreign Key Benefits:
-- Prevents invalid data entry
-- Maintains data consistency
-- Prevents deletion of referenced records
-- Enforces business rules
-
-### Foreign Key Actions:
-- **RESTRICT** - Prevent delete/update of referenced row
-- **CASCADE** - Delete/update dependent rows automatically
-- **SET NULL** - Set foreign key to NULL
-- **SET DEFAULT** - Set foreign key to default value
-
-## Cascading Foreign Keys
-
-Automatic actions when referenced data changes:
-
-### CASCADE Options:
-```sql
-CREATE TABLE orders (
-    id INT PRIMARY KEY,
-    customer_id INT,
-    FOREIGN KEY (customer_id) REFERENCES customers(id)
-        ON DELETE CASCADE
-        ON UPDATE CASCADE
-);
-```
-
-### Types of Cascading:
-- **ON DELETE CASCADE** - Delete child records when parent is deleted
-- **ON UPDATE CASCADE** - Update child records when parent key is updated
-- **ON DELETE SET NULL** - Set foreign key to NULL when parent is deleted
-- **ON DELETE RESTRICT** - Prevent parent deletion if children exist
-
-### Examples:
-```sql
--- Customer deletion cascades to orders
-CREATE TABLE orders (
-    id INT PRIMARY KEY,
-    customer_id INT,
-    FOREIGN KEY (customer_id) REFERENCES customers(id)
-        ON DELETE CASCADE
-);
-
--- Set to NULL on deletion
-CREATE TABLE employees (
-    id INT PRIMARY KEY,
-    manager_id INT,
-    FOREIGN KEY (manager_id) REFERENCES employees(id)
-        ON DELETE SET NULL
-);
-```
-
-## ALTER Command
-
-Modifies existing database objects:
-
-### ALTER TABLE Operations:
-```sql
--- Add column
-ALTER TABLE employees
-ADD COLUMN phone VARCHAR(15);
-
--- Drop column
-ALTER TABLE employees
-DROP COLUMN phone;
-
--- Add constraint
-ALTER TABLE employees
-ADD CONSTRAINT uk_email UNIQUE (email);
-
--- Drop constraint
-ALTER TABLE employees
-DROP CONSTRAINT uk_email;
-
--- Add primary key
-ALTER TABLE employees
-ADD PRIMARY KEY (id);
-
--- Add foreign key
-ALTER TABLE orders
-ADD FOREIGN KEY (customer_id) REFERENCES customers(id);
-```
-
-## CHANGE and MODIFY Commands
-
-### CHANGE Command:
-Renames column and can change its definition:
-```sql
--- Change column name and type
-ALTER TABLE employees
-CHANGE old_column_name new_column_name VARCHAR(100);
-
--- Change just the name (keep same type)
-ALTER TABLE employees
-CHANGE first_name fname VARCHAR(50);
-```
-
-### MODIFY Command:
-Changes column definition without renaming:
-```sql
--- Change column type
-ALTER TABLE employees
-MODIFY salary DECIMAL(12,2);
-
--- Add constraint
-ALTER TABLE employees
-MODIFY email VARCHAR(100) NOT NULL UNIQUE;
-
--- Change multiple columns
-ALTER TABLE employees
-MODIFY COLUMN name VARCHAR(100),
-MODIFY COLUMN age INT NOT NULL;
-```
-
-## TRUNCATE Command
-
-Removes all records from table while keeping structure:
-
-### Syntax:
-```sql
-TRUNCATE TABLE table_name;
-```
-
-### TRUNCATE vs DELETE:
-- **TRUNCATE** - Faster, removes all rows, resets auto-increment, cannot use WHERE
-- **DELETE** - Slower, can be selective, maintains auto-increment counter
-
-### Examples:
-```sql
--- Remove all data from table
-TRUNCATE TABLE temp_data;
-
--- Cannot use WHERE with TRUNCATE
--- This is INVALID:
--- TRUNCATE TABLE employees WHERE department = 'IT';
-
--- Use DELETE for conditional removal:
-DELETE FROM employees WHERE department = 'IT';
-```
-
-<a name="management"></a>
-# 6. Table and Database Management
-
-## JOINS in SQL
-
-Combines rows from two or more tables based on related columns:
-
-### Types of JOINS:
-
-#### INNER JOIN
-Returns records with matching values in both tables:
-```sql
-SELECT columns
-FROM table1
-INNER JOIN table2 ON table1.column = table2.column;
-
--- Example
-SELECT e.name, d.department_name
-FROM employees e
-INNER JOIN departments d ON e.department_id = d.id;
-```
-
-#### LEFT JOIN (LEFT OUTER JOIN)
-Returns all records from left table and matched records from right:
-```sql
-SELECT columns
-FROM table1
-LEFT JOIN table2 ON table1.column = table2.column;
-
--- Example
-SELECT c.name, o.order_date
-FROM customers c
-LEFT JOIN orders o ON c.id = o.customer_id;
-```
-
-#### RIGHT JOIN (RIGHT OUTER JOIN)
-Returns all records from right table and matched records from left:
-```sql
-SELECT columns
-FROM table1
-RIGHT JOIN table2 ON table1.column = table2.column;
-```
-
-#### FULL OUTER JOIN
-Returns all records when there's a match in either table:
-```sql
-SELECT columns
-FROM table1
-FULL OUTER JOIN table2 ON table1.column = table2.column;
-```
-
-#### CROSS JOIN
-Returns Cartesian product of both tables:
-```sql
-SELECT columns
-FROM table1
-CROSS JOIN table2;
-```
-
-#### SELF JOIN
-Joins table with itself:
-```sql
-SELECT e1.name AS employee, e2.name AS manager
-FROM employees e1
-JOIN employees e2 ON e1.manager_id = e2.id;
-```
-
-### Complex JOIN Examples:
-```sql
--- Multiple joins
-SELECT 
-    o.id,
-    c.name AS customer_name,
-    p.name AS product_name,
-    o.quantity
-FROM orders o
-JOIN customers c ON o.customer_id = c.id
-JOIN products p ON o.product_id = p.id;
-
--- Join with conditions
-SELECT e.name, d.name
-FROM employees e
-JOIN departments d ON e.dept_id = d.id
-WHERE e.salary > 50000;
-```
-
-<a name="features"></a>
-# 7. Advanced SQL Features
-
-## UNION in SQL
-
-Combines results of two or more SELECT statements:
-
-### UNION vs UNION ALL:
-- **UNION** - Removes duplicates
-- **UNION ALL** - Keeps duplicates (faster)
-
-### Syntax:
-```sql
-SELECT column1, column2 FROM table1
-UNION
-SELECT column1, column2 FROM table2;
-```
-
-### Rules:
-- Same number of columns
-- Similar data types
-- Column names from first SELECT used
-
-### Examples:
-```sql
--- Combine active and inactive customers
-SELECT name, email FROM active_customers
-UNION
-SELECT name, email FROM inactive_customers;
-
--- With ORDER BY (applies to final result)
-SELECT name FROM managers
-UNION
-SELECT name FROM employees
-ORDER BY name;
-
--- Different tables with aliases
-SELECT 'Customer' as type, name FROM customers
-UNION
-SELECT 'Supplier' as type, name FROM suppliers;
-```
-
-## SQL Sub Queries
-
-Query nested inside another query:
-
-### Types of Subqueries:
-
-#### Single Row Subquery:
-Returns one row:
-```sql
-SELECT name FROM employees
-WHERE salary = (SELECT MAX(salary) FROM employees);
-```
-
-#### Multiple Row Subquery:
-Returns multiple rows:
-```sql
-SELECT name FROM employees
-WHERE department_id IN (
-    SELECT id FROM departments 
-    WHERE location = 'New York'
-);
-```
-
-#### Correlated Subquery:
-References outer query:
-```sql
-SELECT name FROM employees e1
-WHERE salary > (
-    SELECT AVG(salary) 
-    FROM employees e2 
-    WHERE e2.department_id = e1.department_id
-);
-```
-
-### Subquery Operators:
-- **IN** - Value exists in subquery results
-- **NOT IN** - Value doesn't exist in subquery results
-- **EXISTS** - Subquery returns at least one row
-- **NOT EXISTS** - Subquery returns no rows
-- **ANY/SOME** - Condition true for any subquery value
-- **ALL** - Condition true for all subquery values
-
-### Examples:
-```sql
--- EXISTS example
-SELECT name FROM customers c
-WHERE EXISTS (
-    SELECT 1 FROM orders o 
-    WHERE o.customer_id = c.id
-);
-
--- ALL example
-SELECT name FROM employees
-WHERE salary > ALL (
-    SELECT salary FROM employees 
-    WHERE department = 'HR'
-);
-
--- Subquery in SELECT
-SELECT 
-    name,
-    salary,
-    (SELECT AVG(salary) FROM employees) as avg_salary
-FROM employees;
-```
-
-## MySQL Views
-
-Virtual tables based on SQL queries:
-
-### Creating Views:
-```sql
-CREATE VIEW view_name AS
-SELECT columns
-FROM tables
-WHERE conditions;
-
--- Example
-CREATE VIEW high_salary_employees AS
-SELECT name, department, salary
-FROM employees
-WHERE salary > 75000;
-```
-
-### Using Views:
-```sql
--- Query view like a table
-SELECT * FROM high_salary_employees;
-
--- Join with other tables
-SELECT v.name, d.location
-FROM high_salary_employees v
-JOIN departments d ON v.department = d.name;
-```
-
-### View Operations:
-```sql
--- Update view definition
-CREATE OR REPLACE VIEW view_name AS
-SELECT new_columns FROM tables;
-
--- Drop view
-DROP VIEW view_name;
-
--- Show view definition
-SHOW CREATE VIEW view_name;
-```
-
-### Types of Views:
-
-#### Simple Views:
-- Based on single table
-- Can perform DML operations
-```sql
-CREATE VIEW emp_view AS
-SELECT id, name, salary FROM employees;
-```
-
-#### Complex Views:
-- Based on multiple tables or contains functions
-- Limited DML operations
-```sql
-CREATE VIEW dept_summary AS
-SELECT 
-    d.name,
-    COUNT(e.id) as employee_count,
-    AVG(e.salary) as avg_salary
-FROM departments d
-LEFT JOIN employees e ON d.id = e.dept_id
-GROUP BY d.id, d.name;
-```
-
-### View Benefits:
-- Security (hide sensitive columns)
-- Simplify complex queries
-- Provide consistent interface
-- Logical data independence
-
-### View Limitations:
-- Performance overhead
-- Update restrictions on complex views
-- Dependency on base tables
+-- Group by

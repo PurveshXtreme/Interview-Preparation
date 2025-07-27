@@ -1,5 +1,18 @@
 # Introduction to SQL - Comprehensive Notes
 
+# Table of Contents 
+1. [ Database Fundamentals. ](#fundamentals)
+2. [ SQL Datatypes and Commands. ](#datatypes)
+3. [ Basic Queries and Operations. ](#basic)
+4. [ Advanced Querying Techniques. ](#advanced)
+5. [ Data Modification Operations. ](#modification)
+6. [ Table and Database Management. ](#management)
+7. [ Joins and Relationships. ](#joins)
+8. [ Advanced SQL Features. ](#features)
+
+<a name="fundamentals"></a>
+# 1. Database Fundamentals
+
 ## What is Database?
 A database is an organized collection of structured information, or data, typically stored electronically in a computer system. It is managed by a Database Management System (DBMS) which provides an interface for users to interact with the data.
 
@@ -87,6 +100,9 @@ DROP DATABASE database_name;
 - Follow naming conventions
 - Consider future scalability
 - Plan database structure before creation
+
+<a name="datatypes"></a>
+# 2. SQL Datatypes and Commands
 
 ## Creating Our First Table
 
@@ -204,6 +220,9 @@ SELECT
 FROM information_schema.tables
 GROUP BY table_schema;
 ```
+
+<a name="basic"></a>
+# 3. Basic Queries and Operations
 
 ## Table Related Queries
 
@@ -343,6 +362,8 @@ CREATE TABLE users (
 
 ### Super Key
 - Set of attributes that can uniquely identify records
+- Dependency on base tables
+
 - May contain additional attributes beyond candidate key
 
 ## Constraints
@@ -670,6 +691,12 @@ ORDER BY avg_salary DESC
 LIMIT 5;
 ```
 
+<a name="advanced"></a>
+# 4. Advanced Querying Techniques
+
+<a name="modification"></a>
+# 5. Data Modification Operations
+
 ## UPDATE Command
 
 Modifies existing records in a table:
@@ -902,6 +929,9 @@ TRUNCATE TABLE temp_data;
 DELETE FROM employees WHERE department = 'IT';
 ```
 
+<a name="management"></a>
+# 6. Table and Database Management
+
 ## JOINS in SQL
 
 Combines rows from two or more tables based on related columns:
@@ -984,6 +1014,9 @@ FROM employees e
 JOIN departments d ON e.dept_id = d.id
 WHERE e.salary > 50000;
 ```
+
+<a name="features"></a>
+# 7. Advanced SQL Features
 
 ## UNION in SQL
 

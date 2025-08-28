@@ -39,4 +39,20 @@ Another strength is collaboration and teamwork — participating in hackathons a
 
 ---
 
+**Question:** How do you prioritize your tasks?
+
+**Answer:**  
+“I prioritize my tasks based on their **urgency and importance**. Typically, I start by identifying deadlines and breaking projects into smaller actionable tasks. Then, I categorize them as must-haves, should-haves, could-haves, and won’t-haves. I also consider how long each task might take and plan enough time to ensure quality. I regularly revisit my to-do list to adjust priorities if new tasks or urgent requests come up. To stay organized, I use **the Eisenhower Matrix** along with task management tools, which helps me manage time effectively and complete tasks efficiently.”
+
+---
+
+**Question:** How do you handle failure?
+
+**Answer:**  
+“I consider failure an opportunity for growth and learning. When something doesn’t go as planned, I step back to analyze what happened and identify lessons from the experience. I ask myself questions like: Did I mismanage my time? Was communication lacking? Did I overlook a key detail? Understanding what went wrong helps me avoid similar mistakes in the future.  
+
+I also seek feedback from colleagues or mentors to gain different perspectives. For me, failure is not something to fear; it’s a chance to improve and come back more determined. I believe that how we respond to failure is just as important as the success that follows.”
+
+---
+
 

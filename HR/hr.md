@@ -4,11 +4,15 @@
 1. [What are your strengths?](#question-what-are-your-strengths)
 2. [What are your weaknesses?](#question-what-are-your-weaknesses)
 3. [Why do you want to work here?](#question-why-do-you-want-to-work-here)
-4. [Where do you see yourself in five years?](#question-where-do-you-see-yourself-in-five-years)
-5. [How do you handle stress and pressure?](#question-how-do-you-handle-stress-and-pressure)
-6. [Do you prefer working alone or in a team?](#question-do-you-prefer-working-alone-or-in-a-team)
-7. [How do you prioritize your tasks?](#question-how-do-you-prioritize-your-tasks)
-8. [How do you handle failure?](#question-how-do-you-handle-failure)
+4. [How can you contribute to our company?](#question-how-can-you-contribute-to-our-company)
+5. [Where do you see yourself in five years?](#question-where-do-you-see-yourself-in-five-years)
+6. [How do you handle stress and pressure?](#question-how-do-you-handle-stress-and-pressure)
+7. [Do you prefer working alone or in a team?](#question-do-you-prefer-working-alone-or-in-a-team)
+8. [How do you prioritize your tasks?](#question-how-do-you-prioritize-your-tasks)
+9. [How do you handle failure?](#question-how-do-you-handle-failure)
+10. [What sets you apart from other candidates?](#question-what-sets-you-apart-from-other-candidates)
+11. [Can you give an example of a time you showed leadership?](#question-can-you-give-an-example-of-a-time-you-showed-leadership)
+
 
 ---
 
@@ -32,6 +36,11 @@ Another strength is collaboration and teamwork — participating in hackathons a
 -- answer as per the company and the job role
 
 ---
+
+### **Question: How can you contribute to our company?**
+
+-- answer as per the company and the job role
+
 
 ### **Question: Where do you see yourself in five years?**
 
@@ -67,3 +76,26 @@ Another strength is collaboration and teamwork — participating in hackathons a
 “I consider failure an opportunity for growth and learning. When something doesn’t go as planned, I step back to analyze what happened and identify lessons from the experience. I ask myself questions like: Did I mismanage my time? Was communication lacking? Did I overlook a key detail? Understanding what went wrong helps me avoid similar mistakes in the future.  
 
 I also seek feedback from colleagues or mentors to gain different perspectives. For me, failure is not something to fear; it’s a chance to improve and come back more determined. I believe that how we respond to failure is just as important as the success that follows.”
+
+---
+
+### Question: What sets you apart from other candidates?
+
+**Answer:**  
+What sets me apart is my combination of strong technical skills and adaptability. I’ve built a solid foundation in [your core skills — e.g., Java, SQL, Web Development], but I also focus on applying them in real projects, hackathons, and internships under tight deadlines.  
+
+Along with that, I bring strong communication skills, which help me work well in teams and explain technical ideas clearly to non-technical people. I’m also very open to feedback and quick to learn new tools or technologies, which helps me adapt to challenges and keep improving. I believe this balance of technical ability, problem-solving, and teamwork makes me a strong fit for your company.
+
+---
+
+### Question: Can you give an example of a time you showed leadership?
+
+**Answer:**  
+In my final year project, our team faced a tough phase when unexpected technical issues slowed down our progress and frustrated some teammates. I took the initiative to call a quick meeting, where I redistributed tasks based on each member’s strengths and set smaller milestones to keep us on track.  
+
+At the same time, I stayed calm and focused, motivating my teammates and keeping communication open with our mentor about the challenges we faced. This helped boost morale, and we were able to solve the issues and finish the project on time.  
+
+The experience taught me that leadership is not about authority, but about guiding the team with clarity, keeping everyone motivated, and setting an example through your own actions.  
+
+---
+

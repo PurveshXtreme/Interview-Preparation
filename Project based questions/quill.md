@@ -42,5 +42,8 @@ My focus was on creating a **simple** and **user-friendly design** so that users
 “Yes, you’re right, the backend is built with Flask. My main contribution was in the frontend, where I developed the interface using HTML, CSS, and JavaScript. Later, my teammate working on the backend integrated the frontend with Flask so that it could interact directly with the Hugging Face model. So while the Flask part was handled by my teammate, my focus was on making sure the UI remained simple, responsive, and user-friendly.”
 
 ---
+---
+
+
 
 

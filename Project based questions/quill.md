@@ -44,6 +44,39 @@ My focus was on creating a **simple** and **user-friendly design** so that users
 ---
 ---
 
+### Project-Specific Questions – Quill AI
 
+---
+
+#### ❓ Which Hugging Face model did you use?  
+**Answer:**  
+“We integrated a **pre-trained Hugging Face summarization model**, such as `facebook/bart-large-cnn`. This model is designed for text summarization and can handle long passages efficiently, generating concise outputs that retain key points.”
+
+---
+
+#### ❓ How does this model summarize the text?  
+**Answer:**  
+“The model reads the input text and uses a **transformer-based architecture** to understand the context. It identifies important sentences and phrases and generates a concise summary, predicting the most relevant words for the output.”
+
+---
+
+#### ❓ How does the frontend communicate with the backend and vice versa?  
+**Answer:**  
+“The **frontend sends the user’s input text** to the backend using a **POST request** (via the form). The backend receives this text, passes it to the summarization model, and then the **summarized text is sent back** to the frontend. On the frontend, we display the summary in a dedicated output section.”
+
+---
+
+#### ❓ How did you ensure that the summarized text is placed properly on the frontend?  
+**Answer:**  
+“I created a **dedicated container** for the summarized text using HTML and CSS, separate from the input box. I also used scrollable divs for long summaries and consistent styling so that the output is clearly visible and easy to read for users.”
+
+---
+
+#### ❓ Did you preprocess the text before sending it to the backend?  
+**Answer:**  
+“From the frontend side, we performed **minimal preprocessing**—mainly trimming extra spaces and ensuring the input isn’t empty. The backend model can handle most formatting, so additional preprocessing wasn’t necessary.”
+
+---
+---
 
 

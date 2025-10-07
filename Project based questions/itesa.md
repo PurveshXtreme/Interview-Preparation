@@ -1,0 +1,1 @@
+"I contributed to organizing and managing technical events for Advait 24 as a Technical Event Coordinator, making sure competitions ran smoothly. I also assisted the ITESA team with managing technical events and logistics at the college level."

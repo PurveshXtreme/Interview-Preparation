@@ -112,7 +112,7 @@ export default function App() {
 ---
 
 
-# 📝 React To-Do List Example
+#  React To-Do List Example
 
 ```javascript
 import "./styles.css";

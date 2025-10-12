@@ -10,6 +10,7 @@
 - [Create a Modal Component](#create-a-modal-component)
 - [React Image Carousel](#react-image-carousel)
 - [React Star Rating Component](#react-star-rating-component)
+- [React Real-Time Search](#react-real-time-search)
 
 
 
@@ -644,7 +645,67 @@ export default function App() {
 ---
 ---
 
+# React Real-Time Search 
 
+This is a **real-time search** implementation in React using functional components and `useState`/`useEffect` hooks. The list of todos is fetched from an API, and the search input filters the list **on-the-fly** without using extra state for filtered data.
+
+```javascript
+import "./styles.css";
+import { useState, useEffect } from "react";
+
+export default function App() {
+  const [data, setData] = useState([]);
+  const [query, setQuery] = useState("");
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/todos")
+      .then((res) => res.json())
+      .then((json) => {
+        setData(json);
+        setLoading(false);
+      });
+  }, []);
+
+  const filteredDate = loading
+    ? []
+    : data.filter((item) =>
+        item.title.toLowerCase().includes(query.toLowerCase())
+      );
+
+  if (loading) return <div>loading...</div>;
+
+  return (
+    <div className="App">
+      <div>Real time search</div>
+      <input
+        type="text"
+        placeholder="search"
+        onChange={(e) => {
+          setQuery(e.target.value);
+        }}
+      />
+
+      {filteredDate.map((item) => {
+        return <div key={item.id}>{item.title}</div>;
+      })}
+    </div>
+  );
+}
+```
+
+---
+
+## 📌 Notes
+
+- `useState` is used for **API data**, **search query**, and **loading state**.
+- `useEffect` is used to **fetch data on component mount** (`[]` dependency array ensures it runs only once).
+- The **filtered list** is derived dynamically using `.filter()` based on the current query.
+- This approach avoids storing **redundant state** for filtered data, making the component simpler.
+- `.toLowerCase()` is used for **case-insensitive search**.
+
+---
+---
 
 
 

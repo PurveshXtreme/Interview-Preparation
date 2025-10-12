@@ -1,3 +1,13 @@
+# Table of Contents
+
+- [React Counter](#react-counter)
+- [React Toggle Switch – Two Approaches](#react-toggle-switch--two-approaches)
+- [React To-Do List Example](#react-to-do-list-example)
+
+
+---
+---
+
 # React Counter 
 
 ## Code Overview

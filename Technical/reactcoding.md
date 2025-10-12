@@ -9,6 +9,7 @@
 - [Implement a Tabs Component](#implement-a-tabs-component)
 - [Create a Modal Component](#create-a-modal-component)
 - [React Image Carousel](#react-image-carousel)
+- [React Star Rating Component](#react-star-rating-component)
 
 
 
@@ -589,7 +590,59 @@ export default function App() {
 ---
 ---
 
+# React Star Rating Component
 
+## Code Overview
+This is a simple **star rating component** built using React functional components and `useState`.  
+It allows users to rate from **1 to 5 stars**, and dynamically updates the displayed rating.
+
+```javascript
+import "./styles.css";
+import { useState } from "react";
+
+export default function App() {
+  const [rating, setRating] = useState(-1);
+
+  const rates = ["★", "★★", "★★★", "★★★★", "★★★★★"];
+  const arr = [1, 2, 3, 4, 5];
+
+  return (
+    <div className="App">
+      <div>{rating === -1 ? "please rate us" : rates[rating]}</div>
+
+      {arr.map((item) => {
+        return (
+          <button
+            onClick={() => {
+              setRating(item - 1);
+            }}
+          >
+            {item}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+```
+
+---
+
+## Notes
+
+- `useState(-1)` is used to track the **selected rating**. `-1` indicates no rating selected.
+- `rates` array contains **display strings for stars**.
+- `arr.map()` is used to render buttons dynamically for each rating.
+- `setRating(item - 1)` ensures correct **0-based indexing** when accessing `rates`.
+- Conditional rendering:
+  ```javascript
+  {rating === -1 ? "please rate us" : rates[rating]}
+  ```
+  - Displays `"please rate us"` when no rating is selected.
+  - Displays the **selected star rating** otherwise.
+
+---
+---
 
 
 

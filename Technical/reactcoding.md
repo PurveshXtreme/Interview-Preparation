@@ -1,3 +1,6 @@
+- [JSONPlaceholder](https://jsonplaceholder.typicode.com)
+- [CodeSandbox: damp-monad-p45s4w](https://codesandbox.io/p/sandbox/damp-monad-p45s4w?file=%2Fsrc%2FApp.js%3A34%2C11)
+
 # Table of Contents
 
 - [React Counter](#react-counter)
@@ -707,7 +710,7 @@ export default function App() {
 ---
 ---
 
-
+question print only top 10 values of large array in component
 
 
 

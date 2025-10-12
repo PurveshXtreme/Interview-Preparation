@@ -20,6 +20,10 @@
 - [React Context API – Global State Example](#react-context-api--global-state-example)
 - [React Custom Hook – Fetch & Cache API Data](#react-custom-hook--fetch--cache-api-data)
 - [React Countdown Timer](#react-countdown-timer)
+- [Simple React Form with Validation](#simple-react-form-with-validation)
+- [Dynamic Styling — React Button Color Changer](#dynamic-styling--react-button-color-changer)
+- [Debounced Search in React](#debounced-search-in-react)
+- [Progress Bar in React](#progress-bar-in-react)
   
 
 
@@ -1109,7 +1113,256 @@ export default function CountdownTimer() {
 ---
 ---
 
+# Simple React Form with Validation
 
+This example shows a **basic React form** with **validation** for empty fields and email format.
 
+---
 
+## 📘 Code Example
 
+```javascript
+import { useState } from "react";
+
+export default function SimpleForm() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // basic validation
+    if (!name || !email) {
+      setError("All fields are required!");
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setError("Please enter a valid email address!");
+      return;
+    }
+
+    setError("");
+    console.log("Form submitted successfully!");
+    console.log("Name:", name);
+    console.log("Email:", email);
+
+    setName("");
+    setEmail("");
+  };
+
+  return (
+    <div style={{ textAlign: "center", marginTop: "30px" }}>
+      <h2>Simple Form</h2>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          placeholder="Enter name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+        <br />
+        <input
+          type="email"
+          placeholder="Enter email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+
+      {error && <p style={{ color: "red" }}>{error}</p>}
+    </div>
+  );
+}
+```
+
+---
+---
+
+# Dynamic Styling — React Button Color Changer
+
+## 🧩 Problem
+Create a **button** that changes its **background color** every time it’s clicked.
+
+### 🧠 Concepts Tested
+- Inline Styling  
+- Dynamic State Updates (`useState`)
+
+---
+
+## ✅ Example Code
+
+```javascript
+import { useState } from "react";
+
+export default function App() {
+  const colors = ["red", "green", "blue", "orange", "purple"];
+  const [colorIndex, setColorIndex] = useState(0);
+
+  const changeColor = () => {
+    setColorIndex((prev) => (prev + 1) % colors.length);
+  };
+
+  return (
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <button
+        onClick={changeColor}
+        style={{
+          backgroundColor: colors[colorIndex],
+          color: "white",
+          padding: "10px 20px",
+          border: "none",
+          borderRadius: "8px",
+          cursor: "pointer",
+          fontSize: "16px"
+        }}
+      >
+        Click Me
+      </button>
+    </div>
+  );
+}
+```
+
+---
+---
+
+# Debounced Search in React
+
+## 🧩 Problem  
+Implement a **search bar** that waits for **500ms after typing stops** before making an API call.
+
+### 🧠 Concepts Tested
+- **Debouncing**  
+- **useEffect**  
+- **Performance Optimization**
+
+---
+
+## ✅ Example Code
+
+```javascript
+import { useState, useEffect } from "react";
+
+export default function App() {
+  const [query, setQuery] = useState("");
+  const [results, setResults] = useState([]);
+
+  useEffect(() => {
+    const handler = setTimeout(() => {
+      if (query) {
+        // Simulate API call
+        console.log("Fetching data for:", query);
+        setResults([`Result for "${query}"`]);
+      }
+    }, 500);
+
+    // Cleanup function to cancel previous timeout
+    return () => {
+      clearTimeout(handler);
+    };
+  }, [query]);
+
+  return (
+    <div className="App" style={{ textAlign: "center", marginTop: "50px" }}>
+      <h3>Debounced Search</h3>
+      <input
+        type="text"
+        placeholder="Search..."
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        style={{
+          padding: "8px",
+          width: "200px",
+          borderRadius: "6px",
+          border: "1px solid #ccc",
+        }}
+      />
+      <div style={{ marginTop: "20px" }}>
+        {results.map((item, index) => (
+          <div key={index}>{item}</div>
+        ))}
+      </div>
+    </div>
+  );
+}
+```
+
+---
+---
+
+# Progress Bar in React
+
+## 🧩 Problem  
+Build a **progress bar** that fills based on a **percentage input value**.
+
+### 🧠 Concepts Tested  
+- **Dynamic styling**  
+- **Props usage**  
+- **Controlled inputs**
+
+---
+
+## ✅ Example Code
+
+```javascript
+import { useState } from "react";
+
+function ProgressBar({ value }) {
+  return (
+    <div
+      style={{
+        width: "100%",
+        backgroundColor: "#e0e0e0",
+        borderRadius: "10px",
+        overflow: "hidden",
+        marginTop: "10px",
+      }}
+    >
+      <div
+        style={{
+          width: `${value}%`,
+          height: "20px",
+          backgroundColor: value < 50 ? "orange" : "green",
+          transition: "width 0.3s ease-in-out",
+        }}
+      ></div>
+    </div>
+  );
+}
+
+export default function App() {
+  const [progress, setProgress] = useState(0);
+
+  return (
+    <div className="App" style={{ textAlign: "center", marginTop: "50px" }}>
+      <h3>📊 Progress Bar Example</h3>
+      <input
+        type="number"
+        value={progress}
+        onChange={(e) => {
+          const val = Math.min(100, Math.max(0, e.target.value));
+          setProgress(val);
+        }}
+        placeholder="Enter progress (0-100)"
+        style={{
+          padding: "8px",
+          width: "200px",
+          borderRadius: "6px",
+          border: "1px solid #ccc",
+        }}
+      />
+
+      <ProgressBar value={progress} />
+      <p>{progress}% completed</p>
+    </div>
+  );
+}
+```
+
+---
+---

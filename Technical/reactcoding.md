@@ -8,6 +8,7 @@
 - [Dropdown](#dropdown)
 - [Implement a Tabs Component](#implement-a-tabs-component)
 - [Create a Modal Component](#create-a-modal-component)
+- [React Image Carousel](#react-image-carousel)
 
 
 
@@ -533,7 +534,60 @@ export default function App() {
 ---
 ---
 
+# React Image Carousel
 
+## Code Example
+
+```javascript
+import "./styles.css";
+import { useState } from "react";
+
+export default function App() {
+  const [active, setActive] = useState(0);
+  const images = [
+    "https://picsum.photos/id/1015/600/400",
+    "https://picsum.photos/id/1016/600/400",
+    "https://picsum.photos/id/1018/600/400",
+    "https://picsum.photos/id/1020/600/400",
+    "https://picsum.photos/id/1024/600/400",
+    "https://picsum.photos/id/1025/600/400",
+  ];
+
+  const goNext = () => {
+    setActive((active + 1) % images.length);
+  };
+
+  const goPrev = () => {
+    // ✅ Important: add images.length before modulo to handle negative indices
+    setActive((active - 1 + images.length) % images.length);
+  };
+
+  return (
+    <div className="App">
+      <div className="carousel">
+        <button onClick={goNext}> next </button>
+        <img src={images[active]} alt="carousel" />
+        <button onClick={goPrev}> prev </button>
+      </div>
+    </div>
+  );
+}
+```
+
+---
+
+## Notes
+
+- `images` array contains the URLs of carousel images.
+- `active` state keeps track of the **currently visible image**.
+- `goNext`: `(active + 1) % images.length` ensures **cycling forward** through the images.
+- `goPrev`: `(active - 1 + images.length) % images.length` is important because:
+  - Directly doing `(active - 1) % images.length` can produce **negative numbers**.
+  - Adding `images.length` ensures the modulo operation always gives a **valid positive index**.
+- Clicking **Next** or **Prev** updates the `active` state, causing the displayed image to change.
+
+---
+---
 
 
 

@@ -14,6 +14,9 @@
 - [React Image Carousel](#react-image-carousel)
 - [React Star Rating Component](#react-star-rating-component)
 - [React Real-Time Search](#react-real-time-search)
+- [Display Top 10 Items of a Large Array in React](#display-top-10-items-of-a-large-array-in-react)
+- [React Multi-Step Form](#react-multi-step-form)
+- [Simple Form](#simple-form)
 
 
 
@@ -710,12 +713,180 @@ export default function App() {
 ---
 ---
 
-question print only top 10 values of large array in component
+# Display Top 10 Items of a Large Array in React
 
+**Problem:**  
+You have a large array of data (100+ items). In a React component, display **only the first 10 items**.
 
+---
 
+## Key Points
 
+- Render only a subset of the array using **array slicing**.
+- Use `.slice(0, 10)` to get the first 10 elements.
+- Map over the sliced array inside JSX.
 
+---
+
+## Example
+
+```javascript
+import React from "react";
+
+export default function App() {
+  const largeArray = Array.from({ length: 100 }, (_, i) => `Item ${i + 1}`);
+
+  // Get first 10 items
+  const firstTenItems = largeArray.slice(0, 10);
+
+  return (
+    <div>
+      <h1>Top 10 Items</h1>
+      <ul>
+        {firstTenItems.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+```
+
+**Notes:**
+
+- `.slice(start, end)` does not modify the original array.
+- Always provide a unique `key` prop when mapping in React.
+
+---
+---
+
+# React Multi-Step Form 
+
+```javascript
+import "./styles.css";
+import { useState } from "react";
+
+export default function App() {
+  const [step, setStep] = useState(1);
+
+  const stepOne = () => {
+    return (
+      <>
+        <div>this is step one</div>
+        <button
+          onClick={() => {
+            setStep(step + 1);
+          }}
+        >
+          go to next step
+        </button>
+      </>
+    );
+  };
+
+  const stepTwo = () => {
+    return (
+      <>
+        <div>this is step 2</div>
+        <button
+          onClick={() => {
+            setStep(step + 1);
+          }}
+        >
+          go to next step
+        </button>
+      </>
+    );
+  };
+
+  const stepThree = () => {
+    return (
+      <>
+        <div>this is the last step</div>
+        <button type="submit">Submit</button>
+      </>
+    );
+  };
+
+  const handleSubmit = () => {
+    console.log("form submitted");
+  };
+
+  return (
+    <div className="App">
+      <form onSubmit={handleSubmit}>
+        {step === 1 && stepOne()}
+        {step === 2 && stepTwo()}
+        {step === 3 && stepThree()}
+      </form>
+    </div>
+  );
+}
+```
+
+---
+---
+
+# Simple Form
+
+This example demonstrates a **controlled form** in React, where the input fields are controlled via state and **cleared after submission**.
+
+```javascript
+import "./styles.css";
+import { useState } from "react";
+
+export default function App() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Prevent page reload
+    console.log("Form submitted");
+    console.log("Name: " + name);
+    console.log("Email: " + email);
+
+    // Clear input fields after submission
+    setName("");
+    setEmail("");
+  };
+
+  return (
+    <div className="App">
+      <form onSubmit={handleSubmit}>
+        <div>Fill the form</div>
+
+        <input
+          type="text"
+          placeholder="Enter your name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+
+        <input
+          type="email"
+          placeholder="Enter email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+
+        <button type="submit">Submit form</button>
+      </form>
+    </div>
+  );
+}
+```
+
+---
+
+## ✅ Key Points
+
+- **Controlled Inputs:** The `value` of inputs is tied to React state (`name` and `email`).
+- **Prevent Default:** `event.preventDefault()` prevents page reload on form submission.
+- **Clearing Inputs:** After submitting, calling `setName("")` and `setEmail("")` resets the input fields.
+- **onChange Handler:** Updates state whenever the user types in the input field.
+
+---
+---
 
 
 

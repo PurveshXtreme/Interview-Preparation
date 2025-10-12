@@ -3,6 +3,8 @@
 - [React Counter](#react-counter)
 - [React Toggle Switch – Two Approaches](#react-toggle-switch--two-approaches)
 - [React To-Do List Example](#react-to-do-list-example)
+- [React API Call](#react-api-call)
+
 
 
 ---
@@ -199,6 +201,148 @@ export default function App() {
 | `reduce` | `arr.reduce((acc, curr) => ..., initialValue)` | Reduces the array to a **single value** by applying a function. |
 
 > ✅ **Tip:** Use methods like `map`, `filter`, `reduce` to **avoid mutating** the original array and follow React’s **immutable state update** practices.
+
+
+---
+---
+
+# React API Call 
+
+---
+
+## Approach 1 – Using Fetch with `.then()`
+
+```javascript
+import "./styles.css";
+import { useState, useEffect } from "react";
+
+export default function App() {
+  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState();
+
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then((res) => res.json())
+      .then((json) => {
+        setData(json);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) return <div>Loading...</div>;
+
+  return (
+    <div className="App">
+      <ul>
+        {data.map((user) => (
+          <li key={user.id}>{user.name}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+```
+
+### Notes:
+- **`useEffect`**: Runs after the component mounts. Dependency array `[]` ensures it runs **once**.
+- **`fetch`**: Native browser API to make HTTP requests. Returns a **promise**. Use `.then()` to handle response and parse JSON.
+
+---
+
+## Approach 2 – Using Fetch with `async/await`
+
+```javascript
+import { useState, useEffect } from "react";
+
+export default function App() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    // Define an async function inside useEffect
+    const fetchData = async () => {
+      const res = await fetch("https://jsonplaceholder.typicode.com/users");
+      const json = await res.json();
+      setData(json);
+    };
+
+    fetchData(); // Call the async function
+  }, []);
+
+  return (
+    <div>
+      <h1>Users List</h1>
+      <ul>
+        {data.map((user) => (
+          <li key={user.id}>{user.name}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+```
+
+### Notes:
+- `async/await` makes **asynchronous code look synchronous**, easier to read.
+- Still uses **`fetch`**, so JSON parsing is manual (`res.json()`).
+- `useEffect` dependency array `[]` ensures this runs **once** after mount.
+
+---
+
+## Approach 3 – Using Axios with `async/await`
+
+```javascript
+import { useState, useEffect } from "react";
+import axios from "axios";
+
+export default function App() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(
+          "https://jsonplaceholder.typicode.com/users"
+        );
+        setData(response.data); // Axios automatically parses JSON
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  return (
+    <div>
+      <h1>Users List</h1>
+      <ul>
+        {data.map((user) => (
+          <li key={user.id}>{user.name}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+```
+
+### Notes:
+- **Axios**: Third-party library for HTTP requests.
+  - Automatically parses JSON.
+  - Handles errors more clearly with `try/catch`.
+  - Supports features like **timeouts**, **interceptors**, **cancellation**.
+- Dependency array `[]` in `useEffect` ensures fetch runs once on mount.
+
+---
+
+## 🔹 Fetch vs Axios
+
+| Feature                  | Fetch                        | Axios                         |
+|---------------------------|------------------------------|-------------------------------|
+| JSON Parsing              | Manual (`res.json()`)        | Automatic                     |
+| Error Handling            | Only network errors by default | Handles HTTP errors too      |
+| Browser Support           | Native API                   | Needs library                 |
+| Features                  | Basic GET/POST               | Timeout, interceptors, cancel tokens |
+| Syntax                    | `.then()` or `async/await`   | `async/await` recommended    |
 
 
 ---

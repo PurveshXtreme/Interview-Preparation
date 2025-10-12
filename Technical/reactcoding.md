@@ -4,6 +4,7 @@
 - [React Toggle Switch – Two Approaches](#react-toggle-switch--two-approaches)
 - [React To-Do List Example](#react-to-do-list-example)
 - [React API Call](#react-api-call)
+- [Search Filter](#search-filter)
 
 
 
@@ -347,3 +348,81 @@ export default function App() {
 
 ---
 ---
+
+# Search Filter
+
+```jsx
+import "./styles.css";
+import { useState, useEffect } from "react";
+
+export default function App() {
+  const [data, setData] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
+  const [text, setText] = useState("");
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/todos")
+      .then((res) => res.json())
+      .then((json) => {
+        setData(json);
+        setFilteredData(json);
+        setLoading(false);
+      });
+  }, []);
+
+  const handleSearch = () => {
+    const updatedData = data.filter((item) =>
+      item.title.toLowerCase().includes(text.toLowerCase())
+    );
+    setFilteredData(updatedData);
+  };
+
+  if (loading) return <div>Loading...</div>;
+
+  return (
+    <div className="App">
+      <h2>🔍 Search To-Do Titles</h2>
+      <input
+        type="text"
+        placeholder="Enter keyword..."
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+      />
+      <button onClick={handleSearch}>Search</button>
+
+      <ul>
+        {filteredData.map((todo) => (
+          <li key={todo.id}>{todo.title}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+```
+
+---
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -17,6 +17,10 @@
 - [Display Top 10 Items of a Large Array in React](#display-top-10-items-of-a-large-array-in-react)
 - [React Multi-Step Form](#react-multi-step-form)
 - [Simple Form](#simple-form)
+- [React Context API – Global State Example](#react-context-api--global-state-example)
+- [React Custom Hook – Fetch & Cache API Data](#react-custom-hook--fetch--cache-api-data)
+- [React Countdown Timer](#react-countdown-timer)
+  
 
 
 
@@ -888,7 +892,222 @@ export default function App() {
 ---
 ---
 
+# React Context API – Global State Example
 
+This example shows how to use **React Context API** to manage and share a global state (like a list of posts) across components **without prop drilling**.
+
+---
+
+## 📘 Code Example
+
+```javascript
+import React, { createContext, useState, useContext } from "react";
+
+// 1️⃣ Create Context
+const PostContext = createContext();
+
+// 2️⃣ Create Provider Component
+export const PostProvider = ({ children }) => {
+  const [posts, setPosts] = useState([
+    { id: 1, title: "React Basics" },
+    { id: 2, title: "Understanding useState" },
+  ]);
+
+  const addPost = (newTitle) => {
+    setPosts([...posts, { id: posts.length + 1, title: newTitle }]);
+  };
+
+  return (
+    <PostContext.Provider value={{ posts, addPost }}>
+      {children}
+    </PostContext.Provider>
+  );
+};
+
+// 3️⃣ Custom Hook to use Context
+export const usePosts = () => useContext(PostContext);
+
+// 4️⃣ Example Component to Display Posts
+const PostList = () => {
+  const { posts } = usePosts();
+
+  return (
+    <div>
+      <h2>All Posts</h2>
+      <ul>
+        {posts.map((post) => (
+          <li key={post.id}>{post.title}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+// 5️⃣ Example Component to Add a New Post
+const AddPost = () => {
+  const { addPost } = usePosts();
+  const [text, setText] = useState("");
+
+  return (
+    <div>
+      <input
+        type="text"
+        placeholder="New Post Title"
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+      />
+      <button onClick={() => addPost(text)}>Add Post</button>
+    </div>
+  );
+};
+
+// 6️⃣ Main App Component
+export default function App() {
+  return (
+    <PostProvider>
+      <div className="App">
+        <h1>React Context API Example</h1>
+        <AddPost />
+        <PostList />
+      </div>
+    </PostProvider>
+  );
+}
+```
+
+---
+---
+
+# ⚙️ React Custom Hook – Fetch & Cache API Data
+
+This example shows how to create a **custom React hook** (`useFetch`) that fetches data from an API and **caches** it to prevent unnecessary re-fetching.
+
+---
+
+## 📘 Code Example
+
+```javascript
+import { useState, useEffect } from "react";
+
+const cache = {}; // simple in-memory cache
+
+// 🧩 Custom Hook
+export const useFetch = (url) => {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    if (!url) return;
+
+    const fetchData = async () => {
+      // ✅ Check cache first
+      if (cache[url]) {
+        setData(cache[url]);
+        setLoading(false);
+        return;
+      }
+
+      try {
+        setLoading(true);
+        const res = await fetch(url);
+        const result = await res.json();
+        cache[url] = result; // ✅ Save in cache
+        setData(result);
+      } catch (err) {
+        setError(err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, [url]);
+
+  return { data, loading, error };
+};
+
+// 🧠 Example Component using the custom hook
+export default function App() {
+  const { data, loading, error } = useFetch(
+    "https://jsonplaceholder.typicode.com/posts"
+  );
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error fetching data 😢</p>;
+
+  return (
+    <div>
+      <h1>Fetched Posts</h1>
+      <ul>
+        {data.slice(0, 5).map((post) => (
+          <li key={post.id}>{post.title}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+```
+
+---
+
+## 📝 Notes
+
+- `useFetch(url)` handles:
+  - ✅ Fetching data asynchronously
+  - ✅ Storing it in a **cache** to reuse
+  - ✅ Managing **loading** and **error** states
+- The cache prevents multiple API calls for the same URL.
+- Can be reused in any component just by calling `useFetch(url)`.
+
+---
+---
+
+# React Countdown Timer
+
+This example shows how to create a **countdown timer** component in React that starts from a given number of seconds and counts down to zero.
+
+---
+
+## 📘 Code Example
+
+```javascript
+import { useState, useEffect } from "react";
+
+export default function CountdownTimer() {
+  const [timeLeft, setTimeLeft] = useState(10); // countdown starts from 10 seconds
+
+  useEffect(() => {
+    if (timeLeft <= 0) return; // stop when timer hits 0
+
+    const timer = setInterval(() => {
+      setTimeLeft((prev) => prev - 1);
+    }, 1000);
+
+    // 🧹 Cleanup to prevent memory leaks
+    return () => clearInterval(timer);
+  }, [timeLeft]);
+
+  return (
+    <div style={{ textAlign: "center", marginTop: "30px" }}>
+      <h1>Countdown Timer</h1>
+      <h2>{timeLeft > 0 ? timeLeft : "Time's up!"}</h2>
+    </div>
+  );
+}
+```
+
+---
+
+## 🧠 How It Works
+
+- `timeLeft` → state variable storing remaining seconds.
+- `useEffect` → runs a timer (`setInterval`) that decrements `timeLeft` every second.
+- When `timeLeft` reaches `0`, the countdown stops automatically.
+- Cleanup function inside `useEffect` ensures old timers are cleared.
+
+---
+---
 
 
 

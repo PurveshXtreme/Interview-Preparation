@@ -5,6 +5,9 @@
 - [React To-Do List Example](#react-to-do-list-example)
 - [React API Call](#react-api-call)
 - [Search Filter](#search-filter)
+- [Dropdown](#dropdown)
+- [Implement a Tabs Component](#implement-a-tabs-component)
+- [Create a Modal Component](#create-a-modal-component)
 
 
 
@@ -404,8 +407,131 @@ export default function App() {
 ---
 ---
 
+# Dropdown
+
+```jsx
+import "./styles.css";
+import { useState } from "react";
+
+export default function App() {
+  const [open, setOpen] = useState(false);
+  const list = ["apple", "mango", "lemon", "watermelon", "banana"];
+
+  return (
+    <div className="App">
+      <button
+        onClick={() => {
+          setOpen(!open);
+        }}
+      >
+        Toggle Dropdown
+      </button>
+
+      {open && list.map((item, index) => <li key={index}>{item}</li>)}
+    </div>
+  );
+}
+```
+
+**📝 Notes**
+- `useState(false)` → initializes dropdown as closed.  
+- `setOpen(!open)` → toggles the dropdown on button click.  
+- `{open && ...}` → conditional rendering (shows list only if `open` is true).  
+- Always include a **key** when mapping elements (`key={index}`) for stable rendering.
+
+---
+---
 
 
+# Implement a Tabs Component
+
+**Problem:**  
+Create a tabs component where each tab displays different content when selected.  
+
+**Solution:**  
+```jsx
+import "./styles.css";
+import { useState } from "react";
+
+export default function App() {
+  const [active, setActive] = useState(0);
+
+  const tabs = [
+    { title: "Home", content: "This is Home page" },
+    { title: "Profile", content: "This is Profile page" },
+    { title: "Settings", content: "This is Settings page" },
+  ];
+
+  return (
+    <div className="App">
+      {tabs.map((tab, index) => (
+        <button key={index} onClick={() => setActive(index)}>
+          {tab.title}
+        </button>
+      ))}
+
+      <div>{tabs[active].content}</div>
+    </div>
+  );
+}
+```
+
+**📝 Notes:**
+- `useState(0)` keeps track of which tab is **currently active** (default = first tab).  
+- The `map()` function dynamically renders tab buttons.  
+- Clicking a button updates `active` to that tab’s index.  
+- `{tabs[active].content}` displays only the content for the selected tab.
+
+---
+---
+
+# Create a Modal Component
+
+**Problem:**  
+Create a reusable modal component that can be opened and closed, and display any content passed to it.
+
+**Solution:**  
+```jsx
+import "./styles.css";
+import { useState } from "react";
+
+function Modal({ isOpen, onClose, children }) {
+  if (!isOpen) return null; // don't render when closed
+
+  return (
+    <div className="modal-overlay">
+      <div className="modal-content">
+        {children}
+        <button onClick={onClose}>Close</button>
+      </div>
+    </div>
+  );
+}
+
+export default function App() {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className="App">
+      <button onClick={() => setOpen(true)}>Open Modal</button>
+
+      <Modal isOpen={open} onClose={() => setOpen(false)}>
+        <h2>Hello from Modal!</h2>
+        <p>This is a reusable modal component.</p>
+      </Modal>
+    </div>
+  );
+}
+```
+
+**📝 Notes:**
+- `Modal` is **reusable** — you can pass any content via `children`.
+- The `isOpen` prop controls whether the modal is visible.
+- Returning `null` prevents rendering when the modal is closed.
+- Basic CSS (for `.modal-overlay` and `.modal-content`) is used to center the modal and dim the background.
+
+---
+---
 
 
 

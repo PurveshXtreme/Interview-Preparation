@@ -6,6 +6,7 @@
   - [1. Quill.AI - Text Summarization Platform](#1-quillai---text-summarization-platform)
   - [2. Zync - Chat and Social Feed Platform](#2-zync---chat-and-social-feed-platform)
 - [Common Interview Questions](#common-interview-questions)
+  - [Questions to Ask at the End of the Interview](#questions-to-ask-at-the-end-of-the-interview)
   - [Why should we hire you?](#why-should-we-hire-you)
   - [Why Deloitte?](#why-deloitte)
   - [What are your strengths?](#what-are-your-strengths)
@@ -49,6 +50,24 @@ From this project, I learned how to design clean REST APIs, connect them with a 
 ---
 
 ## Common Interview Questions
+
+### Questions to Ask at the End of the Interview
+
+#### **1️⃣ About Learning & Training**
+**“Could you tell me how the learning journey during the first six months of the Cyber Gurukul bootcamp looks like?”**
+
+#### **2️⃣ About Self-Improvement**
+**“Is there anything you would recommend I learn or prepare before joining, if I get selected?”**
+
+---
+
+### ⭐ If They Ask: “Any more questions?”
+**“No sir, that’s all from my side. Thank you for the opportunity.”**
+
+[↑ Back to Table of Contents](#table-of-contents)
+
+---
+
 
 ### Why should we hire you?
 

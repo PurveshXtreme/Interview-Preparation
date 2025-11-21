@@ -7,6 +7,7 @@
   - [2. Zync - Chat and Social Feed Platform](#2-zync---chat-and-social-feed-platform)
 - [Common Interview Questions](#common-interview-questions)
   - [Questions to Ask at the End of the Interview](#questions-to-ask-at-the-end-of-the-interview)
+  - [Where do you see yourself in 5 years?](#where-do-you-see-yourself-in-5-years)
   - [Why should we hire you?](#why-should-we-hire-you)
   - [Why Deloitte?](#why-deloitte)
   - [What are your strengths?](#what-are-your-strengths)
@@ -65,6 +66,12 @@ From this project, I learned how to design clean REST APIs, connect them with a 
 **“No sir, that’s all from my side. Thank you for the opportunity.”**
 
 [↑ Back to Table of Contents](#table-of-contents)
+
+---
+
+
+#### **Where do you see yourself in 5 years?**
+“In five years, I see myself as a more skilled and confident professional with strong technical foundations. I want to learn from real projects, improve continuously, and take more responsibility in areas like IT operations and security. My focus is to grow steadily, contribute well to the team, and build a stable career.”
 
 ---
 

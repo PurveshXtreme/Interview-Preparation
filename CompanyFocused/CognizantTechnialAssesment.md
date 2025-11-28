@@ -84,6 +84,12 @@
 
 ---
 
+[MCQ Question 1](#q-mcq-1)
+
+
+[More C# Snippets](#csharp-snippets)
+
+
 # 🖥️ C# Coding Questions
 
 ---
@@ -193,8 +199,6 @@ class Program
 
 <a id="q-csharp-2"></a>
 
-<a id="q-csharp-3"></a>
-
 [⬆️ Back to Table of Contents](#table-of-contents)
 
 ---
@@ -286,7 +290,6 @@ public class Solution
 
 <a id="q-csharp-3"></a>
 
-<a id="q-csharp-4"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -374,7 +377,6 @@ class Program
 
 <a id="q-csharp-4"></a>
 
-<a id="q-csharp-5"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -485,7 +487,6 @@ class Program
 
 <a id="q-csharp-5"></a>
 
-<a id="q-csharp-6"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -552,7 +553,6 @@ class Program
 
 <a id="q-csharp-6"></a>
 
-<a id="q-csharp-7"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -654,7 +654,6 @@ class Program
 
 <a id="q-csharp-7"></a>
 
-<a id="q-csharp-8"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -761,7 +760,6 @@ class Program
 
 <a id="q-csharp-8"></a>
 
-<a id="q-csharp-9"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -862,7 +860,6 @@ class Program
 
 <a id="q-csharp-9"></a>
 
-<a id="q-csharp-10"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -966,7 +963,6 @@ class Program
 
 <a id="q-csharp-10"></a>
 
-<a id="q-csharp-11"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -1074,7 +1070,6 @@ class Program
 
 <a id="q-csharp-11"></a>
 
-<a id="q-csharp-12"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -1151,7 +1146,6 @@ class Program
 
 <a id="q-csharp-12"></a>
 
-<a id="q-csharp-13"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -1231,7 +1225,6 @@ Total Price = Rs. 280
 
 <a id="q-csharp-13"></a>
 
-<a id="q-csharp-14"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -1313,7 +1306,6 @@ Prime Number
 
 <a id="q-csharp-14"></a>
 
-<a id="q-csharp-15"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -1374,7 +1366,6 @@ class Program
 
 <a id="q-csharp-15"></a>
 
-<a id="q-csharp-16"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -1452,7 +1443,6 @@ class Program
 
 <a id="q-csharp-16"></a>
 
-<a id="q-csharp-17"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -1525,7 +1515,6 @@ Output: Not a Buzz Number
 
 ---
 
-<a id="q-csharp-18"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -1628,29 +1617,6 @@ class Program
 
 ---
 
-
-
-<a id="q-webui-4"></a>
-
-# 🗄️ SQL Questions
-
----
-
-<a id="q-sql-1"></a>
-# 🗄️ SQL Questions
-
----
-
-<a id="q-sql-1"></a>
-
-<a id="q-sql-2"></a>
-
-[⬆️ Back to Table of Contents](#table-of-contents)
-
----
-
-# 🗄️ SQL Questions
-
 ---
 
 <a id="q-sql-1"></a>
@@ -1675,9 +1641,6 @@ WHERE PaidAmount < TotalAmount;
 ---
 
 
-<a id="q-sql-2"></a>
-
-<a id="q-sql-3"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -1698,10 +1661,6 @@ WHERE salary < (SELECT MAX(salary) FROM Employee);
 ---
 ---
 
-
-<a id="q-sql-3"></a>
-
-<a id="q-sql-4"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -1728,9 +1687,6 @@ FROM (
 
 
 
-<a id="q-sql-4"></a>
-
-<a id="q-sql-5"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -1751,9 +1707,6 @@ WHERE Name LIKE '%ed';
 --
 
 
-<a id="q-sql-5"></a>
-
-<a id="q-sql-6"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -1777,9 +1730,7 @@ GROUP BY Department;
 ---
 
 
-<a id="q-sql-6"></a>
 
-<a id="q-sql-7"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -1805,9 +1756,6 @@ HAVING COUNT(*) > 1;
 
 
 
-<a id="q-sql-7"></a>
-
-<a id="q-sql-8"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -1860,9 +1808,6 @@ GROUP BY a.ArtistName;
 
 
 
-<a id="q-sql-8"></a>
-
-<a id="q-sql-9"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -1901,9 +1846,7 @@ HAVING COUNT(f.FollowingID) >= 5;
 
 
 
-<a id="q-sql-9"></a>
 
-<a id="q-sql-10"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -1944,9 +1887,6 @@ WHERE
 
 
 
-<a id="q-sql-10"></a>
-
-<a id="q-sql-11"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -1991,9 +1931,7 @@ HAVING SUM(LeaveCount) > 10;
 
 
 
-<a id="q-sql-11"></a>
 
-<a id="q-sql-12"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -2042,9 +1980,7 @@ WHERE d.LOCATION IN ('BANGALORE', 'COCHIN');
 ---
 
 
-<a id="q-sql-12"></a>
 
-<a id="q-sql-13"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -2090,9 +2026,7 @@ WHERE RATING = 5;
 
 
 
-<a id="q-sql-13"></a>
 
-<a id="q-sql-14"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -2143,9 +2077,7 @@ ORDER BY DEPARTURE_TIME ASC;
 ---
 
 
-<a id="q-sql-14"></a>
 
-<a id="q-sql-15"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -2197,9 +2129,6 @@ WHERE PaidAmount < TotalAmount;
 
 
 
-<a id="q-sql-15"></a>
-
-<a id="q-sql-16"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -2248,9 +2177,6 @@ LIMIT 5;
 ---
 
 
-<a id="q-sql-16"></a>
-
-<a id="q-sql-17"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -2293,9 +2219,7 @@ WHERE Salary > 50000;
 
 
 
-<a id="q-sql-17"></a>
 
-<a id="q-sql-18"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -2320,9 +2244,7 @@ SELECT columnName FROM Table2;
 ---
 ---
 
-<a id="q-sql-18"></a>
 
-<a id="q-sql-19"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -2348,9 +2270,7 @@ BETWEEN '2023-01-01' AND '2023-07-30';
 ---
 ---
 
-<a id="q-sql-19"></a>
 
-<a id="q-sql-20"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -2374,9 +2294,7 @@ FROM employees;
 --
 
 
-<a id="q-sql-20"></a>
 
-<a id="q-sql-21"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -2411,10 +2329,6 @@ CREATE TABLE employees (
 ---
 
 
-<a id="q-sql-21"></a>
-
-<a id="q-sql-22"></a>
-
 [⬆️ Back to Table of Contents](#table-of-contents)
 
 ---
@@ -2436,9 +2350,7 @@ TRUNCATE TABLE tableName;
 ---
 
 
-<a id="q-sql-22"></a>
 
-<a id="q-sql-23"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -2476,9 +2388,7 @@ LEFT JOIN departments d
 ---
 
 
-<a id="q-sql-23"></a>
 
-<a id="q-sql-24"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -2527,9 +2437,7 @@ GROUP BY a.ArtistName;
 ---
 
 
-<a id="q-sql-24"></a>
 
-<a id="q-sql-25"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -2568,9 +2476,7 @@ WHERE CategoryName LIKE 'M%';
 ---
 
 
-<a id="q-sql-25"></a>
 
-<a id="q-sql-26"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -2616,9 +2522,6 @@ WHERE TransactionAmount > 10000
 ---
 
 
-<a id="q-sql-26"></a>
-
-<a id="q-sql-27"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -2661,9 +2564,7 @@ ORDER BY FirstName;
 ---
 
 
-<a id="q-sql-27"></a>
 
-<a id="q-sql-28"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -2699,9 +2600,6 @@ WHERE salary BETWEEN 60000 AND 80000;
 ---
 
 
-<a id="q-sql-28"></a>
-
-<a id="q-sql-29"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -2733,10 +2631,6 @@ VALUES (1, 'John Doe', 30, 'New York', 55000);
 ---
 
 
-<a id="q-sql-29"></a>
-
-<a id="q-sql-30"></a>
-
 [⬆️ Back to Table of Contents](#table-of-contents)
 
 ---
@@ -2767,9 +2661,6 @@ GROUP BY job_title;
 ---
 
 
-<a id="q-sql-30"></a>
-
-<a id="q-sql-31"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -2805,9 +2696,6 @@ GROUP BY department_id;
 ---
 
 
-<a id="q-sql-31"></a>
-
-<a id="q-sql-32"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -2833,9 +2721,6 @@ WHERE columnName IN (Value1, Value2, Value3);
 ---
 
 
-<a id="q-sql-32"></a>
-
-<a id="q-sql-33"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -2861,10 +2746,6 @@ FROM tableName;
 --
 
 
-
-<a id="q-sql-33"></a>
-
-<a id="q-sql-34"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -2894,10 +2775,6 @@ FROM employees;
 --
 
 
-
-<a id="q-sql-34"></a>
-
-<a id="q-sql-35"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -2939,10 +2816,6 @@ JOIN departments d
 
 
 
-<a id="q-sql-35"></a>
-
-<a id="q-sql-36"></a>
-
 [⬆️ Back to Table of Contents](#table-of-contents)
 
 ---
@@ -2972,9 +2845,6 @@ WHERE department_id = 5;
 ---
 
 
-<a id="q-sql-36"></a>
-
-<a id="q-sql-37"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -2997,26 +2867,6 @@ WHERE salary < 30000;
 ---
 --
 
-
-
----
-
-# 🌐 Web UI Questions (HTML/CSS/JavaScript)
-
----
-
-<a id="q-webui-1"></a>
-# 🌐 Web UI Questions (HTML/CSS/JavaScript)
-
----
-
-<a id="q-webui-1"></a>
-
-<a id="q-webui-2"></a>
-
-[⬆️ Back to Table of Contents](#table-of-contents)
-
----
 
 # 🌐 Web UI Questions (HTML/CSS/JavaScript)
 
@@ -3139,9 +2989,6 @@ This project demonstrates:
 ---
 
 
-<a id="q-webui-2"></a>
-
-<a id="q-webui-3"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -3244,10 +3091,6 @@ This solution meets all requirements:
 ---
 
 
-
-<a id="q-webui-3"></a>
-
-<a id="q-webui-4"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -3352,9 +3195,6 @@ kittenBtn.addEventListener("click", function() {
 ---
 
 
-<a id="q-webui-5"></a>
-
-<a id="q-webui-5"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -3405,9 +3245,6 @@ Add sample rows such as:
 ---
 
 
-<a id="q-webui-6"></a>
-
-<a id="q-webui-6"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -3459,9 +3296,6 @@ The form should use proper labels and input types.
 ---
 
 
-<a id="q-webui-7"></a>
-
-<a id="q-webui-7"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -3513,9 +3347,6 @@ Use the respective file names in the `href` attributes:
 ---
 
 
-<a id="q-webui-8"></a>
-
-<a id="q-webui-8"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -3555,10 +3386,6 @@ Create a simple HTML page with the basic structure including:
 --
 
 
-
-<a id="q-webui-9"></a>
-
-<a id="q-webui-9"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -3600,9 +3427,6 @@ Write an HTML + JavaScript program to **change the text of a paragraph** when a 
 ---
 
 
-<a id="q-webui-10"></a>
-
-<a id="q-webui-10"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -3626,9 +3450,6 @@ Write an HTML code snippet to create a link that opens an external website in a 
 
 
 
-<a id="q-webui-11"></a>
-
-<a id="q-webui-11"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -3655,9 +3476,6 @@ body {
 ---
 
 
-<a id="q-webui-12"></a>
-
-<a id="q-webui-12"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -3695,9 +3513,6 @@ The page should include the standard HTML structure such as `<!DOCTYPE html>`, `
 ---
 
 
-<a id="q-webui-13"></a>
-
-<a id="q-webui-13"></a>
 
 [⬆️ Back to Table of Contents](#table-of-contents)
 
@@ -3744,14 +3559,7 @@ Both lists should contain sample items.
 ---
 
 <a id="q-mcq-1"></a>
-# 📝 MCQs (C# Multiple Choice Questions)
 
----
-
-<a id="q-mcq-1"></a>
-
-<a id="q-mcq-2"></a>
-# 📝 C# Multiple Choice Questions (MCQs)
 
 ---
 
@@ -4027,6 +3835,7 @@ D) char myChar = 65;
 
 ----
 
+<a id="csharp-snippets"></a>
 
 
 

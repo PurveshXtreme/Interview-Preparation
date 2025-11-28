@@ -1,3 +1,94 @@
+# 📚 Programming Questions & Solutions
+
+---
+
+<a id="table-of-contents"></a>
+## 📖 Table of Contents
+
+### 🖥️ C# Coding Questions
+| # | Question |
+|---|----------|
+| 1 | [Programming Question — Subarray Count (Size 3 Condition Check)](#q-csharp-1) |
+| 2 | [Programming Question — Lift Maximum People Problem](#q-csharp-2) |
+| 3 | [Programming Question — ASCII Character Converter](#q-csharp-3) |
+| 4 | [Programming Question — Lucky Number Calculator](#q-csharp-4) |
+| 5 | [Programming Question — Display Current Date and Time](#q-csharp-5) |
+| 6 | [Programming Question — Character Expansion by First Occurrence Index](#q-csharp-6) |
+| 7 | [Programming Question — Longest Even-Length Vowel-Starting Word](#q-csharp-7) |
+| 8 | [Programming Question — Maximum Levels & Concatenated Score](#q-csharp-8) |
+| 9 | [Programming Question — Impact Sum With Threshold](#q-csharp-9) |
+| 10 | [Programming Question — Lucky Number Calculation (ASCII × Index Rule)](#q-csharp-10) |
+| 11 | [Programming Question — Reverse Array Based on Half-Sum Comparison](#q-csharp-11) |
+| 12 | [Programming Question — Generate Bill for Vohra's Purchase](#q-csharp-12) |
+| 13 | [Programming Question — Prime Number Check](#q-csharp-13) |
+| 14 | [Programming Question — Print Left-Aligned Star Triangle](#q-csharp-14) |
+| 15 | [Programming Question — Maximum Subarray Sum](#q-csharp-15) |
+| 16 | [Programming Question — Check Buzz Number](#q-csharp-16) |
+| 17 | [Programming Question — Minimum Operations to Form a Permutation](#q-csharp-17) |
+
+### 🗄️ SQL Questions
+| # | Question |
+|---|----------|
+| 1 | [SQL Question — Outstanding Amount](#q-sql-1) |
+| 2 | [SQL Question — Second Highest Salary (2023)](#q-sql-2) |
+| 3 | [SQL Question — Third Highest Salary](#q-sql-3) |
+| 4 | [SQL Question — Names Ending With "ed"](#q-sql-4) |
+| 5 | [SQL Question — Count Employees Department-Wise (2022)](#q-sql-5) |
+| 6 | [SQL Question — Departments With More Than One Employee](#q-sql-6) |
+| 7 | [SQL Question — Artist Followers (2018 or Later)](#q-sql-7) |
+| 8 | [SQL Question — Users Following at Least 5 Others](#q-sql-8) |
+| 9 | [SQL Question — Employees Joined Recently or Between Jan–Mar](#q-sql-9) |
+| 10 | [SQL Question — Employee Leave Summary](#q-sql-10) |
+| 11 | [SQL Question — Employee Details With House Rent Allowance](#q-sql-11) |
+| 12 | [SQL Question — Album Reviews With Rating 5](#q-sql-12) |
+| 13 | [SQL Question — Upcoming Flight Details (After 2024-02-06)](#q-sql-13) |
+| 14 | [SQL Question — Patients With Outstanding Amount](#q-sql-14) |
+| 15 | [SQL Question — Top 5 Users by Messages Sent](#q-sql-15) |
+| 16 | [SQL Question — Staff Salary Filter](#q-sql-16) |
+| 17 | [SQL Question — Combine Results of Multiple SELECT Statements](#q-sql-17) |
+| 18 | [SQL Question — Retrieve Rows Within a Date Range](#q-sql-18) |
+| 19 | [SQL Question — Retrieve Specific Columns From a Table](#q-sql-19) |
+| 20 | [SQL Question — Create Employees Table](#q-sql-20) |
+| 21 | [SQL Question — Delete All Rows but Keep Table Structure](#q-sql-21) |
+| 22 | [SQL Question — Combine Rows Using LEFT JOIN](#q-sql-22) |
+| 23 | [SQL Question — Artist Followers (2018 or Later)](#q-sql-23) |
+| 24 | [SQL Question — Categories Starting With 'M'](#q-sql-24) |
+| 25 | [SQL Question — Mid-Range Transactions (10k to 50k)](#q-sql-25) |
+| 26 | [SQL Question — Customer Details by Account Type](#q-sql-26) |
+| 27 | [SQL Question — Employees With Salary Between 60,000 and 80,000](#q-sql-27) |
+| 28 | [SQL Question — Insert Values Into Employees Table](#q-sql-28) |
+| 29 | [SQL Question — Average Salary by Job Title](#q-sql-29) |
+| 30 | [SQL Question — Count Employees in Each Department](#q-sql-30) |
+| 31 | [SQL Question — Retrieve Rows Matching Specific Values](#q-sql-31) |
+| 32 | [SQL Question — Find the Sum of Values in a Column](#q-sql-32) |
+| 33 | [SQL Question — Salary Difference Between Highest and Lowest Paid Employees](#q-sql-33) |
+| 34 | [SQL Question — Join Employees With Their Departments](#q-sql-34) |
+| 35 | [SQL Question — Increase Salary for Employees in Department 5](#q-sql-35) |
+| 36 | [SQL Question — Remove Employees With Low Salary](#q-sql-36) |
+
+### 🌐 Web UI Questions (HTML/CSS/JavaScript)
+| # | Question |
+|---|----------|
+| 1 | [Fruit Chart — Web Development Task](#q-webui-1) |
+| 2 | [Programming Question — Image Showcase Application](#q-webui-2) |
+| 3 | [Programming Question — Interactive Animal Display Application](#q-webui-3) |
+| 4 | [Programming Question — Build a Product Information Table](#q-webui-4) |
+| 5 | [HTML Question — Create a Simple Input Form](#q-webui-5) |
+| 6 | [HTML Question — Build a Basic Navigation Bar](#q-webui-6) |
+| 7 | [HTML Question — Create a Basic HTML Page Structure](#q-webui-7) |
+| 8 | [JavaScript Question — Change Paragraph Text on Button Click](#q-webui-8) |
+| 9 | [HTML Question — Link to an External Website](#q-webui-9) |
+| 10 | [CSS Question — Add and Center a Background Image](#q-webui-10) |
+| 11 | [HTML Question — Create a Simple Webpage With Heading and Paragraph](#q-webui-11) |
+| 12 | [HTML Question — Create an Ordered and Unordered List](#q-webui-12) |
+
+---
+
+# 🖥️ C# Coding Questions
+
+---
+
+<a id="q-csharp-1"></a>
 # 🚀 Programming Question — Subarray Count (Size 3 Condition Check)
 
 ## 📌 Problem Description
@@ -99,6 +190,16 @@ class Program
 ---
 
 
+
+<a id="q-csharp-2"></a>
+
+<a id="q-csharp-3"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-csharp-2"></a>
 # 🚀 Programming Question — Lift Maximum People Problem
 
 ## 📌 Problem Description
@@ -182,6 +283,2746 @@ public class Solution
 ---
 
 
+
+<a id="q-csharp-3"></a>
+
+<a id="q-csharp-4"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-csharp-3"></a>
+# 🚀 Programming Question — ASCII Character Converter
+
+## 📌 Problem Description
+You are given **4 integer inputs**, each representing an ASCII value.  
+Your task is to convert every integer into its corresponding **ASCII character** and display the output in the format:
+
+```
+<number> - <character>
+```
+
+The number of inputs will **always be 4**.
+
+---
+
+## 🧠 Example
+
+### Sample Input:
+```
+65
+66
+67
+68
+```
+
+### Sample Output:
+```
+65 - A
+66 - B
+67 - C
+68 - D
+```
+
+---
+
+# ✅ C# Solution
+```csharp
+using System;
+
+public class Solution
+{
+    public void ConvertASCII(int[] nums)
+    {
+        for (int i = 0; i < nums.Length; i++)
+        {
+            char ch = (char)nums[i];
+            Console.WriteLine(nums[i] + " - " + ch);
+        }
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int[] nums = new int[4];
+
+        for (int i = 0; i < 4; i++)
+        {
+            nums[i] = Convert.ToInt32(Console.ReadLine());
+        }
+
+        Solution sol = new Solution();
+        sol.ConvertASCII(nums);
+    }
+}
+```
+
+---
+
+# 🎯 Complexity
+- Time Complexity: **O(1)** (only 4 inputs)  
+- Space Complexity: **O(1)**
+
+---
+
+---
+---
+
+
+<a id="q-csharp-4"></a>
+
+<a id="q-csharp-5"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-csharp-4"></a>
+# 🚀 Programming Question — Lucky Number Calculator
+
+## 📌 Problem Description
+Jack wants to compute a **lucky number** for a given word using numerology rules.
+
+You are given a word, and you must calculate its lucky number as follows:
+
+1. Each character has an **ASCII value**  
+   Example: `'A' = 65`, `'B' = 66`, etc.
+
+2. Each character has a **1-based index**  
+   - 1st character → index **1**  
+   - 2nd character → index **2**  
+   - And so on…
+
+3. For each character:
+   - Compute the product:  
+     **ASCII value × index**
+   - **Add this product to the total ONLY IF:**  
+     - The **index is odd**, OR  
+     - The **ASCII value is odd**, OR  
+     - Both are odd  
+
+Return the final lucky number.
+
+---
+
+## 🧠 Example
+
+### Sample Input:
+```
+ABC
+```
+
+### Calculation:
+| Character | ASCII | Index | ASCII × Index | Odd Check | Included? |
+|-----------|--------|--------|-----------------|-------------|------------|
+| A         | 65     | 1      | 65              | both odd    | YES        |
+| B         | 66     | 2      | 132             | even-even   | NO         |
+| C         | 67     | 3      | 201             | both odd    | YES        |
+
+### Sample Output:
+```
+266
+```
+
+---
+
+# ✅ C# Solution
+```csharp
+using System;
+
+public class Solution
+{
+    public int LuckyNumber(string word)
+    {
+        int total = 0;
+
+        for (int i = 0; i < word.Length; i++)
+        {
+            int index = i + 1;               
+            int ascii = (int)word[i];        
+            int product = ascii * index;
+
+            // Include when index or ASCII (or both) are odd
+            if (index % 2 == 1 || ascii % 2 == 1)
+            {
+                total += product;
+            }
+        }
+
+        return total;
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        string input = Console.ReadLine();
+        Solution sol = new Solution();
+
+        int result = sol.LuckyNumber(input);
+        Console.WriteLine(result);
+    }
+}
+```
+
+---
+
+# 🎯 Complexity
+- **Time Complexity:** O(N), where N = length of the word  
+- **Space Complexity:** O(1)  
+
+---
+
+
+---
+---
+
+
+
+<a id="q-csharp-5"></a>
+
+<a id="q-csharp-6"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-csharp-5"></a>
+# 🚀 Programming Question — Display Current Date and Time
+
+## 📌 Problem Description
+Write a program to **display the current system date and time**.  
+The output should show both the **current date** and **current time** in standard readable format.
+
+You may use the built-in **DateTime** class in C#.
+
+---
+
+## 🧠 Example
+
+### Sample Output:
+```
+Current Date and Time: 11/27/2025 10:52:30 AM
+```
+
+(Note: Actual output will vary based on the system date and time.)
+
+---
+
+# ✅ C# Solution
+```csharp
+using System;
+
+public class Solution
+{
+    public void DisplayDateTime()
+    {
+        DateTime now = DateTime.Now;
+        Console.WriteLine("Current Date and Time: " + now);
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Solution sol = new Solution();
+        sol.DisplayDateTime();
+    }
+}
+```
+
+---
+
+# 🎯 Complexity
+- **Time Complexity:** O(1)  
+- **Space Complexity:** O(1)  
+
+---
+
+
+---
+---
+
+
+
+<a id="q-csharp-6"></a>
+
+<a id="q-csharp-7"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-csharp-6"></a>
+# 🚀 Programming Question — Character Expansion by First Occurrence Index
+
+## 📌 Problem Description
+You are given a string **s** consisting of lowercase English letters.  
+For each character, you must repeat it based on the **1-based index of its first occurrence** in the string.
+
+The final output must:
+- Contain expanded character groups
+- Join them using **hyphens (`-`)**
+- Preserve the **original character order**
+
+Example rule:
+- If a character first appears at index 1 → repeat it once  
+- If a character first appears at index 2 → repeat it twice  
+- If first at index 3 → repeat it thrice  
+…and so on.
+
+Return the final formatted string.
+
+---
+
+## 🧠 Example
+
+### Sample Input:
+```
+abca
+```
+
+### Explanation:
+- `'a'` first appears at index **1** → repeat **1** time → `"a"`
+- `'b'` first appears at index **2** → repeat **2** times → `"bb"`
+- `'c'` first appears at index **3** → repeat **3** times → `"ccc"`
+- `'a'` appears again, but its **first occurrence** is still index **1** → `"a"`
+
+### Sample Output:
+```
+a-bb-ccc-a
+```
+
+---
+
+# ✅ C# Solution
+```csharp
+using System;
+using System.Collections.Generic;
+
+public class Solution
+{
+    public string ExpandString(string s)
+    {
+        Dictionary<char, int> firstIndex = new Dictionary<char, int>();
+        List<string> parts = new List<string>();
+
+        for (int i = 0; i < s.Length; i++)
+        {
+            char ch = s[i];
+
+            // Store first occurrence index if not stored
+            if (!firstIndex.ContainsKey(ch))
+                firstIndex[ch] = i + 1;  // 1-based index
+
+            int repeat = firstIndex[ch];
+            parts.Add(new string(ch, repeat));
+        }
+
+        return string.Join("-", parts);
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        string s = Console.ReadLine();
+        Solution sol = new Solution();
+        Console.WriteLine(sol.ExpandString(s));
+    }
+}
+```
+
+---
+
+# 🎯 Complexity
+- **Time Complexity:** O(N²) — due to string repetition  
+- **Space Complexity:** O(N)  
+
+---
+
+
+
+---
+
+
+<a id="q-csharp-7"></a>
+
+<a id="q-csharp-8"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-csharp-7"></a>
+# 🚀 Programming Question — Longest Even-Length Vowel-Starting Word
+
+## 📌 Problem Description
+You are given a sentence consisting of words separated by spaces.  
+Your task is to find the **longest word** that satisfies **both** conditions:
+
+1. The word has an **even length**  
+2. The word **starts with a vowel** (`A, E, I, O, U`, case-insensitive)
+
+If multiple words have the **same maximum even length**, return the **first** such word.  
+If **no word** satisfies the conditions, return:
+
+```
+0-0
+```
+
+Input format:
+- A single string containing only **alphabetic characters and spaces**.
+
+---
+
+## 🧠 Example
+
+### Sample Input:
+```
+apple code inside umbrella
+```
+
+### Valid Words:
+- apple → starts with vowel, length 5 (odd) → ❌  
+- code → even length, but starts with consonant → ❌  
+- inside → starts with vowel, length 6 (even) → ✔  
+- umbrella → starts with vowel, length 8 (even) → ✔  
+
+Longest even-length vowel-starting word → **umbrella**
+
+### Sample Output:
+```
+umbrella
+```
+
+---
+
+# ✅ C# Solution
+```csharp
+using System;
+
+public class Solution
+{
+    public string LongestVowelWord(string sentence)
+    {
+        string[] words = sentence.Split(' ');
+        string vowels = "aeiouAEIOU";
+
+        string best = "0-0";
+        int maxLen = 0;
+
+        foreach (string word in words)
+        {
+            if (word.Length % 2 == 0 && vowels.Contains(word[0]))
+            {
+                if (word.Length > maxLen)
+                {
+                    maxLen = word.Length;
+                    best = word;
+                }
+            }
+        }
+
+        return best;
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        string sentence = Console.ReadLine();
+        Solution sol = new Solution();
+        Console.WriteLine(sol.LongestVowelWord(sentence));
+    }
+}
+```
+
+---
+
+# 🎯 Complexity
+- **Time Complexity:** O(N × L) — splitting + checking each word  
+- **Space Complexity:** O(1) — constant extra space  
+
+---
+
+
+
+---
+---
+
+
+<a id="q-csharp-8"></a>
+
+<a id="q-csharp-9"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-csharp-8"></a>
+# 🚀 Programming Question — Maximum Levels & Concatenated Score
+
+## 📌 Problem Description
+You are playing a game where you want to cross as many levels as possible.  
+You start with an initial amount of **energy `n`**.
+
+To move from one level to the next:
+
+- You must spend the **highest power of 2 (x)** that is **less than or equal to** your current energy.
+- After spending `x`, subtract it from your energy.
+- Append `x` to your **score string**.
+- Continue until your energy becomes **0** or you cannot spend any more energy.
+
+Your task is to return the **final concatenated score** as an integer.
+
+---
+
+## 🧠 Example
+
+### Sample Input:
+```
+18
+```
+
+### Calculation:
+- Energy = 18 → highest power of 2 ≤ 18 is **16** → score = `"16"`
+- Remaining energy = 2
+- Energy = 2 → highest power of 2 ≤ 2 is **2** → score = `"162"`
+
+Final score = **162**
+
+### Sample Output:
+```
+162
+```
+
+---
+
+# ✅ C# Solution
+```csharp
+using System;
+
+public class Solution
+{
+    public int GetFinalScore(int n)
+    {
+        string score = "";
+
+        while (n > 0)
+        {
+            int x = 1;
+
+            // Find highest power of 2 <= n
+            while (x * 2 <= n)
+            {
+                x *= 2;
+            }
+
+            score += x.ToString();
+            n -= x;
+        }
+
+        return Convert.ToInt32(score);
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int n = Convert.ToInt32(Console.ReadLine());
+        Solution sol = new Solution();
+        Console.WriteLine(sol.GetFinalScore(n));
+    }
+}
+```
+
+---
+
+# 🎯 Complexity
+- **Time Complexity:** O(log n)  
+- **Space Complexity:** O(log n)
+
+---
+
+
+
+---
+
+
+
+
+<a id="q-csharp-9"></a>
+
+<a id="q-csharp-10"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-csharp-9"></a>
+# 🚀 Programming Question — Impact Sum With Threshold
+
+## 📌 Problem Description
+In a factory assembly line, each product has a weight.  
+Sensors calculate the **impact sum** of each product, defined as:
+
+> Sum of the weights of **all other products** except the current one.
+
+However, if the impact sum of a product exceeds the **maximum threshold `C`**,  
+the sensor should display the value **C** instead.
+
+You are given:
+
+- An integer array where each element represents a product's weight  
+- An integer `C` representing the maximum allowable impact value  
+
+Return a **new array** where each element is the impact sum for that product (capped at C).
+
+---
+
+## 🧠 Example
+
+### Sample Input:
+```
+weights = [2, 3, 5]
+C = 7
+```
+
+### Calculation:
+- For index 0 → sum of others = 3 + 5 = 8 → exceeds C → **7**
+- For index 1 → sum = 2 + 5 = 7 → equals C → **7**
+- For index 2 → sum = 2 + 3 = 5 → ≤ C → **5**
+
+### Sample Output:
+```
+[7, 7, 5]
+```
+
+---
+
+# ✅ C# Solution
+```csharp
+using System;
+
+public class Solution
+{
+    public int[] ImpactSum(int[] arr, int C)
+    {
+        int n = arr.Length;
+        int totalSum = 0;
+
+        foreach (int x in arr)
+            totalSum += x;
+
+        int[] result = new int[n];
+
+        for (int i = 0; i < n; i++)
+        {
+            int impact = totalSum - arr[i];
+            result[i] = (impact > C) ? C : impact;
+        }
+
+        return result;
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int[] arr = { 2, 3, 5 };
+        int C = 7;
+
+        Solution sol = new Solution();
+        int[] result = sol.ImpactSum(arr, C);
+
+        foreach (int x in result)
+            Console.Write(x + " ");
+    }
+}
+```
+
+---
+
+# 🎯 Complexity
+- **Time Complexity:** O(n)  
+- **Space Complexity:** O(n)
+
+---
+
+
+---
+
+
+
+<a id="q-csharp-10"></a>
+
+<a id="q-csharp-11"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-csharp-10"></a>
+# 🚀 Programming Question — Lucky Number Calculation (ASCII × Index Rule)
+
+## 📌 Problem Description
+Jack is interested in numerology and wants to calculate a **lucky number** for a given word using the rules below:
+
+1. Each alphabet has an **ASCII value**  
+   (Example: `'A' = 65`, `'B' = 66`, `'Z' = 90`, `'a' = 97`, etc.)
+
+2. Each character in the word has a **1-based index**  
+   - First character → index **1**  
+   - Second character → index **2**  
+   - And so on…
+
+3. The **lucky number** is calculated as:
+   - Multiply each character’s ASCII value by its 1-based index  
+   - **Add this product to the total only if:**  
+     - The **index is odd**, OR  
+     - The **ASCII value is odd**, OR  
+     - **Both** are odd  
+
+Return the final lucky number.
+
+---
+
+## 🧠 Example
+
+### Input:
+```
+Length = 5  
+Word = JAMES
+```
+
+### Calculation:
+```
+J → ASCII 74, index 1 → 74*1 → included
+A → ASCII 65, index 2 → 65*2 → included (ASCII odd)
+M → ASCII 77, index 3 → 77*3 → included
+E → ASCII 69, index 4 → 69*4 → included (ASCII odd)
+S → ASCII 83, index 5 → 83*5 → included
+```
+
+Total = **1126**
+
+### Output:
+```
+1126
+```
+
+---
+
+# ✅ C# Solution
+```csharp
+using System;
+
+public class Solution
+{
+    public int LuckyNumber(string word)
+    {
+        int total = 0;
+
+        for (int i = 0; i < word.Length; i++)
+        {
+            int index = i + 1;
+            int ascii = (int)word[i];
+            int product = ascii * index;
+
+            if (index % 2 == 1 || ascii % 2 == 1)
+            {
+                total += product;
+            }
+        }
+
+        return total;
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int len = Convert.ToInt32(Console.ReadLine());
+        string word = Console.ReadLine();
+
+        Solution sol = new Solution();
+        Console.WriteLine(sol.LuckyNumber(word));
+    }
+}
+```
+
+---
+
+# 🎯 Complexity
+- **Time Complexity:** O(N)  
+- **Space Complexity:** O(1)
+
+---
+---
+
+
+<a id="q-csharp-11"></a>
+
+<a id="q-csharp-12"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-csharp-11"></a>
+# 🚀 Programming Question — Reverse Array Based on Half-Sum Comparison
+
+## 📌 Problem Description
+Write a program that:
+
+1. Calculates the **sum of the first half** of an array.  
+2. Calculates the **sum of the second half** of the array.  
+3. If the **first half sum is less than the second half sum**, the program must  
+   **reverse the entire array**.  
+4. Finally, print the resulting array.
+
+Assume the array contains an **even number of elements**.
+
+---
+
+# ✅ C# Solution
+```csharp
+using System;
+
+public class Solution
+{
+    public void CheckAndReverse(int[] arr)
+    {
+        int n = arr.Length;
+        int mid = n / 2;
+
+        int sum1 = 0, sum2 = 0;
+
+        for (int i = 0; i < mid; i++)
+            sum1 += arr[i];
+
+        for (int i = mid; i < n; i++)
+            sum2 += arr[i];
+
+        if (sum1 < sum2)
+        {
+            Array.Reverse(arr);
+        }
+
+        foreach (int x in arr)
+        {
+            Console.Write(x + " ");
+        }
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int[] arr = { 1, 2, 3, 4, 5, 6 };
+        Solution sol = new Solution();
+        sol.CheckAndReverse(arr);
+    }
+}
+```
+
+---
+
+# 🎯 Complexity
+- **Time Complexity:** O(n)  
+- **Space Complexity:** O(1)
+
+---
+---
+
+
+
+<a id="q-csharp-12"></a>
+
+<a id="q-csharp-13"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-csharp-12"></a>
+# 🍕 Programming Question — Generate Bill for Vohra's Purchase
+
+## 📌 Problem Description
+Vohra went to a movie with his friends at Wave Theatre.  
+During the break, he purchased the following items:
+
+- **Pizza** — ₹100 each  
+- **Puffs** — ₹20 each  
+- **Cool Drink** — ₹10 each  
+
+Write a program to **read the quantity** of pizzas, puffs, and cool drinks purchased and **generate the total bill**.
+
+---
+
+# ✅ C# Solution
+```csharp
+using System;
+
+public class Solution
+{
+    public void GenerateBill()
+    {
+        Console.Write("Enter number of Pizzas: ");
+        int pizzas = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Enter number of Puffs: ");
+        int puffs = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Enter number of Cool Drinks: ");
+        int coolDrinks = Convert.ToInt32(Console.ReadLine());
+
+        int total = (pizzas * 100) + (puffs * 20) + (coolDrinks * 10);
+
+        Console.WriteLine("\n--- Bill Details ---");
+        Console.WriteLine("Pizzas: " + pizzas);
+        Console.WriteLine("Puffs: " + puffs);
+        Console.WriteLine("Cool Drinks: " + coolDrinks);
+        Console.WriteLine("Total Price = Rs." + total);
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Solution sol = new Solution();
+        sol.GenerateBill();
+    }
+}
+```
+
+---
+
+# 🎯 Sample Output
+```
+Enter number of Pizzas: 2
+Enter number of Puffs: 3
+Enter number of Cool Drinks: 4
+
+--- Bill Details ---
+Pizzas: 2
+Puffs: 3
+Cool Drinks: 4
+Total Price = Rs. 280
+```
+
+---
+---
+
+
+
+<a id="q-csharp-13"></a>
+
+<a id="q-csharp-14"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-csharp-13"></a>
+# 🔢 Programming Question — Prime Number Check
+
+## 📌 Problem Description
+Write a program to check whether a given number is a **prime number** or not.
+
+A number is prime if:
+- It is greater than 1  
+- It is divisible only by **1 and itself**
+
+### Example:
+**Input:**  
+```
+5
+```
+
+**Output:**  
+```
+Prime Number
+```
+
+---
+
+# ✅ C# Solution
+```csharp
+using System;
+
+public class Solution
+{
+    public void CheckPrime(int n)
+    {
+        if (n <= 1)
+        {
+            Console.WriteLine("Not Prime");
+            return;
+        }
+
+        for (int i = 2; i <= Math.Sqrt(n); i++)
+        {
+            if (n % i == 0)
+            {
+                Console.WriteLine("Not Prime");
+                return;
+            }
+        }
+
+        Console.WriteLine("Prime Number");
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int n = Convert.ToInt32(Console.ReadLine());
+        Solution sol = new Solution();
+        sol.CheckPrime(n);
+    }
+}
+```
+
+---
+
+# 🎯 Sample Output
+```
+Prime Number
+```
+
+---
+
+---
+
+
+
+<a id="q-csharp-14"></a>
+
+<a id="q-csharp-15"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-csharp-14"></a>
+# ⭐ Programming Question — Print Left-Aligned Star Triangle
+
+## 📌 Problem Statement
+Write a program to print the following **star pattern**, where each row contains an increasing number of stars:
+
+```
+*
+* *
+* * *
+* * * *
+* * * * *
+```
+
+The number of rows should be based on user input.
+
+---
+
+# ✅ C# Solution
+```csharp
+using System;
+
+public class Solution
+{
+    public void PrintPattern(int n)
+    {
+        for (int i = 1; i <= n; i++)
+        {
+            for (int j = 1; j <= i; j++)
+            {
+                Console.Write("* ");
+            }
+            Console.WriteLine();
+        }
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int n = Convert.ToInt32(Console.ReadLine());
+        Solution sol = new Solution();
+        sol.PrintPattern(n);
+    }
+}
+```
+
+---
+---
+
+
+
+<a id="q-csharp-15"></a>
+
+<a id="q-csharp-16"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-csharp-15"></a>
+# 🚀 Programming Question — Maximum Subarray Sum
+
+## 📌 Problem Description
+You are given an integer array **nums**.  
+Your task is to find the **subarray with the largest sum** and return **that sum**.
+
+A subarray is a **contiguous** part of the array.
+
+### Example
+Input:
+```
+nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+```
+
+Maximum sum subarray is:
+```
+[4, -1, 2, 1]
+```
+
+Output:
+```
+6
+```
+
+---
+
+# ✅ C# Solution (Kadane’s Algorithm)
+```csharp
+using System;
+
+public class Solution
+{
+    public int MaxSubArray(int[] nums)
+    {
+        int maxSum = nums[0];
+        int currentSum = nums[0];
+
+        for (int i = 1; i < nums.Length; i++)
+        {
+            currentSum = Math.Max(nums[i], currentSum + nums[i]);
+            maxSum = Math.Max(maxSum, currentSum);
+        }
+
+        return maxSum;
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int[] nums = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+        Solution sol = new Solution();
+        Console.WriteLine(sol.MaxSubArray(nums));  // Output: 6
+    }
+}
+```
+
+---
+
+# 🎯 Complexity
+- **Time Complexity:** O(n)  
+- **Space Complexity:** O(1)
+
+---
+---
+
+
+
+<a id="q-csharp-16"></a>
+
+<a id="q-csharp-17"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-csharp-16"></a>
+# 🔢 Programming Question — Check Buzz Number
+
+## 📌 Problem Description
+A **Buzz Number** is a number that satisfies **at least one** of the following conditions:
+
+1. The number **ends with digit 7**  
+2. The number is **divisible by 7**
+
+Examples:
+- **7** → Buzz number (divisible by 7)  
+- **107** → Buzz number (ends with 7)  
+- **147** → Buzz number (ends with 7 and divisible by 7)
+
+Write a program to check whether a given number is a **Buzz Number** or not.
+
+---
+
+# ✅ C# Solution
+```csharp
+using System;
+
+public class Solution
+{
+    public void CheckBuzz(int n)
+    {
+        if (n % 7 == 0 || n % 10 == 7)
+        {
+            Console.WriteLine("Buzz Number");
+        }
+        else
+        {
+            Console.WriteLine("Not a Buzz Number");
+        }
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int n = Convert.ToInt32(Console.ReadLine());
+        Solution sol = new Solution();
+        sol.CheckBuzz(n);
+    }
+}
+```
+
+---
+
+# 🎯 Sample Outputs
+```
+Input: 107
+Output: Buzz Number
+```
+
+```
+Input: 20
+Output: Not a Buzz Number
+```
+
+---
+---
+
+
+---
+
+<a id="q-csharp-18"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-csharp-17"></a>
+# 🚀 Programming Question — Minimum Operations to Form a Permutation
+
+## 📌 Problem Description
+You are given an integer array **A** of length **N**, where **two integers are repeated** (i.e., exactly two numbers appear twice in the array).
+
+Your goal is to transform the array into a **valid permutation of integers from 1 to N** using the following operation:
+
+### **Allowed Operation**
+- In one operation, you may **choose any element** of the array and **increase its value by 1**.
+
+### **Task**
+Return the **minimum number of operations** required to convert the array into a **valid permutation** of size **N**.
+
+---
+
+## 🧠 Example
+
+### Sample Input:
+```
+A = [1, 1, 3, 3, 4]
+```
+
+### Required permutation:
+```
+[1, 2, 3, 4, 5]
+```
+
+### Explanation:
+- Duplicate 1 → needs to become 2 (1 operation)
+- Duplicate 3 → needs to become 5 (2 operations)
+
+Total operations = **3**
+
+### Sample Output:
+```
+3
+```
+
+---
+
+# ✅ C# Solution
+```csharp
+using System;
+using System.Linq;
+
+public class Solution
+{
+    public int MinOperations(int[] A)
+    {
+        int n = A.Length;
+        Array.Sort(A);
+
+        int ops = 0;
+        int expected = 1;
+
+        for (int i = 0; i < n; i++)
+        {
+            if (A[i] < expected)
+            {
+                // Need to increase A[i] up to expected
+                ops += (expected - A[i]);
+            }
+            else if (A[i] > expected)
+            {
+                // Move expected forward (A already sorted)
+                expected = A[i];
+            }
+
+            expected++;
+        }
+
+        return ops;
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int[] A = { 1, 1, 3, 3, 4 };
+        Solution sol = new Solution();
+        Console.WriteLine(sol.MinOperations(A));  // Output: 3
+    }
+}
+```
+
+---
+
+# 🎯 Complexity
+- **Time Complexity:** O(N log N)  
+- **Space Complexity:** O(1)  
+
+---
+
+---
+
+
+
+<a id="q-webui-4"></a>
+
+# 🗄️ SQL Questions
+
+---
+
+<a id="q-sql-1"></a>
+# 🗄️ SQL Questions
+
+---
+
+<a id="q-sql-1"></a>
+
+<a id="q-sql-2"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+# 🗄️ SQL Questions
+
+---
+
+<a id="q-sql-1"></a>
+# 🏥 SQL Question — Outstanding Amount
+
+Write a SQL query to display **PatientID, PaymentStatus, and OutstandingAmount**  
+(where `OutstandingAmount = TotalAmount - PaidAmount`)  
+for patients whose **PaidAmount < TotalAmount**.
+
+# ✅ SQL Query
+```sql
+SELECT 
+    PatientID,
+    PaymentStatus,
+    (TotalAmount - PaidAmount) AS OutstandingAmount
+FROM Patient
+WHERE PaidAmount < TotalAmount;
+```
+
+---
+
+---
+
+
+<a id="q-sql-2"></a>
+
+<a id="q-sql-3"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-2"></a>
+# 🧾 SQL Question — Second Highest Salary (2023)
+
+Write a SQL query to find the **second highest salary** from the Employee table.
+
+# ✅ SQL Query
+```sql
+SELECT MAX(salary) AS SecondHighestSalary
+FROM Employee
+WHERE salary < (SELECT MAX(salary) FROM Employee);
+```
+
+---
+---
+
+
+<a id="q-sql-3"></a>
+
+<a id="q-sql-4"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-3"></a>
+# 🧾 SQL Question — Third Highest Salary
+
+Write a SQL query to find the **third highest salary** from the Employee table.
+
+# ✅ SQL Query
+```sql
+SELECT MIN(salary) AS ThirdHighestSalary
+FROM (
+    SELECT DISTINCT salary
+    FROM Employee
+    ORDER BY salary DESC
+    LIMIT 3
+) AS t;
+```
+
+---
+---
+
+
+
+<a id="q-sql-4"></a>
+
+<a id="q-sql-5"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-4"></a>
+# 🧾 SQL Question — Names Ending With "ed"
+
+Write a SQL query to display all names that **end with 'ed'**.
+
+# ✅ SQL Query
+```sql
+SELECT Name
+FROM Employees
+WHERE Name LIKE '%ed';
+```
+---
+--
+
+
+<a id="q-sql-5"></a>
+
+<a id="q-sql-6"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-5"></a>
+# 🧾 SQL Question — Count Employees Department-Wise (2022)
+
+Write a SQL query to count the **number of employees in each department**.
+
+# ✅ SQL Query
+```sql
+SELECT 
+    Department,
+    COUNT(*) AS EmployeeCount
+FROM Employees
+GROUP BY Department;
+```
+
+---
+---
+
+
+<a id="q-sql-6"></a>
+
+<a id="q-sql-7"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-6"></a>
+# 🧾 SQL Question — Departments With More Than One Employee
+
+Write a SQL query to display only those **departments that have more than one employee**.
+
+# ✅ SQL Query
+```sql
+SELECT 
+    Department
+FROM Employees
+GROUP BY Department
+HAVING COUNT(*) > 1;
+```
+
+
+---
+---
+
+
+
+<a id="q-sql-7"></a>
+
+<a id="q-sql-8"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-7"></a>
+# 🎵 SQL Question — Artist Followers (2018 or Later)
+
+## 📌 Problem Description
+You are given two tables:
+
+### **Artist**
+- ArtistID  
+- ArtistName  
+
+### **Followers**
+- FollowerID  
+- ArtistID  
+- FollowYear  
+
+Write a SQL query to display:
+
+- Each **artist's name**
+- The **number of followers** who started following the artist in **2018 or later**
+
+The output must include **all artists**, even those who have **zero followers** in that period.  
+For artists with no followers since 2018, display the follower count as **0**.
+
+### **Output Format**
+```
+ArtistName | Followers
+```
+
+---
+
+# ✅ SQL Query
+```sql
+SELECT 
+    a.ArtistName,
+    COUNT(f.FollowerID) AS Followers
+FROM Artist a
+LEFT JOIN Followers f
+    ON a.ArtistID = f.ArtistID
+    AND f.FollowYear >= 2018
+GROUP BY a.ArtistName;
+```
+
+---
+---
+
+
+
+<a id="q-sql-8"></a>
+
+<a id="q-sql-9"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-8"></a>
+# 👥 SQL Question — Users Following at Least 5 Others
+
+## 📌 Problem Statement
+Write an SQL query to display the **FollowerID**, **FirstName**, **LastName**, and the **count of users they follow**, but only for users who **follow at least 5 other users**.
+
+Assume:
+- `Users(UserID, FirstName, LastName)`
+- `Followers(FollowerID, FollowingID)`  
+  (FollowerID follows FollowingID)
+
+---
+
+# ✅ SQL Query
+```sql
+SELECT 
+    u.UserID AS FollowerID,
+    u.FirstName,
+    u.LastName,
+    COUNT(f.FollowingID) AS FollowingCount
+FROM Users u
+JOIN Followers f
+    ON u.UserID = f.FollowerID
+GROUP BY u.UserID, u.FirstName, u.LastName
+HAVING COUNT(f.FollowingID) >= 5;
+```
+
+
+---
+---
+
+
+
+<a id="q-sql-9"></a>
+
+<a id="q-sql-10"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-9"></a>
+# 🧾 SQL Question — Employees Joined Recently or Between Jan–Mar
+
+## 📌 Problem Statement
+Write a MySQL query to find all employees who satisfy **either** of the following conditions:
+
+1. They joined **within the last 2 months** from today's date.  
+2. They joined **between January and March** (any year).
+
+Assume the table:
+
+```
+Employees(EmployeeID, FirstName, LastName, JoinDate)
+```
+
+You must return all employees matching **either** condition.
+
+---
+
+# ✅ SQL Query
+```sql
+SELECT *
+FROM Employees
+WHERE 
+    JoinDate >= DATE_SUB(CURDATE(), INTERVAL 2 MONTH)
+    OR MONTH(JoinDate) BETWEEN 1 AND 3;
+```
+
+---
+
+
+----
+
+
+
+<a id="q-sql-10"></a>
+
+<a id="q-sql-11"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-10"></a>
+# 🧾 SQL Question — Employee Leave Summary
+
+## 📌 Problem Statement
+Write a single SQL query to return the **Employee ID**, **Leave Type**, and **Total Leaves** for employees who:
+
+- Have taken **more than 10 leaves**
+- Have a leave type of **'CL'** (Casual Leave) or **'ML'** (Medical Leave)
+
+Your output must contain the columns:
+
+```
+EMPID | LEAVE_TYPE | TOTAL_LEAVES
+```
+
+Assume the table structure:
+```
+Leaves(EMPID, LeaveType, LeaveCount)
+```
+
+---
+
+# ✅ SQL Query
+```sql
+SELECT 
+    EMPID,
+    LeaveType AS LEAVE_TYPE,
+    SUM(LeaveCount) AS TOTAL_LEAVES
+FROM Leaves
+WHERE LeaveType IN ('CL', 'ML')
+GROUP BY EMPID, LeaveType
+HAVING SUM(LeaveCount) > 10;
+```
+
+---
+---
+
+
+
+<a id="q-sql-11"></a>
+
+<a id="q-sql-12"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-11"></a>
+# 🧾 SQL Question — Employee Details With House Rent Allowance
+
+## 📌 Problem Statement
+Write an SQL query to display the following for employees who work in departments located in **BANGALORE** or **COCHIN**:
+
+- Employee ID  
+- Employee Name  
+- Department Name  
+- House Rent Allowance  
+
+Your output must have the following columns:
+
+```
+EMPID | EMPNAME | DEPTNAME | HOUSE_RENT_ALLOWANCE
+```
+
+Assume the tables:
+
+```
+employee (EMPID, EMPNAME, DEPTID, HOUSE_RENT_ALLOWANCE)
+dept_info (DEPTID, DEPTNAME, LOCATION)
+```
+
+---
+
+# ✅ SQL Query
+```sql
+SELECT 
+    e.EMPID,
+    e.EMPNAME,
+    d.DEPTNAME,
+    e.HOUSE_RENT_ALLOWANCE
+FROM employee e
+JOIN dept_info d
+    ON e.DEPTID = d.DEPTID
+WHERE d.LOCATION IN ('BANGALORE', 'COCHIN');
+```
+
+---
+---
+
+
+<a id="q-sql-12"></a>
+
+<a id="q-sql-13"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-12"></a>
+# 🧾 SQL Question — Album Reviews With Rating 5
+
+## 📌 Problem Statement
+Write an SQL query to display the following details **for albums that have a rating of 5**:
+
+- User ID  
+- Rating  
+- Album Comment  
+
+Your output must contain the following columns:
+
+```
+USER_ID | RATING | A_COMMENT
+```
+
+Assume the table:
+
+```
+AlbumReviews(USER_ID, RATING, A_COMMENT, ALBUM_ID)
+```
+
+---
+
+# ✅ SQL Query
+```sql
+SELECT 
+    USER_ID,
+    RATING,
+    A_COMMENT
+FROM AlbumReviews
+WHERE RATING = 5;
+```
+
+---
+
+---
+
+
+
+<a id="q-sql-13"></a>
+
+<a id="q-sql-14"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-13"></a>
+# 🛫 SQL Question — Upcoming Flight Details (After 2024-02-06)
+
+## 📌 Problem Statement
+Write an SQL query to display the following details for all flights **departing after `2024-02-06`**:
+
+- FLIGHT_ID  
+- DEPARTURE_DATE  
+- DEPARTURE_TIME  
+- FLIGHT_FROM  
+- FLIGHT_TO  
+
+Sort the result by **DEPARTURE_TIME** in **ascending** order.
+
+Your output must contain the columns:
+
+```
+FLIGHT_ID | DEPARTURE_DATE | DEPARTURE_TIME | FLIGHT_FROM | FLIGHT_TO
+```
+
+Assume the table:
+
+```
+Flights(FLIGHT_ID, DEPARTURE_DATE, DEPARTURE_TIME, FLIGHT_FROM, FLIGHT_TO)
+```
+
+---
+
+# ✅ SQL Query
+```sql
+SELECT 
+    FLIGHT_ID,
+    DEPARTURE_DATE,
+    DEPARTURE_TIME,
+    FLIGHT_FROM,
+    FLIGHT_TO
+FROM Flights
+WHERE DEPARTURE_DATE > '2024-02-06'
+ORDER BY DEPARTURE_TIME ASC;
+```
+
+---
+---
+
+
+<a id="q-sql-14"></a>
+
+<a id="q-sql-15"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-14"></a>
+# 🧾 SQL Question — Patients With Outstanding Amount
+
+## 📌 Problem Statement
+Write an SQL query to display the following details for patients **whose bill has not been fully paid**, meaning:
+
+```
+PaidAmount < TotalAmount
+```
+
+Your output must include:
+
+- PATIENTID  
+- PAYMENTSTATUS  
+- OUTSTANDING AMOUNT (calculated as `TotalAmount - PaidAmount`)  
+- Use the alias **OutstandingAmount** for the calculated column.
+
+The final output format should be:
+
+```
+PATIENTID | PAYMENTSTATUS | OUTSTANDING_AMOUNT
+```
+
+Assume the table:
+
+```
+Patients(PatientID, PaymentStatus, TotalAmount, PaidAmount)
+```
+
+---
+
+# ✅ SQL Query
+```sql
+SELECT 
+    PatientID,
+    PaymentStatus,
+    (TotalAmount - PaidAmount) AS OutstandingAmount
+FROM Patients
+WHERE PaidAmount < TotalAmount;
+```
+
+---
+---
+
+
+
+<a id="q-sql-15"></a>
+
+<a id="q-sql-16"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-15"></a>
+# 💬 SQL Question — Top 5 Users by Messages Sent
+
+## 📌 Problem Statement
+Write an SQL query to display the **UserID**, **FirstName**, **LastName**, and the **number of messages sent** by the **top 5 users** who have sent the most messages.
+
+Requirements:
+- Count how many messages each user has sent  
+- Sort the users by **UserID in descending order**  
+- Output must include the following columns:
+
+```
+UserID | FirstName | LastName | MessagesSent
+```
+
+Assume the tables:
+
+```
+Users(UserID, FirstName, LastName)
+Messages(MessageID, SenderID, Content)
+```
+
+---
+
+# ✅ SQL Query
+```sql
+SELECT 
+    U.UserID,
+    U.FirstName,
+    U.LastName,
+    COUNT(M.MessageID) AS MessagesSent
+FROM Users U
+JOIN Messages M
+    ON U.UserID = M.SenderID
+GROUP BY U.UserID, U.FirstName, U.LastName
+ORDER BY U.UserID DESC
+LIMIT 5;
+```
+
+---
+---
+
+
+<a id="q-sql-16"></a>
+
+<a id="q-sql-17"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-16"></a>
+# 🧾 SQL Question — Staff Salary Filter
+
+## 📌 Problem Statement
+Write an SQL query to display the **first name**, **position**, and **salary** of staff members whose salary is **greater than $50,000**.
+
+Use an alias **StaffFirstName** for the `FirstName` column.
+
+Your result must include the following columns:
+
+```
+StaffFirstName | Position | Salary
+```
+
+Assume the table:
+
+```
+Staff(FirstName, Position, Salary)
+```
+
+---
+
+# ✅ SQL Query
+```sql
+SELECT 
+    FirstName AS StaffFirstName,
+    Position,
+    Salary
+FROM Staff
+WHERE Salary > 50000;
+```
+
+---
+--
+
+
+
+<a id="q-sql-17"></a>
+
+<a id="q-sql-18"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-17"></a>
+# 🧾 SQL Question — Combine Results of Multiple SELECT Statements
+
+## 📌 Problem Statement
+Write an SQL query to **combine the result sets** of two or more `SELECT` statements.  
+Use the `UNION` operator to merge results while removing duplicate rows.
+
+---
+
+# ✅ SQL Query
+```sql
+SELECT columnName FROM Table1
+UNION
+SELECT columnName FROM Table2;
+```
+
+---
+---
+
+<a id="q-sql-18"></a>
+
+<a id="q-sql-19"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-18"></a>
+# 🧾 SQL Question — Retrieve Rows Within a Date Range
+
+## 📌 Problem Statement
+Write an SQL query to retrieve rows from a table where a **date column** falls within a **specified date range**.  
+Use the `BETWEEN` operator to filter dates.
+
+---
+
+# ✅ SQL Query
+```sql
+SELECT columnName 
+FROM tableName
+WHERE columnName 
+BETWEEN '2023-01-01' AND '2023-07-30';
+```
+
+---
+---
+
+<a id="q-sql-19"></a>
+
+<a id="q-sql-20"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-19"></a>
+# 🧾 SQL Question — Retrieve Specific Columns From a Table
+
+## 📌 Problem Statement
+Write an SQL query to retrieve **specific columns** (First Name and Last Name) from the `employees` table.
+
+---
+
+# ✅ SQL Query
+```sql
+SELECT first_name, last_name 
+FROM employees;
+```
+
+---
+--
+
+
+<a id="q-sql-20"></a>
+
+<a id="q-sql-21"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-20"></a>
+# 🧾 SQL Question — Create Employees Table
+
+## 📌 Problem Statement
+Write an SQL query to create a table named **`employees`** with the following fields:
+
+- `empld` — integer  
+- `empName` — variable-length string  
+- `empAge` — integer  
+- `empAddress` — variable-length string  
+- `empSalary` — integer  
+
+---
+
+# ✅ SQL Query
+```sql
+CREATE TABLE employees (
+    empld INT,
+    empName VARCHAR(50),
+    empAge INT,
+    empAddress VARCHAR(40),
+    empSalary INT
+);
+```
+
+---
+---
+
+
+<a id="q-sql-21"></a>
+
+<a id="q-sql-22"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-21"></a>
+# 🧾 SQL Question — Delete All Rows but Keep Table Structure
+
+## 📌 Problem Statement
+Write an SQL query to **remove all rows from a table** while **keeping the table structure intact** (i.e., the table should remain, but all data should be deleted).
+
+---
+
+# ✅ SQL Query
+```sql
+TRUNCATE TABLE tableName;
+```
+
+---
+---
+
+
+<a id="q-sql-22"></a>
+
+<a id="q-sql-23"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-22"></a>
+# 🧾 SQL Question — Combine Rows Using LEFT JOIN
+
+## 📌 Problem Statement
+Write an SQL query to combine data from two tables using a **LEFT JOIN**.  
+Retrieve the employee’s **first name** along with the **department name**.
+
+Assume the tables:
+
+```
+employees (emp_id, first_name, department_id)
+departments (department_id, department_name)
+```
+
+The result should display employee details even if the employee does **not** belong to any department.
+
+---
+
+# ✅ SQL Query
+```sql
+SELECT 
+    e.first_name,
+    d.department_name
+FROM employees e
+LEFT JOIN departments d
+    ON e.department_id = d.department_id;
+```
+
+---
+---
+
+
+<a id="q-sql-23"></a>
+
+<a id="q-sql-24"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-23"></a>
+# 🎵 SQL Question — Artist Followers (2018 or Later)
+
+## 📌 Problem Statement
+Write an SQL query to display:
+
+- **Artist Name**
+- **Number of followers** who started following the artist **in 2018 or later**
+
+Requirements:
+- Include **all artists**, even if they have **zero followers** in that period.
+- Use **LEFT JOIN** to ensure artists without followers appear with count **0**.
+- Output format:
+
+```
+ArtistName | Followers
+```
+
+Assume the tables:
+
+```
+Artist(ArtistID, ArtistName)
+Followers(FollowerID, ArtistID, FollowYear)
+```
+
+---
+
+# ✅ SQL Query
+```sql
+SELECT 
+    a.ArtistName,
+    COUNT(f.FollowerID) AS Followers
+FROM Artist a
+LEFT JOIN Followers f
+    ON a.ArtistID = f.ArtistID
+    AND f.FollowYear >= 2018
+GROUP BY a.ArtistName;
+```
+
+---
+---
+
+
+<a id="q-sql-24"></a>
+
+<a id="q-sql-25"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-24"></a>
+# 🧾 SQL Question — Categories Starting With 'M'
+
+## 📌 Problem Statement
+Write an SQL query to display the **CategoryID** and **CategoryName** for all categories whose names **start with the letter 'M'**.
+
+Your output should contain the columns:
+
+```
+CATEGORYID | CATEGORYNAME
+```
+
+Assume the table:
+
+```
+Categories(CategoryID, CategoryName)
+```
+
+---
+
+# ✅ SQL Query
+```sql
+SELECT 
+    CategoryID,
+    CategoryName
+FROM Categories
+WHERE CategoryName LIKE 'M%';
+```
+
+---
+---
+
+
+<a id="q-sql-25"></a>
+
+<a id="q-sql-26"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-25"></a>
+# 🧾 SQL Question — Mid-Range Transactions (10k to 50k)
+
+## 📌 Problem Statement
+Write an SQL query to display the following details for all transactions where the **transaction amount is greater than 10,000 but less than 50,000**:
+
+- **TransactionID**
+- **TransactionAmount**
+- **TransactionType**
+
+Your output must contain the columns:
+
+```
+TRANSACTION_ID | TRANSACTION_AMOUNT | TRANSACTION_TYPE
+```
+
+Assume the table:
+
+```
+Transactions(TransactionID, TransactionAmount, TransactionType)
+```
+
+---
+
+# ✅ SQL Query
+```sql
+SELECT 
+    TransactionID AS TRANSACTION_ID,
+    TransactionAmount AS TRANSACTION_AMOUNT,
+    TransactionType AS TRANSACTION_TYPE
+FROM Transactions
+WHERE TransactionAmount > 10000
+  AND TransactionAmount < 50000;
+```
+
+---
+
+---
+
+
+<a id="q-sql-26"></a>
+
+<a id="q-sql-27"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-26"></a>
+# 🧾 SQL Question — Customer Details by Account Type
+
+## 📌 Problem Statement
+Write an SQL query to display the **first name**, **contact number**, and **balance** of all customers whose **account type starts with 'SA'**.
+
+The output must be **ordered by the customer's first name**.
+
+Your result must contain the columns:
+
+```
+FirstName | Contact | Balance
+```
+
+Assume the table:
+
+```
+Customers(FirstName, Contact, Balance, AccountType)
+```
+
+---
+
+# ✅ SQL Query
+```sql
+SELECT 
+    FirstName,
+    Contact,
+    Balance
+FROM Customers
+WHERE AccountType LIKE 'SA%'
+ORDER BY FirstName;
+```
+
+---
+---
+
+
+<a id="q-sql-27"></a>
+
+<a id="q-sql-28"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-27"></a>
+# 🧾 SQL Question — Employees With Salary Between 60,000 and 80,000
+
+## 📌 Problem Statement
+Write an SQL query to list all employees whose salary is **between 60,000 and 80,000** (inclusive).  
+Your output should display the following columns:
+
+```
+employee_id | first_name | salary
+```
+
+Assume the table:
+
+```
+employees(employee_id, first_name, salary)
+```
+
+---
+
+# ✅ SQL Query
+```sql
+SELECT employee_id, first_name, salary
+FROM employees
+WHERE salary BETWEEN 60000 AND 80000;
+```
+
+---
+---
+
+
+<a id="q-sql-28"></a>
+
+<a id="q-sql-29"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-28"></a>
+# 🧾 SQL Question — Insert Values Into Employees Table
+
+## 📌 Problem Statement
+Write an SQL query to **insert values** into the `employees` table, which contains the following columns:
+
+- `empld`
+- `empName`
+- `empAge`
+- `empAddress`
+- `empSalary`
+
+Insert one sample record into the table.
+
+---
+
+# ✅ SQL Query
+```sql
+INSERT INTO employees (empld, empName, empAge, empAddress, empSalary)
+VALUES (1, 'John Doe', 30, 'New York', 55000);
+```
+
+---
+---
+
+
+<a id="q-sql-29"></a>
+
+<a id="q-sql-30"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-29"></a>
+# 🧾 SQL Question — Average Salary by Job Title
+
+## 📌 Problem Statement
+Write an SQL query to calculate the **average salary** for each **job title** in the `employees` table.  
+Your output should include:
+
+```
+job_title | avg_salary
+```
+
+---
+
+# ✅ SQL Query
+```sql
+SELECT 
+    job_title, 
+    AVG(salary) AS avg_salary
+FROM employees
+GROUP BY job_title;
+```
+
+---
+---
+
+
+<a id="q-sql-30"></a>
+
+<a id="q-sql-31"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-30"></a>
+# 🧾 SQL Question — Count Employees in Each Department
+
+## 📌 Problem Statement
+Write an SQL query to count the **number of employees in each department**.  
+Your output should include:
+
+```
+department_id | employee_count
+```
+
+Assume the table:
+
+```
+employees(department_id, ...)
+```
+
+---
+
+# ✅ SQL Query
+```sql
+SELECT department_id, COUNT(*) AS employee_count
+FROM employees
+GROUP BY department_id;
+```
+
+---
+---
+
+
+<a id="q-sql-31"></a>
+
+<a id="q-sql-32"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-31"></a>
+# 🧾 SQL Question — Retrieve Rows Matching Specific Values
+
+## 📌 Problem Statement
+Write an SQL query to retrieve rows from a table where a column matches **any value from a given list**.  
+Use the **IN** operator to filter multiple values at once.
+
+---
+
+# ✅ SQL Query
+```sql
+SELECT columnName
+FROM tableName
+WHERE columnName IN (Value1, Value2, Value3);
+```
+
+---
+---
+
+
+<a id="q-sql-32"></a>
+
+<a id="q-sql-33"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-32"></a>
+# 🧾 SQL Question — Find the Sum of Values in a Column
+
+## 📌 Problem Statement
+Write an SQL query to calculate the **sum of all values** in a specific column of a table.
+
+---
+
+# ✅ SQL Query
+```sql
+SELECT SUM(columnName) 
+FROM tableName;
+```
+
+---
+
+
+--
+
+
+
+<a id="q-sql-33"></a>
+
+<a id="q-sql-34"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-33"></a>
+# 🧾 SQL Question — Salary Difference Between Highest and Lowest Paid Employees
+
+## 📌 Problem Statement
+Write an SQL query to find the **difference between the highest salary and the lowest salary** among all employees.
+
+The output should contain one column:
+
+```
+salary_difference
+```
+
+---
+
+# ✅ SQL Query
+```sql
+SELECT MAX(salary) - MIN(salary) AS salary_difference
+FROM employees;
+```
+
+---
+--
+
+
+
+<a id="q-sql-34"></a>
+
+<a id="q-sql-35"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-34"></a>
+# 🧾 SQL Question — Join Employees With Their Departments
+
+## 📌 Problem Statement
+You are given two tables:
+
+### **employees**
+- employee_id  
+- first_name  
+- last_name  
+- department_id  
+
+### **departments**
+- department_id  
+- department_name  
+
+Write an SQL query to retrieve the **first name**, **last name**, and **department name** of all employees by joining the two tables.
+
+---
+
+# ✅ SQL Query
+```sql
+SELECT 
+    e.first_name,
+    e.last_name,
+    d.department_name
+FROM employees e
+JOIN departments d
+    ON e.department_id = d.department_id;
+```
+
+---
+---
+
+
+
+<a id="q-sql-35"></a>
+
+<a id="q-sql-36"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-35"></a>
+# 🧾 SQL Question — Increase Salary for Employees in Department 5
+
+## 📌 Problem Statement
+Write an SQL query to **increase the salary of all employees in department 5 by 10%**.
+
+That means every employee whose `department_id` is **5** should have their salary updated using:
+
+```
+new salary = old salary × 1.10
+```
+
+---
+
+# ✅ SQL Query
+```sql
+UPDATE employees
+SET salary = salary * 1.10
+WHERE department_id = 5;
+```
+
+---
+---
+
+
+<a id="q-sql-36"></a>
+
+<a id="q-sql-37"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-sql-36"></a>
+# 🧾 SQL Question — Remove Employees With Low Salary
+
+## 📌 Problem Statement
+Write an SQL query to **delete all employees** whose salary is **less than 30,000** from the `employees` table.
+
+---
+
+# ✅ SQL Query
+```sql
+DELETE FROM employees
+WHERE salary < 30000;
+```
+
+---
+--
+
+
+
+---
+
+# 🌐 Web UI Questions (HTML/CSS/JavaScript)
+
+---
+
+<a id="q-webui-1"></a>
+# 🌐 Web UI Questions (HTML/CSS/JavaScript)
+
+---
+
+<a id="q-webui-1"></a>
+
+<a id="q-webui-2"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+# 🌐 Web UI Questions (HTML/CSS/JavaScript)
+
+---
+
+<a id="q-webui-1"></a>
 # 🍎 Fruit Chart — Web Development Task
 
 ## 📌 Problem Description
@@ -297,731 +3138,16 @@ This project demonstrates:
 ----
 ---
 
-# 🏥 SQL Question — Outstanding Amount
 
-Write a SQL query to display **PatientID, PaymentStatus, and OutstandingAmount**  
-(where `OutstandingAmount = TotalAmount - PaidAmount`)  
-for patients whose **PaidAmount < TotalAmount**.
+<a id="q-webui-2"></a>
 
-# ✅ SQL Query
-```sql
-SELECT 
-    PatientID,
-    PaymentStatus,
-    (TotalAmount - PaidAmount) AS OutstandingAmount
-FROM Patient
-WHERE PaidAmount < TotalAmount;
-```
+<a id="q-webui-3"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
 
 ---
 
----
-
-# 🧾 SQL Question — Second Highest Salary (2023)
-
-Write a SQL query to find the **second highest salary** from the Employee table.
-
-# ✅ SQL Query
-```sql
-SELECT MAX(salary) AS SecondHighestSalary
-FROM Employee
-WHERE salary < (SELECT MAX(salary) FROM Employee);
-```
-
----
----
-
-# 🧾 SQL Question — Third Highest Salary
-
-Write a SQL query to find the **third highest salary** from the Employee table.
-
-# ✅ SQL Query
-```sql
-SELECT MIN(salary) AS ThirdHighestSalary
-FROM (
-    SELECT DISTINCT salary
-    FROM Employee
-    ORDER BY salary DESC
-    LIMIT 3
-) AS t;
-```
-
----
----
-
-
-# 🧾 SQL Question — Names Ending With "ed"
-
-Write a SQL query to display all names that **end with 'ed'**.
-
-# ✅ SQL Query
-```sql
-SELECT Name
-FROM Employees
-WHERE Name LIKE '%ed';
-```
----
---
-
-# 🧾 SQL Question — Count Employees Department-Wise (2022)
-
-Write a SQL query to count the **number of employees in each department**.
-
-# ✅ SQL Query
-```sql
-SELECT 
-    Department,
-    COUNT(*) AS EmployeeCount
-FROM Employees
-GROUP BY Department;
-```
-
----
----
-
-# 🧾 SQL Question — Departments With More Than One Employee
-
-Write a SQL query to display only those **departments that have more than one employee**.
-
-# ✅ SQL Query
-```sql
-SELECT 
-    Department
-FROM Employees
-GROUP BY Department
-HAVING COUNT(*) > 1;
-```
-
-
----
----
-
-
-# 🚀 Programming Question — ASCII Character Converter
-
-## 📌 Problem Description
-You are given **4 integer inputs**, each representing an ASCII value.  
-Your task is to convert every integer into its corresponding **ASCII character** and display the output in the format:
-
-```
-<number> - <character>
-```
-
-The number of inputs will **always be 4**.
-
----
-
-## 🧠 Example
-
-### Sample Input:
-```
-65
-66
-67
-68
-```
-
-### Sample Output:
-```
-65 - A
-66 - B
-67 - C
-68 - D
-```
-
----
-
-# ✅ C# Solution
-```csharp
-using System;
-
-public class Solution
-{
-    public void ConvertASCII(int[] nums)
-    {
-        for (int i = 0; i < nums.Length; i++)
-        {
-            char ch = (char)nums[i];
-            Console.WriteLine(nums[i] + " - " + ch);
-        }
-    }
-}
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        int[] nums = new int[4];
-
-        for (int i = 0; i < 4; i++)
-        {
-            nums[i] = Convert.ToInt32(Console.ReadLine());
-        }
-
-        Solution sol = new Solution();
-        sol.ConvertASCII(nums);
-    }
-}
-```
-
----
-
-# 🎯 Complexity
-- Time Complexity: **O(1)** (only 4 inputs)  
-- Space Complexity: **O(1)**
-
----
-
----
----
-
-# 🚀 Programming Question — Lucky Number Calculator
-
-## 📌 Problem Description
-Jack wants to compute a **lucky number** for a given word using numerology rules.
-
-You are given a word, and you must calculate its lucky number as follows:
-
-1. Each character has an **ASCII value**  
-   Example: `'A' = 65`, `'B' = 66`, etc.
-
-2. Each character has a **1-based index**  
-   - 1st character → index **1**  
-   - 2nd character → index **2**  
-   - And so on…
-
-3. For each character:
-   - Compute the product:  
-     **ASCII value × index**
-   - **Add this product to the total ONLY IF:**  
-     - The **index is odd**, OR  
-     - The **ASCII value is odd**, OR  
-     - Both are odd  
-
-Return the final lucky number.
-
----
-
-## 🧠 Example
-
-### Sample Input:
-```
-ABC
-```
-
-### Calculation:
-| Character | ASCII | Index | ASCII × Index | Odd Check | Included? |
-|-----------|--------|--------|-----------------|-------------|------------|
-| A         | 65     | 1      | 65              | both odd    | YES        |
-| B         | 66     | 2      | 132             | even-even   | NO         |
-| C         | 67     | 3      | 201             | both odd    | YES        |
-
-### Sample Output:
-```
-266
-```
-
----
-
-# ✅ C# Solution
-```csharp
-using System;
-
-public class Solution
-{
-    public int LuckyNumber(string word)
-    {
-        int total = 0;
-
-        for (int i = 0; i < word.Length; i++)
-        {
-            int index = i + 1;               
-            int ascii = (int)word[i];        
-            int product = ascii * index;
-
-            // Include when index or ASCII (or both) are odd
-            if (index % 2 == 1 || ascii % 2 == 1)
-            {
-                total += product;
-            }
-        }
-
-        return total;
-    }
-}
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        string input = Console.ReadLine();
-        Solution sol = new Solution();
-
-        int result = sol.LuckyNumber(input);
-        Console.WriteLine(result);
-    }
-}
-```
-
----
-
-# 🎯 Complexity
-- **Time Complexity:** O(N), where N = length of the word  
-- **Space Complexity:** O(1)  
-
----
-
-
----
----
-
-
-# 🚀 Programming Question — Display Current Date and Time
-
-## 📌 Problem Description
-Write a program to **display the current system date and time**.  
-The output should show both the **current date** and **current time** in standard readable format.
-
-You may use the built-in **DateTime** class in C#.
-
----
-
-## 🧠 Example
-
-### Sample Output:
-```
-Current Date and Time: 11/27/2025 10:52:30 AM
-```
-
-(Note: Actual output will vary based on the system date and time.)
-
----
-
-# ✅ C# Solution
-```csharp
-using System;
-
-public class Solution
-{
-    public void DisplayDateTime()
-    {
-        DateTime now = DateTime.Now;
-        Console.WriteLine("Current Date and Time: " + now);
-    }
-}
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        Solution sol = new Solution();
-        sol.DisplayDateTime();
-    }
-}
-```
-
----
-
-# 🎯 Complexity
-- **Time Complexity:** O(1)  
-- **Space Complexity:** O(1)  
-
----
-
-
----
----
-
-
-# 🚀 Programming Question — Character Expansion by First Occurrence Index
-
-## 📌 Problem Description
-You are given a string **s** consisting of lowercase English letters.  
-For each character, you must repeat it based on the **1-based index of its first occurrence** in the string.
-
-The final output must:
-- Contain expanded character groups
-- Join them using **hyphens (`-`)**
-- Preserve the **original character order**
-
-Example rule:
-- If a character first appears at index 1 → repeat it once  
-- If a character first appears at index 2 → repeat it twice  
-- If first at index 3 → repeat it thrice  
-…and so on.
-
-Return the final formatted string.
-
----
-
-## 🧠 Example
-
-### Sample Input:
-```
-abca
-```
-
-### Explanation:
-- `'a'` first appears at index **1** → repeat **1** time → `"a"`
-- `'b'` first appears at index **2** → repeat **2** times → `"bb"`
-- `'c'` first appears at index **3** → repeat **3** times → `"ccc"`
-- `'a'` appears again, but its **first occurrence** is still index **1** → `"a"`
-
-### Sample Output:
-```
-a-bb-ccc-a
-```
-
----
-
-# ✅ C# Solution
-```csharp
-using System;
-using System.Collections.Generic;
-
-public class Solution
-{
-    public string ExpandString(string s)
-    {
-        Dictionary<char, int> firstIndex = new Dictionary<char, int>();
-        List<string> parts = new List<string>();
-
-        for (int i = 0; i < s.Length; i++)
-        {
-            char ch = s[i];
-
-            // Store first occurrence index if not stored
-            if (!firstIndex.ContainsKey(ch))
-                firstIndex[ch] = i + 1;  // 1-based index
-
-            int repeat = firstIndex[ch];
-            parts.Add(new string(ch, repeat));
-        }
-
-        return string.Join("-", parts);
-    }
-}
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        string s = Console.ReadLine();
-        Solution sol = new Solution();
-        Console.WriteLine(sol.ExpandString(s));
-    }
-}
-```
-
----
-
-# 🎯 Complexity
-- **Time Complexity:** O(N²) — due to string repetition  
-- **Space Complexity:** O(N)  
-
----
-
-
-
----
-
-# 🎵 SQL Question — Artist Followers (2018 or Later)
-
-## 📌 Problem Description
-You are given two tables:
-
-### **Artist**
-- ArtistID  
-- ArtistName  
-
-### **Followers**
-- FollowerID  
-- ArtistID  
-- FollowYear  
-
-Write a SQL query to display:
-
-- Each **artist's name**
-- The **number of followers** who started following the artist in **2018 or later**
-
-The output must include **all artists**, even those who have **zero followers** in that period.  
-For artists with no followers since 2018, display the follower count as **0**.
-
-### **Output Format**
-```
-ArtistName | Followers
-```
-
----
-
-# ✅ SQL Query
-```sql
-SELECT 
-    a.ArtistName,
-    COUNT(f.FollowerID) AS Followers
-FROM Artist a
-LEFT JOIN Followers f
-    ON a.ArtistID = f.ArtistID
-    AND f.FollowYear >= 2018
-GROUP BY a.ArtistName;
-```
-
----
----
-
-
-# 👥 SQL Question — Users Following at Least 5 Others
-
-## 📌 Problem Statement
-Write an SQL query to display the **FollowerID**, **FirstName**, **LastName**, and the **count of users they follow**, but only for users who **follow at least 5 other users**.
-
-Assume:
-- `Users(UserID, FirstName, LastName)`
-- `Followers(FollowerID, FollowingID)`  
-  (FollowerID follows FollowingID)
-
----
-
-# ✅ SQL Query
-```sql
-SELECT 
-    u.UserID AS FollowerID,
-    u.FirstName,
-    u.LastName,
-    COUNT(f.FollowingID) AS FollowingCount
-FROM Users u
-JOIN Followers f
-    ON u.UserID = f.FollowerID
-GROUP BY u.UserID, u.FirstName, u.LastName
-HAVING COUNT(f.FollowingID) >= 5;
-```
-
-
----
----
-
-
-# 🚀 Programming Question — Longest Even-Length Vowel-Starting Word
-
-## 📌 Problem Description
-You are given a sentence consisting of words separated by spaces.  
-Your task is to find the **longest word** that satisfies **both** conditions:
-
-1. The word has an **even length**  
-2. The word **starts with a vowel** (`A, E, I, O, U`, case-insensitive)
-
-If multiple words have the **same maximum even length**, return the **first** such word.  
-If **no word** satisfies the conditions, return:
-
-```
-0-0
-```
-
-Input format:
-- A single string containing only **alphabetic characters and spaces**.
-
----
-
-## 🧠 Example
-
-### Sample Input:
-```
-apple code inside umbrella
-```
-
-### Valid Words:
-- apple → starts with vowel, length 5 (odd) → ❌  
-- code → even length, but starts with consonant → ❌  
-- inside → starts with vowel, length 6 (even) → ✔  
-- umbrella → starts with vowel, length 8 (even) → ✔  
-
-Longest even-length vowel-starting word → **umbrella**
-
-### Sample Output:
-```
-umbrella
-```
-
----
-
-# ✅ C# Solution
-```csharp
-using System;
-
-public class Solution
-{
-    public string LongestVowelWord(string sentence)
-    {
-        string[] words = sentence.Split(' ');
-        string vowels = "aeiouAEIOU";
-
-        string best = "0-0";
-        int maxLen = 0;
-
-        foreach (string word in words)
-        {
-            if (word.Length % 2 == 0 && vowels.Contains(word[0]))
-            {
-                if (word.Length > maxLen)
-                {
-                    maxLen = word.Length;
-                    best = word;
-                }
-            }
-        }
-
-        return best;
-    }
-}
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        string sentence = Console.ReadLine();
-        Solution sol = new Solution();
-        Console.WriteLine(sol.LongestVowelWord(sentence));
-    }
-}
-```
-
----
-
-# 🎯 Complexity
-- **Time Complexity:** O(N × L) — splitting + checking each word  
-- **Space Complexity:** O(1) — constant extra space  
-
----
-
-
-
----
----
-
-# 🧾 SQL Question — Employees Joined Recently or Between Jan–Mar
-
-## 📌 Problem Statement
-Write a MySQL query to find all employees who satisfy **either** of the following conditions:
-
-1. They joined **within the last 2 months** from today's date.  
-2. They joined **between January and March** (any year).
-
-Assume the table:
-
-```
-Employees(EmployeeID, FirstName, LastName, JoinDate)
-```
-
-You must return all employees matching **either** condition.
-
----
-
-# ✅ SQL Query
-```sql
-SELECT *
-FROM Employees
-WHERE 
-    JoinDate >= DATE_SUB(CURDATE(), INTERVAL 2 MONTH)
-    OR MONTH(JoinDate) BETWEEN 1 AND 3;
-```
-
----
-
-
-----
-
-
-# 🚀 Programming Question — Maximum Levels & Concatenated Score
-
-## 📌 Problem Description
-You are playing a game where you want to cross as many levels as possible.  
-You start with an initial amount of **energy `n`**.
-
-To move from one level to the next:
-
-- You must spend the **highest power of 2 (x)** that is **less than or equal to** your current energy.
-- After spending `x`, subtract it from your energy.
-- Append `x` to your **score string**.
-- Continue until your energy becomes **0** or you cannot spend any more energy.
-
-Your task is to return the **final concatenated score** as an integer.
-
----
-
-## 🧠 Example
-
-### Sample Input:
-```
-18
-```
-
-### Calculation:
-- Energy = 18 → highest power of 2 ≤ 18 is **16** → score = `"16"`
-- Remaining energy = 2
-- Energy = 2 → highest power of 2 ≤ 2 is **2** → score = `"162"`
-
-Final score = **162**
-
-### Sample Output:
-```
-162
-```
-
----
-
-# ✅ C# Solution
-```csharp
-using System;
-
-public class Solution
-{
-    public int GetFinalScore(int n)
-    {
-        string score = "";
-
-        while (n > 0)
-        {
-            int x = 1;
-
-            // Find highest power of 2 <= n
-            while (x * 2 <= n)
-            {
-                x *= 2;
-            }
-
-            score += x.ToString();
-            n -= x;
-        }
-
-        return Convert.ToInt32(score);
-    }
-}
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        int n = Convert.ToInt32(Console.ReadLine());
-        Solution sol = new Solution();
-        Console.WriteLine(sol.GetFinalScore(n));
-    }
-}
-```
-
----
-
-# 🎯 Complexity
-- **Time Complexity:** O(log n)  
-- **Space Complexity:** O(log n)
-
----
-
-
-
----
-
-
-
+<a id="q-webui-2"></a>
 # 🖼️ Programming Question — Image Showcase Application
 
 ## 📌 Problem Description
@@ -1118,574 +3244,16 @@ This solution meets all requirements:
 ---
 
 
-# 🚀 Programming Question — Impact Sum With Threshold
 
-## 📌 Problem Description
-In a factory assembly line, each product has a weight.  
-Sensors calculate the **impact sum** of each product, defined as:
+<a id="q-webui-3"></a>
 
-> Sum of the weights of **all other products** except the current one.
+<a id="q-webui-4"></a>
 
-However, if the impact sum of a product exceeds the **maximum threshold `C`**,  
-the sensor should display the value **C** instead.
-
-You are given:
-
-- An integer array where each element represents a product's weight  
-- An integer `C` representing the maximum allowable impact value  
-
-Return a **new array** where each element is the impact sum for that product (capped at C).
+[⬆️ Back to Table of Contents](#table-of-contents)
 
 ---
 
-## 🧠 Example
-
-### Sample Input:
-```
-weights = [2, 3, 5]
-C = 7
-```
-
-### Calculation:
-- For index 0 → sum of others = 3 + 5 = 8 → exceeds C → **7**
-- For index 1 → sum = 2 + 5 = 7 → equals C → **7**
-- For index 2 → sum = 2 + 3 = 5 → ≤ C → **5**
-
-### Sample Output:
-```
-[7, 7, 5]
-```
-
----
-
-# ✅ C# Solution
-```csharp
-using System;
-
-public class Solution
-{
-    public int[] ImpactSum(int[] arr, int C)
-    {
-        int n = arr.Length;
-        int totalSum = 0;
-
-        foreach (int x in arr)
-            totalSum += x;
-
-        int[] result = new int[n];
-
-        for (int i = 0; i < n; i++)
-        {
-            int impact = totalSum - arr[i];
-            result[i] = (impact > C) ? C : impact;
-        }
-
-        return result;
-    }
-}
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        int[] arr = { 2, 3, 5 };
-        int C = 7;
-
-        Solution sol = new Solution();
-        int[] result = sol.ImpactSum(arr, C);
-
-        foreach (int x in result)
-            Console.Write(x + " ");
-    }
-}
-```
-
----
-
-# 🎯 Complexity
-- **Time Complexity:** O(n)  
-- **Space Complexity:** O(n)
-
----
-
-
----
-
-
-# 🧾 SQL Question — Employee Leave Summary
-
-## 📌 Problem Statement
-Write a single SQL query to return the **Employee ID**, **Leave Type**, and **Total Leaves** for employees who:
-
-- Have taken **more than 10 leaves**
-- Have a leave type of **'CL'** (Casual Leave) or **'ML'** (Medical Leave)
-
-Your output must contain the columns:
-
-```
-EMPID | LEAVE_TYPE | TOTAL_LEAVES
-```
-
-Assume the table structure:
-```
-Leaves(EMPID, LeaveType, LeaveCount)
-```
-
----
-
-# ✅ SQL Query
-```sql
-SELECT 
-    EMPID,
-    LeaveType AS LEAVE_TYPE,
-    SUM(LeaveCount) AS TOTAL_LEAVES
-FROM Leaves
-WHERE LeaveType IN ('CL', 'ML')
-GROUP BY EMPID, LeaveType
-HAVING SUM(LeaveCount) > 10;
-```
-
----
----
-
-
-# 🧾 SQL Question — Employee Details With House Rent Allowance
-
-## 📌 Problem Statement
-Write an SQL query to display the following for employees who work in departments located in **BANGALORE** or **COCHIN**:
-
-- Employee ID  
-- Employee Name  
-- Department Name  
-- House Rent Allowance  
-
-Your output must have the following columns:
-
-```
-EMPID | EMPNAME | DEPTNAME | HOUSE_RENT_ALLOWANCE
-```
-
-Assume the tables:
-
-```
-employee (EMPID, EMPNAME, DEPTID, HOUSE_RENT_ALLOWANCE)
-dept_info (DEPTID, DEPTNAME, LOCATION)
-```
-
----
-
-# ✅ SQL Query
-```sql
-SELECT 
-    e.EMPID,
-    e.EMPNAME,
-    d.DEPTNAME,
-    e.HOUSE_RENT_ALLOWANCE
-FROM employee e
-JOIN dept_info d
-    ON e.DEPTID = d.DEPTID
-WHERE d.LOCATION IN ('BANGALORE', 'COCHIN');
-```
-
----
----
-
-# 🧾 SQL Question — Album Reviews With Rating 5
-
-## 📌 Problem Statement
-Write an SQL query to display the following details **for albums that have a rating of 5**:
-
-- User ID  
-- Rating  
-- Album Comment  
-
-Your output must contain the following columns:
-
-```
-USER_ID | RATING | A_COMMENT
-```
-
-Assume the table:
-
-```
-AlbumReviews(USER_ID, RATING, A_COMMENT, ALBUM_ID)
-```
-
----
-
-# ✅ SQL Query
-```sql
-SELECT 
-    USER_ID,
-    RATING,
-    A_COMMENT
-FROM AlbumReviews
-WHERE RATING = 5;
-```
-
----
-
----
-
-
-# 🚀 Programming Question — Minimum Operations to Form a Permutation
-
-## 📌 Problem Description
-You are given an integer array **A** of length **N**, where **two integers are repeated** (i.e., exactly two numbers appear twice in the array).
-
-Your goal is to transform the array into a **valid permutation of integers from 1 to N** using the following operation:
-
-### **Allowed Operation**
-- In one operation, you may **choose any element** of the array and **increase its value by 1**.
-
-### **Task**
-Return the **minimum number of operations** required to convert the array into a **valid permutation** of size **N**.
-
----
-
-## 🧠 Example
-
-### Sample Input:
-```
-A = [1, 1, 3, 3, 4]
-```
-
-### Required permutation:
-```
-[1, 2, 3, 4, 5]
-```
-
-### Explanation:
-- Duplicate 1 → needs to become 2 (1 operation)
-- Duplicate 3 → needs to become 5 (2 operations)
-
-Total operations = **3**
-
-### Sample Output:
-```
-3
-```
-
----
-
-# ✅ C# Solution
-```csharp
-using System;
-using System.Linq;
-
-public class Solution
-{
-    public int MinOperations(int[] A)
-    {
-        int n = A.Length;
-        Array.Sort(A);
-
-        int ops = 0;
-        int expected = 1;
-
-        for (int i = 0; i < n; i++)
-        {
-            if (A[i] < expected)
-            {
-                // Need to increase A[i] up to expected
-                ops += (expected - A[i]);
-            }
-            else if (A[i] > expected)
-            {
-                // Move expected forward (A already sorted)
-                expected = A[i];
-            }
-
-            expected++;
-        }
-
-        return ops;
-    }
-}
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        int[] A = { 1, 1, 3, 3, 4 };
-        Solution sol = new Solution();
-        Console.WriteLine(sol.MinOperations(A));  // Output: 3
-    }
-}
-```
-
----
-
-# 🎯 Complexity
-- **Time Complexity:** O(N log N)  
-- **Space Complexity:** O(1)  
-
----
-
----
-
-
-# 🚀 Programming Question — Lucky Number Calculation (ASCII × Index Rule)
-
-## 📌 Problem Description
-Jack is interested in numerology and wants to calculate a **lucky number** for a given word using the rules below:
-
-1. Each alphabet has an **ASCII value**  
-   (Example: `'A' = 65`, `'B' = 66`, `'Z' = 90`, `'a' = 97`, etc.)
-
-2. Each character in the word has a **1-based index**  
-   - First character → index **1**  
-   - Second character → index **2**  
-   - And so on…
-
-3. The **lucky number** is calculated as:
-   - Multiply each character’s ASCII value by its 1-based index  
-   - **Add this product to the total only if:**  
-     - The **index is odd**, OR  
-     - The **ASCII value is odd**, OR  
-     - **Both** are odd  
-
-Return the final lucky number.
-
----
-
-## 🧠 Example
-
-### Input:
-```
-Length = 5  
-Word = JAMES
-```
-
-### Calculation:
-```
-J → ASCII 74, index 1 → 74*1 → included
-A → ASCII 65, index 2 → 65*2 → included (ASCII odd)
-M → ASCII 77, index 3 → 77*3 → included
-E → ASCII 69, index 4 → 69*4 → included (ASCII odd)
-S → ASCII 83, index 5 → 83*5 → included
-```
-
-Total = **1126**
-
-### Output:
-```
-1126
-```
-
----
-
-# ✅ C# Solution
-```csharp
-using System;
-
-public class Solution
-{
-    public int LuckyNumber(string word)
-    {
-        int total = 0;
-
-        for (int i = 0; i < word.Length; i++)
-        {
-            int index = i + 1;
-            int ascii = (int)word[i];
-            int product = ascii * index;
-
-            if (index % 2 == 1 || ascii % 2 == 1)
-            {
-                total += product;
-            }
-        }
-
-        return total;
-    }
-}
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        int len = Convert.ToInt32(Console.ReadLine());
-        string word = Console.ReadLine();
-
-        Solution sol = new Solution();
-        Console.WriteLine(sol.LuckyNumber(word));
-    }
-}
-```
-
----
-
-# 🎯 Complexity
-- **Time Complexity:** O(N)  
-- **Space Complexity:** O(1)
-
----
----
-
-# 🛫 SQL Question — Upcoming Flight Details (After 2024-02-06)
-
-## 📌 Problem Statement
-Write an SQL query to display the following details for all flights **departing after `2024-02-06`**:
-
-- FLIGHT_ID  
-- DEPARTURE_DATE  
-- DEPARTURE_TIME  
-- FLIGHT_FROM  
-- FLIGHT_TO  
-
-Sort the result by **DEPARTURE_TIME** in **ascending** order.
-
-Your output must contain the columns:
-
-```
-FLIGHT_ID | DEPARTURE_DATE | DEPARTURE_TIME | FLIGHT_FROM | FLIGHT_TO
-```
-
-Assume the table:
-
-```
-Flights(FLIGHT_ID, DEPARTURE_DATE, DEPARTURE_TIME, FLIGHT_FROM, FLIGHT_TO)
-```
-
----
-
-# ✅ SQL Query
-```sql
-SELECT 
-    FLIGHT_ID,
-    DEPARTURE_DATE,
-    DEPARTURE_TIME,
-    FLIGHT_FROM,
-    FLIGHT_TO
-FROM Flights
-WHERE DEPARTURE_DATE > '2024-02-06'
-ORDER BY DEPARTURE_TIME ASC;
-```
-
----
----
-
-# 🧾 SQL Question — Patients With Outstanding Amount
-
-## 📌 Problem Statement
-Write an SQL query to display the following details for patients **whose bill has not been fully paid**, meaning:
-
-```
-PaidAmount < TotalAmount
-```
-
-Your output must include:
-
-- PATIENTID  
-- PAYMENTSTATUS  
-- OUTSTANDING AMOUNT (calculated as `TotalAmount - PaidAmount`)  
-- Use the alias **OutstandingAmount** for the calculated column.
-
-The final output format should be:
-
-```
-PATIENTID | PAYMENTSTATUS | OUTSTANDING_AMOUNT
-```
-
-Assume the table:
-
-```
-Patients(PatientID, PaymentStatus, TotalAmount, PaidAmount)
-```
-
----
-
-# ✅ SQL Query
-```sql
-SELECT 
-    PatientID,
-    PaymentStatus,
-    (TotalAmount - PaidAmount) AS OutstandingAmount
-FROM Patients
-WHERE PaidAmount < TotalAmount;
-```
-
----
----
-
-
-# 💬 SQL Question — Top 5 Users by Messages Sent
-
-## 📌 Problem Statement
-Write an SQL query to display the **UserID**, **FirstName**, **LastName**, and the **number of messages sent** by the **top 5 users** who have sent the most messages.
-
-Requirements:
-- Count how many messages each user has sent  
-- Sort the users by **UserID in descending order**  
-- Output must include the following columns:
-
-```
-UserID | FirstName | LastName | MessagesSent
-```
-
-Assume the tables:
-
-```
-Users(UserID, FirstName, LastName)
-Messages(MessageID, SenderID, Content)
-```
-
----
-
-# ✅ SQL Query
-```sql
-SELECT 
-    U.UserID,
-    U.FirstName,
-    U.LastName,
-    COUNT(M.MessageID) AS MessagesSent
-FROM Users U
-JOIN Messages M
-    ON U.UserID = M.SenderID
-GROUP BY U.UserID, U.FirstName, U.LastName
-ORDER BY U.UserID DESC
-LIMIT 5;
-```
-
----
----
-
-# 🧾 SQL Question — Staff Salary Filter
-
-## 📌 Problem Statement
-Write an SQL query to display the **first name**, **position**, and **salary** of staff members whose salary is **greater than $50,000**.
-
-Use an alias **StaffFirstName** for the `FirstName` column.
-
-Your result must include the following columns:
-
-```
-StaffFirstName | Position | Salary
-```
-
-Assume the table:
-
-```
-Staff(FirstName, Position, Salary)
-```
-
----
-
-# ✅ SQL Query
-```sql
-SELECT 
-    FirstName AS StaffFirstName,
-    Position,
-    Salary
-FROM Staff
-WHERE Salary > 50000;
-```
-
----
---
-
-
+<a id="q-webui-3"></a>
 # 🐶🐱 Programming Question — Interactive Animal Display Application
 
 ## 📌 Problem Description
@@ -1783,151 +3351,16 @@ kittenBtn.addEventListener("click", function() {
 ---
 ---
 
-# 🚀 Programming Question — Reverse Array Based on Half-Sum Comparison
 
-## 📌 Problem Description
-Write a program that:
+<a id="q-webui-5"></a>
 
-1. Calculates the **sum of the first half** of an array.  
-2. Calculates the **sum of the second half** of the array.  
-3. If the **first half sum is less than the second half sum**, the program must  
-   **reverse the entire array**.  
-4. Finally, print the resulting array.
+<a id="q-webui-5"></a>
 
-Assume the array contains an **even number of elements**.
+[⬆️ Back to Table of Contents](#table-of-contents)
 
 ---
 
-# ✅ C# Solution
-```csharp
-using System;
-
-public class Solution
-{
-    public void CheckAndReverse(int[] arr)
-    {
-        int n = arr.Length;
-        int mid = n / 2;
-
-        int sum1 = 0, sum2 = 0;
-
-        for (int i = 0; i < mid; i++)
-            sum1 += arr[i];
-
-        for (int i = mid; i < n; i++)
-            sum2 += arr[i];
-
-        if (sum1 < sum2)
-        {
-            Array.Reverse(arr);
-        }
-
-        foreach (int x in arr)
-        {
-            Console.Write(x + " ");
-        }
-    }
-}
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        int[] arr = { 1, 2, 3, 4, 5, 6 };
-        Solution sol = new Solution();
-        sol.CheckAndReverse(arr);
-    }
-}
-```
-
----
-
-# 🎯 Complexity
-- **Time Complexity:** O(n)  
-- **Space Complexity:** O(1)
-
----
----
-
-
-# 🧾 SQL Question — Combine Results of Multiple SELECT Statements
-
-## 📌 Problem Statement
-Write an SQL query to **combine the result sets** of two or more `SELECT` statements.  
-Use the `UNION` operator to merge results while removing duplicate rows.
-
----
-
-# ✅ SQL Query
-```sql
-SELECT columnName FROM Table1
-UNION
-SELECT columnName FROM Table2;
-```
-
----
----
-# 🧾 SQL Question — Retrieve Rows Within a Date Range
-
-## 📌 Problem Statement
-Write an SQL query to retrieve rows from a table where a **date column** falls within a **specified date range**.  
-Use the `BETWEEN` operator to filter dates.
-
----
-
-# ✅ SQL Query
-```sql
-SELECT columnName 
-FROM tableName
-WHERE columnName 
-BETWEEN '2023-01-01' AND '2023-07-30';
-```
-
----
----
-# 🧾 SQL Question — Retrieve Specific Columns From a Table
-
-## 📌 Problem Statement
-Write an SQL query to retrieve **specific columns** (First Name and Last Name) from the `employees` table.
-
----
-
-# ✅ SQL Query
-```sql
-SELECT first_name, last_name 
-FROM employees;
-```
-
----
---
-
-# 🧾 SQL Question — Create Employees Table
-
-## 📌 Problem Statement
-Write an SQL query to create a table named **`employees`** with the following fields:
-
-- `empld` — integer  
-- `empName` — variable-length string  
-- `empAge` — integer  
-- `empAddress` — variable-length string  
-- `empSalary` — integer  
-
----
-
-# ✅ SQL Query
-```sql
-CREATE TABLE employees (
-    empld INT,
-    empName VARCHAR(50),
-    empAge INT,
-    empAddress VARCHAR(40),
-    empSalary INT
-);
-```
-
----
----
-
+<a id="q-webui-4"></a>
 # 🛒 Programming Question — Build a Product Information Table
 
 ## 📌 Problem Statement
@@ -1971,6 +3404,16 @@ Add sample rows such as:
 ---
 ---
 
+
+<a id="q-webui-6"></a>
+
+<a id="q-webui-6"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-webui-5"></a>
 # 📝 HTML Question — Create a Simple Input Form
 
 ## 📌 Problem Statement
@@ -2015,51 +3458,16 @@ The form should use proper labels and input types.
 ---
 ---
 
-# 🧾 SQL Question — Delete All Rows but Keep Table Structure
 
-## 📌 Problem Statement
-Write an SQL query to **remove all rows from a table** while **keeping the table structure intact** (i.e., the table should remain, but all data should be deleted).
+<a id="q-webui-7"></a>
 
----
+<a id="q-webui-7"></a>
 
-# ✅ SQL Query
-```sql
-TRUNCATE TABLE tableName;
-```
-
----
----
-
-# 🧾 SQL Question — Combine Rows Using LEFT JOIN
-
-## 📌 Problem Statement
-Write an SQL query to combine data from two tables using a **LEFT JOIN**.  
-Retrieve the employee’s **first name** along with the **department name**.
-
-Assume the tables:
-
-```
-employees (emp_id, first_name, department_id)
-departments (department_id, department_name)
-```
-
-The result should display employee details even if the employee does **not** belong to any department.
+[⬆️ Back to Table of Contents](#table-of-contents)
 
 ---
 
-# ✅ SQL Query
-```sql
-SELECT 
-    e.first_name,
-    d.department_name
-FROM employees e
-LEFT JOIN departments d
-    ON e.department_id = d.department_id;
-```
-
----
----
-
+<a id="q-webui-6"></a>
 # 🌐 HTML Question — Build a Basic Navigation Bar
 
 ## 📌 Problem Statement
@@ -2104,151 +3512,16 @@ Use the respective file names in the `href` attributes:
 
 ---
 
-# 🎵 SQL Question — Artist Followers (2018 or Later)
 
-## 📌 Problem Statement
-Write an SQL query to display:
+<a id="q-webui-8"></a>
 
-- **Artist Name**
-- **Number of followers** who started following the artist **in 2018 or later**
+<a id="q-webui-8"></a>
 
-Requirements:
-- Include **all artists**, even if they have **zero followers** in that period.
-- Use **LEFT JOIN** to ensure artists without followers appear with count **0**.
-- Output format:
-
-```
-ArtistName | Followers
-```
-
-Assume the tables:
-
-```
-Artist(ArtistID, ArtistName)
-Followers(FollowerID, ArtistID, FollowYear)
-```
+[⬆️ Back to Table of Contents](#table-of-contents)
 
 ---
 
-# ✅ SQL Query
-```sql
-SELECT 
-    a.ArtistName,
-    COUNT(f.FollowerID) AS Followers
-FROM Artist a
-LEFT JOIN Followers f
-    ON a.ArtistID = f.ArtistID
-    AND f.FollowYear >= 2018
-GROUP BY a.ArtistName;
-```
-
----
----
-
-# 🧾 SQL Question — Categories Starting With 'M'
-
-## 📌 Problem Statement
-Write an SQL query to display the **CategoryID** and **CategoryName** for all categories whose names **start with the letter 'M'**.
-
-Your output should contain the columns:
-
-```
-CATEGORYID | CATEGORYNAME
-```
-
-Assume the table:
-
-```
-Categories(CategoryID, CategoryName)
-```
-
----
-
-# ✅ SQL Query
-```sql
-SELECT 
-    CategoryID,
-    CategoryName
-FROM Categories
-WHERE CategoryName LIKE 'M%';
-```
-
----
----
-
-# 🧾 SQL Question — Mid-Range Transactions (10k to 50k)
-
-## 📌 Problem Statement
-Write an SQL query to display the following details for all transactions where the **transaction amount is greater than 10,000 but less than 50,000**:
-
-- **TransactionID**
-- **TransactionAmount**
-- **TransactionType**
-
-Your output must contain the columns:
-
-```
-TRANSACTION_ID | TRANSACTION_AMOUNT | TRANSACTION_TYPE
-```
-
-Assume the table:
-
-```
-Transactions(TransactionID, TransactionAmount, TransactionType)
-```
-
----
-
-# ✅ SQL Query
-```sql
-SELECT 
-    TransactionID AS TRANSACTION_ID,
-    TransactionAmount AS TRANSACTION_AMOUNT,
-    TransactionType AS TRANSACTION_TYPE
-FROM Transactions
-WHERE TransactionAmount > 10000
-  AND TransactionAmount < 50000;
-```
-
----
-
----
-
-# 🧾 SQL Question — Customer Details by Account Type
-
-## 📌 Problem Statement
-Write an SQL query to display the **first name**, **contact number**, and **balance** of all customers whose **account type starts with 'SA'**.
-
-The output must be **ordered by the customer's first name**.
-
-Your result must contain the columns:
-
-```
-FirstName | Contact | Balance
-```
-
-Assume the table:
-
-```
-Customers(FirstName, Contact, Balance, AccountType)
-```
-
----
-
-# ✅ SQL Query
-```sql
-SELECT 
-    FirstName,
-    Contact,
-    Balance
-FROM Customers
-WHERE AccountType LIKE 'SA%'
-ORDER BY FirstName;
-```
-
----
----
-
+<a id="q-webui-7"></a>
 # 🌐 HTML Question — Create a Basic HTML Page Structure
 
 ## 📌 Problem Statement
@@ -2282,6 +3555,16 @@ Create a simple HTML page with the basic structure including:
 --
 
 
+
+<a id="q-webui-9"></a>
+
+<a id="q-webui-9"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-webui-8"></a>
 # 📝 JavaScript Question — Change Paragraph Text on Button Click
 
 ## 📌 Problem Statement
@@ -2316,6 +3599,16 @@ Write an HTML + JavaScript program to **change the text of a paragraph** when a 
 ---
 ---
 
+
+<a id="q-webui-10"></a>
+
+<a id="q-webui-10"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-webui-9"></a>
 # 🌐 HTML Question — Link to an External Website
 
 ## 📌 Problem Statement
@@ -2332,6 +3625,16 @@ Write an HTML code snippet to create a link that opens an external website in a 
 ---
 
 
+
+<a id="q-webui-11"></a>
+
+<a id="q-webui-11"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-webui-10"></a>
 # 🌄 CSS Question — Add and Center a Background Image
 
 ## 📌 Problem Statement
@@ -2351,170 +3654,16 @@ body {
 ---
 ---
 
-# 🧾 SQL Question — Employees With Salary Between 60,000 and 80,000
 
-## 📌 Problem Statement
-Write an SQL query to list all employees whose salary is **between 60,000 and 80,000** (inclusive).  
-Your output should display the following columns:
+<a id="q-webui-12"></a>
 
-```
-employee_id | first_name | salary
-```
+<a id="q-webui-12"></a>
 
-Assume the table:
-
-```
-employees(employee_id, first_name, salary)
-```
+[⬆️ Back to Table of Contents](#table-of-contents)
 
 ---
 
-# ✅ SQL Query
-```sql
-SELECT employee_id, first_name, salary
-FROM employees
-WHERE salary BETWEEN 60000 AND 80000;
-```
-
----
----
-
-# 🧾 SQL Question — Insert Values Into Employees Table
-
-## 📌 Problem Statement
-Write an SQL query to **insert values** into the `employees` table, which contains the following columns:
-
-- `empld`
-- `empName`
-- `empAge`
-- `empAddress`
-- `empSalary`
-
-Insert one sample record into the table.
-
----
-
-# ✅ SQL Query
-```sql
-INSERT INTO employees (empld, empName, empAge, empAddress, empSalary)
-VALUES (1, 'John Doe', 30, 'New York', 55000);
-```
-
----
----
-
-# 🧾 SQL Question — Average Salary by Job Title
-
-## 📌 Problem Statement
-Write an SQL query to calculate the **average salary** for each **job title** in the `employees` table.  
-Your output should include:
-
-```
-job_title | avg_salary
-```
-
----
-
-# ✅ SQL Query
-```sql
-SELECT 
-    job_title, 
-    AVG(salary) AS avg_salary
-FROM employees
-GROUP BY job_title;
-```
-
----
----
-
-# 🧾 SQL Question — Count Employees in Each Department
-
-## 📌 Problem Statement
-Write an SQL query to count the **number of employees in each department**.  
-Your output should include:
-
-```
-department_id | employee_count
-```
-
-Assume the table:
-
-```
-employees(department_id, ...)
-```
-
----
-
-# ✅ SQL Query
-```sql
-SELECT department_id, COUNT(*) AS employee_count
-FROM employees
-GROUP BY department_id;
-```
-
----
----
-
-# 🧾 SQL Question — Retrieve Rows Matching Specific Values
-
-## 📌 Problem Statement
-Write an SQL query to retrieve rows from a table where a column matches **any value from a given list**.  
-Use the **IN** operator to filter multiple values at once.
-
----
-
-# ✅ SQL Query
-```sql
-SELECT columnName
-FROM tableName
-WHERE columnName IN (Value1, Value2, Value3);
-```
-
----
----
-
-# 🧾 SQL Question — Find the Sum of Values in a Column
-
-## 📌 Problem Statement
-Write an SQL query to calculate the **sum of all values** in a specific column of a table.
-
----
-
-# ✅ SQL Query
-```sql
-SELECT SUM(columnName) 
-FROM tableName;
-```
-
----
-
-
---
-
-
-# 🧾 SQL Question — Salary Difference Between Highest and Lowest Paid Employees
-
-## 📌 Problem Statement
-Write an SQL query to find the **difference between the highest salary and the lowest salary** among all employees.
-
-The output should contain one column:
-
-```
-salary_difference
-```
-
----
-
-# ✅ SQL Query
-```sql
-SELECT MAX(salary) - MIN(salary) AS salary_difference
-FROM employees;
-```
-
----
---
-
-
+<a id="q-webui-11"></a>
 # 🌐 HTML Question — Create a Simple Webpage With Heading and Paragraph
 
 ## 📌 Problem Statement
@@ -2545,6 +3694,16 @@ The page should include the standard HTML structure such as `<!DOCTYPE html>`, `
 ---
 ---
 
+
+<a id="q-webui-13"></a>
+
+<a id="q-webui-13"></a>
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
+
+<a id="q-webui-12"></a>
 # 📝 HTML Question — Create an Ordered and Unordered List
 
 ## 📌 Problem Statement
@@ -2577,404 +3736,21 @@ Both lists should contain sample items.
 ---
 
 
-# 🍕 Programming Question — Generate Bill for Vohra's Purchase
-
-## 📌 Problem Description
-Vohra went to a movie with his friends at Wave Theatre.  
-During the break, he purchased the following items:
-
-- **Pizza** — ₹100 each  
-- **Puffs** — ₹20 each  
-- **Cool Drink** — ₹10 each  
-
-Write a program to **read the quantity** of pizzas, puffs, and cool drinks purchased and **generate the total bill**.
 
 ---
 
-# ✅ C# Solution
-```csharp
-using System;
-
-public class Solution
-{
-    public void GenerateBill()
-    {
-        Console.Write("Enter number of Pizzas: ");
-        int pizzas = Convert.ToInt32(Console.ReadLine());
-
-        Console.Write("Enter number of Puffs: ");
-        int puffs = Convert.ToInt32(Console.ReadLine());
-
-        Console.Write("Enter number of Cool Drinks: ");
-        int coolDrinks = Convert.ToInt32(Console.ReadLine());
-
-        int total = (pizzas * 100) + (puffs * 20) + (coolDrinks * 10);
-
-        Console.WriteLine("\n--- Bill Details ---");
-        Console.WriteLine("Pizzas: " + pizzas);
-        Console.WriteLine("Puffs: " + puffs);
-        Console.WriteLine("Cool Drinks: " + coolDrinks);
-        Console.WriteLine("Total Price = Rs." + total);
-    }
-}
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        Solution sol = new Solution();
-        sol.GenerateBill();
-    }
-}
-```
+# 📝 MCQs (C# Multiple Choice Questions)
 
 ---
 
-# 🎯 Sample Output
-```
-Enter number of Pizzas: 2
-Enter number of Puffs: 3
-Enter number of Cool Drinks: 4
-
---- Bill Details ---
-Pizzas: 2
-Puffs: 3
-Cool Drinks: 4
-Total Price = Rs. 280
-```
-
----
----
-
-
-# 🔢 Programming Question — Prime Number Check
-
-## 📌 Problem Description
-Write a program to check whether a given number is a **prime number** or not.
-
-A number is prime if:
-- It is greater than 1  
-- It is divisible only by **1 and itself**
-
-### Example:
-**Input:**  
-```
-5
-```
-
-**Output:**  
-```
-Prime Number
-```
+<a id="q-mcq-1"></a>
+# 📝 MCQs (C# Multiple Choice Questions)
 
 ---
 
-# ✅ C# Solution
-```csharp
-using System;
+<a id="q-mcq-1"></a>
 
-public class Solution
-{
-    public void CheckPrime(int n)
-    {
-        if (n <= 1)
-        {
-            Console.WriteLine("Not Prime");
-            return;
-        }
-
-        for (int i = 2; i <= Math.Sqrt(n); i++)
-        {
-            if (n % i == 0)
-            {
-                Console.WriteLine("Not Prime");
-                return;
-            }
-        }
-
-        Console.WriteLine("Prime Number");
-    }
-}
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        int n = Convert.ToInt32(Console.ReadLine());
-        Solution sol = new Solution();
-        sol.CheckPrime(n);
-    }
-}
-```
-
----
-
-# 🎯 Sample Output
-```
-Prime Number
-```
-
----
-
----
-
-
-# ⭐ Programming Question — Print Left-Aligned Star Triangle
-
-## 📌 Problem Statement
-Write a program to print the following **star pattern**, where each row contains an increasing number of stars:
-
-```
-*
-* *
-* * *
-* * * *
-* * * * *
-```
-
-The number of rows should be based on user input.
-
----
-
-# ✅ C# Solution
-```csharp
-using System;
-
-public class Solution
-{
-    public void PrintPattern(int n)
-    {
-        for (int i = 1; i <= n; i++)
-        {
-            for (int j = 1; j <= i; j++)
-            {
-                Console.Write("* ");
-            }
-            Console.WriteLine();
-        }
-    }
-}
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        int n = Convert.ToInt32(Console.ReadLine());
-        Solution sol = new Solution();
-        sol.PrintPattern(n);
-    }
-}
-```
-
----
----
-
-
-# 🚀 Programming Question — Maximum Subarray Sum
-
-## 📌 Problem Description
-You are given an integer array **nums**.  
-Your task is to find the **subarray with the largest sum** and return **that sum**.
-
-A subarray is a **contiguous** part of the array.
-
-### Example
-Input:
-```
-nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
-```
-
-Maximum sum subarray is:
-```
-[4, -1, 2, 1]
-```
-
-Output:
-```
-6
-```
-
----
-
-# ✅ C# Solution (Kadane’s Algorithm)
-```csharp
-using System;
-
-public class Solution
-{
-    public int MaxSubArray(int[] nums)
-    {
-        int maxSum = nums[0];
-        int currentSum = nums[0];
-
-        for (int i = 1; i < nums.Length; i++)
-        {
-            currentSum = Math.Max(nums[i], currentSum + nums[i]);
-            maxSum = Math.Max(maxSum, currentSum);
-        }
-
-        return maxSum;
-    }
-}
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        int[] nums = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
-        Solution sol = new Solution();
-        Console.WriteLine(sol.MaxSubArray(nums));  // Output: 6
-    }
-}
-```
-
----
-
-# 🎯 Complexity
-- **Time Complexity:** O(n)  
-- **Space Complexity:** O(1)
-
----
----
-
-
-# 🔢 Programming Question — Check Buzz Number
-
-## 📌 Problem Description
-A **Buzz Number** is a number that satisfies **at least one** of the following conditions:
-
-1. The number **ends with digit 7**  
-2. The number is **divisible by 7**
-
-Examples:
-- **7** → Buzz number (divisible by 7)  
-- **107** → Buzz number (ends with 7)  
-- **147** → Buzz number (ends with 7 and divisible by 7)
-
-Write a program to check whether a given number is a **Buzz Number** or not.
-
----
-
-# ✅ C# Solution
-```csharp
-using System;
-
-public class Solution
-{
-    public void CheckBuzz(int n)
-    {
-        if (n % 7 == 0 || n % 10 == 7)
-        {
-            Console.WriteLine("Buzz Number");
-        }
-        else
-        {
-            Console.WriteLine("Not a Buzz Number");
-        }
-    }
-}
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        int n = Convert.ToInt32(Console.ReadLine());
-        Solution sol = new Solution();
-        sol.CheckBuzz(n);
-    }
-}
-```
-
----
-
-# 🎯 Sample Outputs
-```
-Input: 107
-Output: Buzz Number
-```
-
-```
-Input: 20
-Output: Not a Buzz Number
-```
-
----
----
-
-# 🧾 SQL Question — Join Employees With Their Departments
-
-## 📌 Problem Statement
-You are given two tables:
-
-### **employees**
-- employee_id  
-- first_name  
-- last_name  
-- department_id  
-
-### **departments**
-- department_id  
-- department_name  
-
-Write an SQL query to retrieve the **first name**, **last name**, and **department name** of all employees by joining the two tables.
-
----
-
-# ✅ SQL Query
-```sql
-SELECT 
-    e.first_name,
-    e.last_name,
-    d.department_name
-FROM employees e
-JOIN departments d
-    ON e.department_id = d.department_id;
-```
-
----
----
-
-
-# 🧾 SQL Question — Increase Salary for Employees in Department 5
-
-## 📌 Problem Statement
-Write an SQL query to **increase the salary of all employees in department 5 by 10%**.
-
-That means every employee whose `department_id` is **5** should have their salary updated using:
-
-```
-new salary = old salary × 1.10
-```
-
----
-
-# ✅ SQL Query
-```sql
-UPDATE employees
-SET salary = salary * 1.10
-WHERE department_id = 5;
-```
-
----
----
-
-# 🧾 SQL Question — Remove Employees With Low Salary
-
-## 📌 Problem Statement
-Write an SQL query to **delete all employees** whose salary is **less than 30,000** from the `employees` table.
-
----
-
-# ✅ SQL Query
-```sql
-DELETE FROM employees
-WHERE salary < 30000;
-```
-
----
---
-
-
+<a id="q-mcq-2"></a>
 # 📝 C# Multiple Choice Questions (MCQs)
 
 ---
@@ -3472,4 +4248,12 @@ public bool IsLeapYear(int year)
 
 
 
+
+
+---
+
+
+[⬆️ Back to Table of Contents](#table-of-contents)
+
+---
 

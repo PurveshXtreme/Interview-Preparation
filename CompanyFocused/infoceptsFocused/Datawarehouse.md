@@ -425,21 +425,6 @@ Dim_Product — Fact_Sales — Dim_Time
 - Multiple Dimension Tables directly connected to it  
 - Dimensions are **NOT normalized** (no sub-tables)
 
-## ✔ Characteristics
-- Denormalized dimensions  
-- Fast query performance  
-- Simple design  
-- Most used in reporting tools (Tableau, Power BI, Looker)
-
-## ✔ Advantages
-- Very fast for read/analytic queries  
-- Easy to understand for business users  
-- Requires fewer joins, improves performance  
-
-## ✔ Disadvantages
-- Takes more storage  
-- Some data redundancy in dimensions  
-
 ## ✔ Example
 
 ### Fact Table: Fact_Sales
@@ -480,20 +465,6 @@ Dim_Customer — Fact_Sales — Dim_Time
 - Dimension tables connected  
 - Dimensions have **sub-dimensions** (normalized)
 
-## ✔ Characteristics
-- Normalized dimensions (3rd Normal Form)  
-- Reduced redundancy  
-- More joins required  
-
-## ✔ Advantages
-- Saves storage  
-- Avoids data duplication  
-- Good for very large, complex dimensions  
-
-## ✔ Disadvantages
-- Slower query performance (more joins)  
-- More complex design  
-- Harder for business users to understand  
 
 ## ✔ Example
 

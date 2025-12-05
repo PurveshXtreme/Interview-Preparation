@@ -103,6 +103,135 @@ From this project, I learned how the frontend communicates with a backend that u
 
 ---
 
+# Quill.AI – Interview Q&A Notes
+
+## Table of Contents
+- [Frontend & Backend Technology Choices](#frontend--backend-technology-choices)
+- [Model Choice (BART, GPT, Gemini)](#model-choice-bart-gpt-gemini)
+- [Summarization Concepts](#summarization-concepts)
+- [Tokens & Token Limits](#tokens--token-limits)
+- [Challenges Faced](#challenges-faced)
+- [Libraries Used](#libraries-used)
+- [LLM (Large Language Model) Explanation](#llm-large-language-model-explanation)
+- [Types of LLMs](#types-of-llms)
+- [Transformer Architecture](#transformer-architecture)
+- [Attention Mechanism](#attention-mechanism)
+
+---
+
+## Frontend & Backend Technology Choices
+
+### ⭐ 1. Why HTML, CSS, and JavaScript for the frontend?
+**“I used HTML, CSS, and JavaScript because they are lightweight, fast, and ideal for building simple and responsive user interfaces.  
+The project didn’t require a heavy framework like React, so plain JS gave full control over the UI and made the development process quick and flexible.”**
+
+### ⭐ 2. Why Python for the backend?
+**“We used Python because it has excellent support for AI/ML libraries. Hugging Face and transformer models run more smoothly in Python, so integrating the BART model for summarization was very easy. Python also has simple frameworks like Flask that make API development quick.”**
+
+---
+
+## Model Choice (BART, GPT, Gemini)
+
+### ⭐ 3. Why BART for summarization?
+**“BART is a transformer-based encoder–decoder model that is specifically fine-tuned for summarization tasks.  
+It is optimized for abstractive summarization and performs very well on general text.”**
+
+### ⭐ 4. Why not GPT or Gemini?
+**“GPT and Gemini are powerful, but they require API keys, have usage costs, and depend on external servers.  
+Since our goal was a free and offline summarization backend, BART was a better option because it is open-source, free, and can run locally without any API dependency.”**
+
+---
+
+## Summarization Concepts
+
+### ⭐ 7. Difference between extractive vs abstractive summarization
+**“Extractive summarization picks key sentences directly from the original text.  
+Abstractive summarization generates new sentences using its understanding of the content.  
+BART performs abstractive summarization.”**
+
+---
+
+## Tokens & Token Limits
+
+### ⭐ 10. What are tokens?
+**“Tokens are small units of text — like words or sub-words — that the model understands.  
+The model doesn’t work directly with raw text; it works with token IDs that represent the text.”**
+
+### ⭐ 11. What is the token limit for BART?
+**“The BART-large model has a limit of around 1,024 tokens for input.  
+If the text is longer than this, it must be shortened or chunked before summarization.”**
+
+---
+
+## Challenges Faced
+
+### ⭐ 13. Challenges you faced & how you solved them
+**“A challenge I faced was making the frontend clean and responsive. Initially, the layout was breaking on smaller screens. I solved this by adjusting the CSS, using flexible units, and testing the UI across multiple screen sizes.  
+Another challenge was understanding how the summarization model works. I solved it by reading the Hugging Face documentation and experimenting with different summary lengths until the output was stable.”**
+
+---
+
+## Libraries Used
+
+### ⭐ Hugging Face Transformers
+**Final Answer:**  
+**“The project uses the Hugging Face Transformers library.”**
+
+### Why?
+**“We used the Hugging Face Transformers library because it provides pre-trained models like BART that can be used directly for summarization.  
+It also simplifies tokenization, model loading, and inference through the pipeline API.”**
+
+---
+
+## LLM (Large Language Model) Explanation
+
+### ⭐ What is an LLM?
+**“An LLM (Large Language Model) is an AI model trained on a huge amount of text data.  
+It learns patterns in language such as grammar, meaning, context, and relationships between words.  
+LLMs are built using transformer architecture, which uses attention mechanisms to understand context in sentences.”**
+
+---
+
+## Types of LLMs
+
+### ⭐ 1. Encoder-Only Models  
+**Examples:** BERT  
+**Purpose:** Understanding tasks (classification, sentiment analysis, NER)  
+**Reason:** Encoder-only models read input bidirectionally and are excellent for comprehension.
+
+### ⭐ 2. Decoder-Only Models  
+**Examples:** GPT, LLaMA, Gemini (partially)  
+**Purpose:** Text generation (chatbots, stories, code generation)  
+**Reason:** They generate text one token at a time using previous context.
+
+### ⭐ 3. Encoder–Decoder Models  
+**Examples:** BART, T5  
+**Purpose:** Summarization, translation, question answering  
+**Reason:**  
+- **Encoder** understands the full input  
+- **Decoder** generates the output  
+Perfect for input → output transformations.
+
+---
+
+## Transformer Architecture
+
+### ⭐ What is Transformer Architecture? (Short & Simple)
+**“Transformer architecture is a deep learning model used for language tasks.  
+It processes all words in a sentence at the same time (parallel), instead of one-by-one like older models.  
+This makes it faster, more accurate, and better at understanding context.”**
+
+---
+
+## Attention Mechanism
+
+### ⭐ What is Attention Mechanism? (Short & Simple)
+**“Attention is the method transformers use to understand which words in a sentence are important.  
+Instead of treating all words equally, attention lets the model ‘focus’ on the right words while reading or generating text.”**
+
+---
+---
+
 
 
 

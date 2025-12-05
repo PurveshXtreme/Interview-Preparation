@@ -12,6 +12,8 @@
   - [3. Predictive Analytics](#3-predictive-analytics)
   - [4. Prescriptive Analytics](#4-prescriptive-analytics)  
 
+-[Go to Big Data Analytics Lifecycle](#big-data-analytics-lifecycle-descriptive-diagram)
+
 
 ---
 
@@ -156,3 +158,75 @@ It uses simulations, optimization algorithms, and sometimes reinforcement learni
 “It recommends actions by evaluating different possible outcomes.”
 
 ---
+
+# Big Data Analytics Lifecycle (Descriptive Diagram)
+
+# Big Data Analytics Lifecycle (Descriptive Diagram)
+
+```
+┌───────────────────────────────────────────────┐
+│            1. Use Case Identification          │
+│  • Define the business problem                 │
+│  • Identify objectives and expected outcomes   │
+└───────────────────────────┬───────────────────┘
+                            │
+                            ▼
+┌───────────────────────────────────────────────┐
+│                 2. Data Collection              │
+│  • Identify data sources                        │
+│  • Collect raw data from logs, sensors, DBs     │
+│  • Ingest data using tools (Sqoop, Kafka, etc.) │
+└───────────────────────────┬───────────────────┘
+                            │
+                            ▼
+┌───────────────────────────────────────────────┐
+│                  3. Data Filtering              │
+│  • Remove noise, duplicates, errors             │
+│  • Handle missing or corrupt data               │
+│  • Ensure reliable and clean input              │
+└───────────────────────────┬───────────────────┘
+                            │
+                            ▼
+┌───────────────────────────────────────────────┐
+│                 4. Data Extraction              │
+│  • Select relevant fields or attributes         │
+│  • Extract meaningful subsets of the data       │
+│  • Prepare data for further processing          │
+└───────────────────────────┬───────────────────┘
+                            │
+                            ▼
+┌───────────────────────────────────────────────┐
+│                5. Data Aggregation              │
+│  • Combine data from multiple sources           │
+│  • Merge structured + unstructured datasets     │
+│  • Create a unified dataset for analysis        │
+└───────────────────────────┬───────────────────┘
+                            │
+                            ▼
+┌───────────────────────────────────────────────┐
+│                 6. Data Analysis                │
+│  • Apply ML models, statistics, algorithms      │
+│  • Perform pattern discovery & predictions      │
+│  • Use tools like Spark, MLlib, Python, R       │
+└───────────────────────────┬───────────────────┘
+                            │
+                            ▼
+┌───────────────────────────────────────────────┐
+│            7. Visualization & Reporting         │
+│  • Present results using dashboards/charts      │
+│  • Use tools like Tableau, Power BI, Grafana    │
+│  • Convert insights into understandable form    │
+└───────────────────────────┬───────────────────┘
+                            │
+                            ▼
+┌───────────────────────────────────────────────┐
+│             8. Final Action / Decision          │
+│  • Insights drive business decisions            │
+│  • Implement strategies, optimizations, alerts  │
+│  • Measure impact and refine the process        │
+└───────────────────────────────────────────────┘
+```
+
+---
+ 
+

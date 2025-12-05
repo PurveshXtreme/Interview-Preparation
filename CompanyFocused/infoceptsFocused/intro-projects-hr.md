@@ -18,6 +18,13 @@
 - [What are your strengths?](#what-are-your-strengths)
 - [What is your weakness?](#what-is-your-weakness)
 - [Tell me about a time you worked in a team](#tell-me-about-a-time-you-worked-in-a-team)
+
+- ## Table of Contents
+- # [Questions to Ask the Interviewer](#questions-to-ask-the-interviewer)
+
+## Table of Contents
+- [About Learning & Training](#about-learning--training)
+- [About Self-Improvement](#about-self-improvement)
   
 
 ---
@@ -364,6 +371,18 @@ I believe I will be able to learn quickly during the training period and contrib
 
 ---
 ---
+
+# Questions to Ask the Interviewer
+
+---
+
+## About Learning & Training
+**“Could you please tell me how the training journey for trainees at Infocepts is structured and what technologies we get to learn during the program?”**
+
+---
+
+## About Self-Improvement
+**“Is there anything you would suggest I learn or prepare before joining, if I get selected?”**
 
 
 

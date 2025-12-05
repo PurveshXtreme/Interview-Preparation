@@ -29,3 +29,6 @@ Along with academics, I have been actively involved in teamwork-oriented activit
 I would describe myself as someone who enjoys learning new things, understands responsibilities well, and stays consistent with whatever I start. 
 
 I’m interested in **Infocepts** because the role focuses on analysis, problem-solving, and continuous learning, which aligns well with my strengths. I’m looking forward to applying my technical foundation, learning new technologies, and contributing to meaningful, data-driven projects.
+
+---
+

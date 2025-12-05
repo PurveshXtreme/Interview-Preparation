@@ -5,7 +5,9 @@
 - [HR Round Introduction](#hr-round-introduction)
 - [LearnPlay Project Documentation](#learnplay-project-documentation)
 - [Quill.AI – Text Summarization Platform](#quillai--text-summarization-platform)
-- 
+- [Zync – Chat and Social Feed Platform](#zync--chat-and-social-feed-platform)
+- [ZapUI – React Component Library](#zapui--react-component-library)
+  
   
 
 ---
@@ -237,6 +239,50 @@ If you mean neural network layers, then they consist of Input Layer, Hidden Laye
 
 
 ---
+---
+
+# Project Documentation
+
+---
+
+## Zync – Chat and Social Feed Platform
+
+**Zync is a simple chat and social feed platform where users can post updates and view messages in a clean interface.  
+The aim of the project was to create a basic communication system with a structured backend and an organized frontend.**
+
+The tech stack includes **Spring Boot** for the backend and **React with Redux** for the frontend.
+
+- **Spring Boot** handles APIs for users, posts, and chat-related data.  
+- **React** manages the UI.  
+- **Redux** is used to keep the state consistent across the application, especially for posts, user data, and chat messages.
+
+My contribution to this project was mainly on the **backend and frontend integration**.
+
+- On the backend, I worked with Spring Boot to build **REST APIs** for users, posts, and chat data.  
+- On the frontend, I used **React + Redux** to manage application state and display the data smoothly.
+
+From this project, I learned how to design **clean REST APIs**, connect them with a React frontend, and use **Redux** to manage shared state.  
+It also helped me understand **how data flows in a social platform** and how to structure both backend and frontend for smooth interaction.
+
+---
+
+## ZapUI – React Component Library
+
+**ZapUI is a React component library published as an npm package.  
+It provides reusable components like Avatar, Button, Input, Browser components, etc.  
+The library is built using plain CSS to keep it lightweight and framework-independent.**
+
+My contribution to this project included:
+
+- Developing core components such as **Button**, **Avatar**, etc.  
+- Handling the **npm workflow** — publishing the package, updating versions, and ensuring smooth installation for other developers through:
+
+```bash
+npm install zapui
+```
+
+From this project, I learned how to build reusable UI components, maintain consistent styling with plain CSS, and manage the full **npm publishing workflow**, including versioning and distribution.
+
 ---
 
 

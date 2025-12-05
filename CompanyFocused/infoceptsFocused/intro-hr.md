@@ -1,4 +1,4 @@
-# Interview Introductions – Infocepts
+# Interview – Infocepts
 
 ## Table of Contents
 - [Technical Round Introduction](#technical-round-introduction)

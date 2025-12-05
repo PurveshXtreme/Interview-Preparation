@@ -230,6 +230,13 @@ This makes it faster, more accurate, and better at understanding context.”**
 Instead of treating all words equally, attention lets the model ‘focus’ on the right words while reading or generating text.”**
 
 ---
+
+**The layers of AI typically refer to the AI technology stack:  
+1) Data Layer, 2) Model Layer, 3) Infrastructure Layer, and 4) Application Layer.  
+If you mean neural network layers, then they consist of Input Layer, Hidden Layers, and Output Layer.**
+
+
+---
 ---
 
 

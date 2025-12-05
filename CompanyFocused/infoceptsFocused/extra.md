@@ -7,6 +7,19 @@
 - [What is HTTP?](#what-is-http)
 - [What is an API?](#what-is-an-api)
 
+- # Cloud Concepts & Reporting Tools
+
+## Table of Contents
+- [Cloud Concepts](#cloud-concepts)
+  - [What is Cloud Computing?](#what-is-cloud-computing)
+  - [Cloud Service Models (IaaS, PaaS, SaaS)](#cloud-service-models-iaas-paas-saas)
+  - [Deployment Models](#deployment-models)
+  - [Advantages of Cloud](#advantages-of-cloud)
+- [Reporting Tools](#reporting-tools)
+  - [Power BI](#power-bi)
+  - [Tableau](#tableau)
+  - [Excel Pivot Tables](#excel-pivot-tables)
+
 ---
 
 ## OSI Model – Short Notes
@@ -86,4 +99,62 @@ It defines:
 - What format is used  
 
 APIs allow the frontend and backend (or two different systems) to exchange information without needing to know each other's internal details.
+
+---
+
+# Cloud Concepts & Reporting Tools
+
+## Cloud Concepts (Short Notes)
+
+### ⭐ What is Cloud Computing?
+Cloud computing means delivering IT resources—like servers, databases, storage, and analytics—over the internet on a pay-as-you-go model.
+
+### ⭐ Key Cloud Service Models
+- **IaaS (Infrastructure as a Service)**  
+  Provides virtual machines, networks, storage.  
+  *Example: AWS EC2, Google Compute Engine.*
+
+- **PaaS (Platform as a Service)**  
+  Provides a platform to build and deploy applications without managing servers.  
+  *Example: Heroku, Google App Engine.*
+
+- **SaaS (Software as a Service)**  
+  Ready-to-use software delivered over the internet.  
+  *Example: Gmail, Office 365.*
+
+### ⭐ Deployment Models
+- **Public Cloud** – Shared cloud (AWS, Azure, GCP).  
+- **Private Cloud** – Dedicated cloud for one organization.  
+- **Hybrid Cloud** – Combination of public + private.
+
+### ⭐ Advantages of Cloud
+- Scalability  
+- Cost-efficient (pay only for use)  
+- High availability  
+- Security  
+- Global accessibility
+
+---
+
+## Reporting Tools
+
+### ⭐ Power BI
+- Microsoft’s business analytics tool.  
+- Used to **visualize data**, build dashboards, and create reports.  
+- Supports various data sources (Excel, SQL, APIs, cloud).  
+- Strong interactive dashboards with DAX formulas.
+
+### ⭐ Tableau
+- A powerful data visualization tool.  
+- Known for **drag-and-drop dashboards**, rich charts, and fast analytics.  
+- Great for working with large datasets.  
+- Used widely in BI and data analytics.
+
+### ⭐ Excel Pivot Tables
+- Used to **summarize and analyze data quickly**.  
+- Helps perform grouping, filtering, totals, averages, and trends.  
+- Useful for quick reporting without coding.  
+- Often used for basic analytics and business reporting.
+
+---
 

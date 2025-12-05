@@ -99,7 +99,7 @@ The tech stack includes **HTML, CSS, and JavaScript** for the frontend, and **Py
 
 My contribution to this project was mainly on the **frontend side**. I designed the user interface, including the landing page and input forms, and focused on making the UI simple, clean, and easy to use.
 
-From this project, I learned how to structure a clean UI, take user input effectively, and display the summarized text returned from the backend in a clear and readable manner.
+From this project, I learned how the frontend communicates with a backend that uses AI models, and display the summarized text returned from the backend in a clear and readable manner.
 
 ---
 

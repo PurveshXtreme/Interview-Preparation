@@ -4,6 +4,8 @@
 - [Technical Round Introduction](#technical-round-introduction)
 - [HR Round Introduction](#hr-round-introduction)
 - [LearnPlay Project Documentation](#learnplay-project-documentation)
+- [Quill.AI – Text Summarization Platform](#quillai--text-summarization-platform)
+- 
   
 
 ---
@@ -50,5 +52,59 @@ The workflow is simple:
 My contribution to this project was mainly on the backend. I worked with Spring Boot to build REST APIs, implement JWT authentication, design the data models, and ensure smooth communication between the frontend and backend. I focused on making the backend secure, modular, and reliable so that users could log in, access quizzes, and track progress without issues.
 
 Through this project, I learned how to build a secure backend system, integrate a React frontend with a Spring Boot API, and follow clean, modular coding practices.
+
+---
+
+**Challenges faced in the project**
+
+One challenge I faced in this project was implementing JWT authentication correctly. At first, managing the token and securing API endpoints was tricky. I solved this problem by breaking it into steps. First, I understood how JWT works, then implemented token generation, implemented token validation, and finally secured the endpoints. Testing each part separately helped me overcome this issue.
+
+---
+
+**Whats is JWT?**
+
+**JWT stands for JSON Web Token. It is a secure way of verifying users and communicating identity between the client and server without storing any session data on the server. It allows information to be transferred safely because the token is digitally signed.**
+
+**The workflow is simple:**
+
+- The user logs in,  
+- The server verifies the credentials and generates a JWT,  
+- The client stores this token and sends it with every API request,  
+- The server validates the token before giving access.
+
+**In my Spring Boot application, I used JWT by adding dependencies like `jjwt-api`, `jjwt-impl`, and `jjwt-jackson`, which help in generating, signing, and validating the token.**
+
+---
+
+**Why these technologies?**
+
+**We used React because it allows us to build a fast and responsive UI using reusable components. Its component-based architecture made the development process easy and efficient.**
+
+**For the backend, we chose Spring Boot because it is a strong framework for building secure and production-ready applications. It simplifies the creation of REST APIs and provides smooth integration with databases like MySQL.**
+
+**We used the Gemini API because it integrates well with Spring AI and was suitable for generating quiz questions based on the user’s selected topic. Its support within Spring Boot made the integration smooth, reliable, and free to use for our project requirements.**
+
+---
+---
+
+# Quill.AI – Documentation
+
+---
+
+## Quill.AI – Text Summarization Platform
+
+**Quill.AI is a simple text-summarization platform that takes long text as input and generates a concise summary. The main idea of the project was to allow users to quickly understand long articles or documents by using an AI model to shorten the content.**
+
+The tech stack includes **HTML, CSS, and JavaScript** for the frontend, and **Python with the Hugging Face BART model** for the backend.
+
+My contribution to this project was mainly on the **frontend side**. I designed the user interface, including the landing page and input forms, and focused on making the UI simple, clean, and easy to use.
+
+From this project, I learned how to structure a clean UI, take user input effectively, and display the summarized text returned from the backend in a clear and readable manner.
+
+---
+
+
+
+
 
 

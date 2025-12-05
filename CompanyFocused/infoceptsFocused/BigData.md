@@ -4,6 +4,7 @@
 - [What is Big Data?](#what-is-big-data)
 - [The 5 Vs of Big Data](#the-5-vs-of-big-data)
 - [Big Data Technologies](#big-data-technologies)
+- 
 
 ---
 
@@ -35,7 +36,8 @@ Data comes in multiple formats:
 - Unstructured (videos, images, logs)  
 
 ### **4. Veracity**
-Data can be noisy, incomplete, or inconsistent. Ensuring accuracy and reliability is a challenge.
+-Veracity refers to the trustworthiness, accuracy, and quality of the data.
+-Data can be noisy, incomplete, or inconsistent. Ensuring accuracy and reliability is a challenge.
 
 ### **5. Value**
 The most important V — the useful insights or business impact derived from analyzing Big Data.
@@ -49,7 +51,8 @@ Because of the 5Vs, companies use specialized technologies such as:
 - **HDFS** → Distributed file system  
 - **Apache Spark** → Fast, in-memory processing engine
 
+These tools allow organizations to store, process, and analyze massive datasets efficiently.
+
 ---
 
-These tools allow organizations to store, process, and analyze massive datasets efficiently.
 

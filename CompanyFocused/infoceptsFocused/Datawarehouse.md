@@ -1,3 +1,51 @@
+# 📑 Table of Contents (TOC)
+
+- [1️⃣ What is a Data Warehouse?](#1️⃣-what-is-a-data-warehouse)
+  - [Properties](#properties)
+  - [Simple Example](#simple-example)
+
+- [2️⃣ Difference Between OLTP and OLAP](#2️⃣-difference-between-oltp-and-olap)
+
+- [3️⃣ Introduction to Data Warehouse Architecture](#3️⃣-introduction-to-data-warehousing-architecture)
+  - [Architecture Diagram](#data-warehouse-architecture-descriptive-diagram)
+
+- [4️⃣ Introduction to ETL](#1️⃣-introduction-to-etl-and-data-movement-for-data-warehousing)
+
+- [5️⃣ ETL Design Basics](#2️⃣-introduction-to-etl-design)
+
+- [6️⃣ Core Building Blocks of a Data Warehouse](#🧱-core-building-blocks-of-a-data-warehouse)
+
+- [7️⃣ Fact Tables](#1️⃣-fact-tables)
+  - [Purpose](#🎯-purpose)
+  - [Characteristics](#🧩-characteristics)
+  - [Examples](#📌-examples)
+
+- [8️⃣ Types of Fact Tables](#📌-types-of-fact-tables-4-important-types)
+  - [Transaction Fact Table](#1️⃣-transaction-fact-table)
+  - [Periodic Snapshot Fact Table](#2️⃣-periodic-snapshot-fact-table)
+  - [Accumulating Snapshot Fact Table](#3️⃣-accumulating-snapshot-fact-table)
+  - [Factless Fact Table](#4️⃣-factless-fact-table)
+
+- [9️⃣ Dimension Tables](#2️⃣-dimension-tables)
+  - [Purpose](#🎯-purpose-1)
+  - [Characteristics](#🧩-characteristics-1)
+  - [Examples](#📌-examples-1)
+
+- [🔟 Measures (Facts)](#3️⃣-measures-facts)
+
+- [1️⃣1️⃣ Types of Facts](#🔢-types-of-facts-very-important-interview-topic)
+  - [Additive Facts](#1️⃣-additive-facts)
+  - [Semi-Additive Facts](#2️⃣-semi-additive-facts)
+  - [Non-Additive Facts](#3️⃣-non-additive-facts)
+
+- [1️⃣2️⃣ Schemas in Data Warehousing](#📘-schemas-in-data-warehousing-proper-explanation)
+
+- [1️⃣3️⃣ Star Schema](#⭐-1️⃣-star-schema-most-common-schema)
+
+- [1️⃣4️⃣ Snowflake Schema](#❄-2️⃣-snowflake-schema-normalized-schema)
+
+
+
 # 1️⃣ What is a Data Warehouse? (Simple + Interview Answer)
 
 A **Data Warehouse (DW)** is a centralized storage system that collects data from multiple sources, cleans it, integrates it, and stores it for reporting and analysis.
@@ -132,230 +180,340 @@ Good ETL design ensures:
 
 ---
 
-# 📘 Data Warehousing Building Blocks (Proper Notes)
-
-A Data Warehouse is designed using a set of core building blocks that help structure data for analysis.  
-The four primary building blocks are:
+🧱 Core Building Blocks of a Data Warehouse  
+The four primary components are:
 
 - Fact Tables  
 - Dimension Tables  
 - Measures (Facts)  
-- Schemas  
+- Schemas (Star & Snowflake)  
 
-These form the foundation of dimensional modeling.
-
----
 
 # 1️⃣ Fact Tables
 
-A **Fact Table** is the central table in a Data Warehouse model. It stores **quantitative, numeric, measurable data** about business processes.
+A Fact Table is the central table in a data warehouse.  
+It stores quantitative, numeric, measurable business data.
 
-### Purpose:
-- Record business events such as sales, transactions, shipments.
-- Provide values that analysts want to aggregate and study.
+## 🎯 Purpose
+- Store numerical measures (sales, profit, quantity).  
+- Record business events (transactions, payments).  
+- Provide values for aggregation (SUM, AVG, MAX).
 
-### Characteristics of Fact Tables:
-- Contain **numeric measures** (facts).
-- Contain **foreign keys** referencing dimension tables.
-- Usually very large in size.
-- Represent data at a specific **granularity** (e.g., one row per sale).
+## 🧩 Characteristics
+- Contains foreign keys referencing dimension tables.  
+- Usually very large compared to dimensions.  
+- Represents a defined granularity (e.g., each sale).  
+- Always numeric facts.
 
-### Examples:
-- Sales Fact → sales_amount, quantity, discount  
-- Order Fact → order_count, shipping_cost  
+## 📌 Examples
+
+### Sales Fact Table:
+- sales_amount  
+- quantity_sold  
+- discount  
+- product_key, customer_key, date_key  
+
+
+---
+
+# 📌 Types of Fact Tables (4 Important Types)
+
+## 1️⃣ Transaction Fact Table
+- Most detailed  
+- Records individual transactions  
+- Example: Each sale event  
+
+## 2️⃣ Periodic Snapshot Fact Table
+- Captures data at fixed intervals (daily, monthly)  
+- Useful for trends  
+- Example: Daily inventory levels  
+
+## 3️⃣ Accumulating Snapshot Fact Table
+- Tracks lifecycle-based processes  
+- Updates as each stage completes  
+- Example: Order lifecycle → Ordered → Packed → Shipped → Delivered  
+
+## 4️⃣ Factless Fact Table
+Contains only foreign keys, no numeric facts.  
+Used for:
+- Event tracking (attendance)  
+- Coverage analysis (promotion applied or not)  
+
 
 ---
 
 # 2️⃣ Dimension Tables
 
-A **Dimension Table** provides the **context** for facts. These tables store **descriptive attributes** that help analyze and group facts.
+A Dimension Table provides descriptive information that gives meaning to facts.
 
-### Purpose:
-Answer questions like:
-- Who purchased? (Customer)  
-- What was purchased? (Product)  
-- When was it purchased? (Time)  
-- Where was it purchased? (Location)
+## 🎯 Purpose
+Dimensions answer business questions such as:
 
-### Characteristics of Dimension Tables:
-- Contain **textual** or **categorical** data.
-- Have a **primary key** (often a surrogate key).
-- Smaller compared to fact tables.
-- Used to slice and filter data in reports.
+- Who made the purchase? → Customer Dimension  
+- What was purchased? → Product Dimension  
+- When was it purchased? → Time Dimension  
+- Where was it purchased? → Location Dimension  
 
-### Examples:
-- Customer Dimension → name, age, city  
-- Product Dimension → name, brand, category  
-- Time Dimension → date, month, year  
+## 🧩 Characteristics
+- Contain textual, descriptive, or categorical attributes.  
+- Have a primary key (usually surrogate).  
+- Smaller in size than fact tables.  
+- Used for grouping, filtering, slicing, dicing in reports.
+
+## 📌 Examples
+- Customer Dimension: name, age, gender, city  
+- Product Dimension: name, brand, category  
+- Time Dimension: date, month, quarter, year  
+
 
 ---
 
 # 3️⃣ Measures (Facts)
 
-**Facts** are the numeric values stored inside fact tables. They represent measurable business data.
-
-### Types of Facts:
-
-#### ✔ Additive Facts
-- Can be added across all dimensions.
-- Example: sales_amount, quantity_sold.
-
-#### ✔ Semi-Additive Facts
-- Can be added across some dimensions, but not all (usually not across time).
-- Example: account_balance, inventory_level.
-
-#### ✔ Non-Additive Facts
-- Cannot be added at all.
-- Example: percentage, ratio.
-
-### Importance:
-Facts drive business KPIs and analytical reports.
+Measures are the numeric values inside fact tables.  
+They are the core of business analysis.
 
 ---
 
-# 4️⃣ Schemas (Model Structures)
+# 🔢 Types of Facts (Very Important Interview Topic)
 
-Schemas define how fact and dimension tables are organized.
-
-### ⭐ Star Schema
-- Most widely used schema in DW.
-- Fact table at the center, surrounded by dimension tables.
-- Dimensions are **not normalized**.
-- Simple and fast for queries.
-
-### ❄ Snowflake Schema
-- Dimensions are **normalized** into multiple related tables.
-- More complex structure.
-- Saves space but slower for analysis.
-
-### Importance:
-Choosing the schema affects performance, usability, and maintainability.
+Facts can behave differently when we try to aggregate (SUM, AVG, MAX, MIN) them.  
+That’s why we classify them into 3 categories:
 
 ---
 
-# 📌 Summary of Building Blocks
+# 1️⃣ Additive Facts
 
-- **Fact Tables** store numeric values about business events.  
-- **Dimension Tables** store descriptive information that explains the facts.  
-- **Facts (Measures)** include numeric data used in analysis (additive, semi-additive, non-additive).  
-- **Schemas** (Star, Snowflake) define how fact and dimension tables are linked.
+## ✔ Definition
+These facts can be summed (added) across **all dimensions** in the data warehouse.
 
-These building blocks together make data in the warehouse **organized**, **analyzable**, and **efficient** for reporting.
+Meaning:  
+No matter how you slice the data (by time, product, customer, region),  
+the total is meaningful.
 
----
+## ✔ Examples
+- sales_amount  
+- quantity_sold  
+- revenue  
+- cost  
 
-# 📘 Dimensional Modeling
+## ✔ Why additive?
+If you sum:
 
-Dimensional Modeling is a design technique used in Data Warehousing to make data easy to understand and fast for querying.  
-It organizes data into:
-- **Fact Tables** (measurements)
-- **Dimension Tables** (descriptive context)
+- sales_amount for a day  
+- then sum again for a month  
+- and again for a year  
 
-It is mainly used for analytical processing (OLAP).
+➡ The totals remain valid and correct.
 
----
+## ✔ Example Scenario
+| Date | Product | Sales Amount |
+|------|---------|--------------|
+| 1 Jan | TV | 20,000 |
+| 1 Jan | Laptop | 30,000 |
 
-# ⭐ Core Components of Dimensional Modeling
+Total Sales = 20,000 + 30,000 = **50,000**  
+(Valid across any dimension)
 
-## 1️⃣ Fact Tables
-- Store measurable, numeric data (facts)
-- Examples: sales amount, quantity sold
-- Contain foreign keys referencing dimensions
-- Represent business processes
-
-## 2️⃣ Dimension Tables
-- Store descriptive attributes of business entities
-- Examples: customer name, product category, time, location
-- Contain primary keys (usually surrogate keys)
-- Used for slicing, filtering, grouping data
-
----
-
-# 📌 Star Schema vs Snowflake Schema
-
-## ⭐ Star Schema
-- Fact table at the center
-- Dimension tables directly connected
-- Dimensions are *not normalized*
-- Simpler and faster for querying
-
-### Structure:
-Fact Table → Dimension Table (1-to-Many)
-
-## ❄ Snowflake Schema
-- Dimensions are normalized into multiple related tables
-- More complex structure
-- Saves storage but slower for analysis
-
-### Structure:
-Fact Table → Dimension → Sub-Dimension
-
-### Comparison Table:
-
-| Star Schema | Snowflake Schema |
-|-------------|------------------|
-| Denormalized dimensions | Normalized dimensions |
-| Faster query performance | Slower queries |
-| Simple design | Complex design |
-| Uses more storage | Uses less storage |
-| Best for reporting | Best for complex DW design |
+👉 These are the easiest facts to work with.
 
 ---
 
-# 📌 Facts, Fact Tables, Dimensions, and Dimension Tables
+# 2️⃣ Semi-Additive Facts
 
-## Facts
-- Numerical measurements used for analysis
-- Examples: revenue, profit, units sold
-- Can be additive, semi-additive, or non-additive
+## ✔ Definition
+These facts can be added across some dimensions,  
+but **NOT across the time dimension**.
 
-## Fact Tables
-- Central tables containing facts and foreign keys
-- Usually very large
-- Represent business events or processes
+### Why not across time?  
+Because these facts represent a **state at a point in time**, not a quantity.
 
-## Dimensions
-- Textual descriptive data about entities
-- Examples: product, customer, time, store
+## ✔ Examples
+- account_balance  
+- inventory_level  
+- stock_on_hand  
 
-## Dimension Tables
-- Contain dimension attributes
-- Used for grouping, filtering, slicing data in reports
-- Connected to fact tables through keys
+## ✔ Explanation
+If your bank balance is:
 
----
+- 1 Jan → ₹50,000  
+- 2 Jan → ₹55,000  
+- 3 Jan → ₹60,000  
 
-# 📌 Types of Fact Tables (4 Main Types)
+👉 You **cannot** add them:  
+50k + 55k + 60k = **165k** ❌ (Meaningless)
 
-## 1️⃣ Transaction Fact Table
-- Records individual business transactions
-- Most detailed (lowest granularity)
-- Example: each sales transaction
+But you *can* aggregate across other dimensions (e.g., customers or accounts).
 
-## 2️⃣ Periodic Snapshot Fact Table
-- Captures data at fixed intervals (daily, monthly)
-- Used for trend analysis
-- Example: daily inventory levels, monthly account balances
+## ✔ Correct usage
+For semi-additive facts, we typically use:
 
-## 3️⃣ Accumulating Snapshot Fact Table
-- Tracks a process with multiple stages
-- Updated as process progresses
-- Example: order fulfillment lifecycle (order → shipped → delivered)
-
-## 4️⃣ Factless Fact Table
-- Contains only foreign keys, no numeric facts
-- Used for event tracking or coverage analysis
-- Example: student attendance, employee training participation
+- MAX(balance)  
+- MIN(balance)  
+- Ending balance  
+- Average inventory  
 
 ---
 
-# 📌 Summary
+# 3️⃣ Non-Additive Facts
 
-Dimensional modeling organizes data into fact and dimension tables for fast analytical queries.  
-Star schema is simpler and faster; snowflake schema is normalized and more complex.  
-Fact tables store measurements; dimension tables store descriptive information.  
-Four fact table types: Transaction, Periodic Snapshot, Accumulating Snapshot, and Factless Fact Tables.
+## ✔ Definition
+These facts **cannot be added across any dimension**.
+
+Because adding them makes no sense mathematically.
+
+## ✔ Examples
+- percentage (conversion rate)  
+- ratios (profit margin)  
+- percent_growth  
+
+## ✔ Why not additive?
+If profit margin is:
+
+- Product A: 20%  
+- Product B: 30%  
+
+You cannot do:  
+20% + 30% = 50% ❌ (Wrong)
+
+Instead, you must calculate a weighted metric:
+
+```
+Profit Margin = Total Profit / Total Sales
+```
+
+## ✔ Best way to use non-additive facts
+Recompute them using **additive fields**.
 
 ---
+
+# 📘 Schemas in Data Warehousing (Proper Explanation)
+
+A Schema defines how tables (Fact + Dimension) are structured and connected in a Data Warehouse.
+
+Schemas are part of Dimensional Modeling, and they determine:
+
+- How fast queries run  
+- How easy reporting becomes  
+- How clean and organized the structure is  
+
+There are two most important schemas:
+
+- Star Schema  
+- Snowflake Schema  
+
+(These are the ones asked in interviews.)
+
+---
+
+# ⭐ 1️⃣ Star Schema (Most Common Schema)
+
+The Star Schema is the simplest and most widely used schema in Data Warehousing.
+
+It is called a *star* because the diagram looks like a star:
+
+```
+            Dim_Customer
+                 |
+Dim_Product — Fact_Sales — Dim_Time
+                 |
+            Dim_Store
+```
+
+## ✔ Structure
+- One central Fact Table  
+- Multiple Dimension Tables directly connected to it  
+- Dimensions are **NOT normalized** (no sub-tables)
+
+## ✔ Characteristics
+- Denormalized dimensions  
+- Fast query performance  
+- Simple design  
+- Most used in reporting tools (Tableau, Power BI, Looker)
+
+## ✔ Advantages
+- Very fast for read/analytic queries  
+- Easy to understand for business users  
+- Requires fewer joins, improves performance  
+
+## ✔ Disadvantages
+- Takes more storage  
+- Some data redundancy in dimensions  
+
+## ✔ Example
+
+### Fact Table: Fact_Sales
+- sales_amount  
+- quantity  
+- date_key  
+- product_key  
+- customer_key  
+
+### Dimension Tables:
+- Dim_Product (product_name, category, brand)  
+- Dim_Customer (name, city, age)  
+- Dim_Time (day, month, year)  
+- Dim_Store (store_name, location)  
+
+
+---
+
+# ❄ 2️⃣ Snowflake Schema (Normalized Schema)
+
+A Snowflake Schema is an extension of the Star Schema.
+
+In this schema, **dimension tables are normalized** into multiple related tables.  
+The structure looks like a snowflake because dimensions further branch out:
+
+```
+                 Dim_Product
+                     |
+                Sub_Dim_Category
+                     |
+Dim_Customer — Fact_Sales — Dim_Time
+                     |
+                 Sub_Dim_Region
+```
+
+## ✔ Structure
+- Fact table in the center  
+- Dimension tables connected  
+- Dimensions have **sub-dimensions** (normalized)
+
+## ✔ Characteristics
+- Normalized dimensions (3rd Normal Form)  
+- Reduced redundancy  
+- More joins required  
+
+## ✔ Advantages
+- Saves storage  
+- Avoids data duplication  
+- Good for very large, complex dimensions  
+
+## ✔ Disadvantages
+- Slower query performance (more joins)  
+- More complex design  
+- Harder for business users to understand  
+
+## ✔ Example
+
+### Star Schema Dimension:
+```
+Dim_Product
+(product_id, product_name, category_name)
+```
+
+### Snowflake Schema Dimensions:
+```
+Dim_Product
+(product_id, product_name, category_id)
+
+Dim_Category
+(category_id, category_name)
+```
+
+---
+
+
 
 

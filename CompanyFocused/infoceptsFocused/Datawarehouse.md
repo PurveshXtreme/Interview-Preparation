@@ -44,6 +44,14 @@
 
 - [1️⃣4️⃣ Snowflake Schema](#❄-2️⃣-snowflake-schema-normalized-schema)
 
+- - [1️⃣ Slowly Changing Dimensions (SCD)](#1️⃣-slowly-changing-dimensions-scd)
+  - [What is SCD?](#what-is-scd)
+  - [Types of SCD](#⭐-types-of-slowly-changing-dimensions)
+  - [SCD Type 0 — Fixed Dimension](#1️⃣-scd-type-0--fixed-dimension)
+  - [SCD Type 1 — Overwrite](#2️⃣-scd-type-1--overwrite-no-history)
+  - [SCD Type 2 — Full History Tracking](#3️⃣-scd-type-2--full-history-tracking-most-important)
+  - [SCD Type 3 — Limited History](#4️⃣-scd-type-3--limited-history-tracking)
+
 
 
 # 1️⃣ What is a Data Warehouse? (Simple + Interview Answer)
@@ -482,6 +490,89 @@ Dim_Product
 Dim_Category
 (category_id, category_name)
 ```
+
+
+---
+
+# 🧩 1️⃣ Slowly Changing Dimensions (SCD)
+
+## What is SCD?
+A **Slowly Changing Dimension (SCD)** is used in Data Warehousing to **manage and track changes** in dimension table attributes over time.
+
+Dimension data changes slowly — such as:
+- Customer address  
+- Employee department  
+- Product category  
+
+We use SCD techniques to **store historical changes correctly**.
+
+---
+
+# ⭐ Types of Slowly Changing Dimensions
+
+There are **3 major SCD Types** used in the industry + **1 additional type** that stores limited history.
+
+---
+
+# 1️⃣ SCD Type 0 — Fixed Dimension
+
+No changes are allowed.  
+Once data is inserted, it remains **unchanged forever**.
+
+### ✔ Use Case:
+- **Date Dimension**  
+- **Time Dimension**
+
+These values never change.
+
+---
+
+# 2️⃣ SCD Type 1 — Overwrite (No History)
+
+Old values are **overwritten** with new values.  
+No historical record is kept.
+
+### ✔ Example  
+Customer moves from **Pune → Mumbai**
+
+| Customer | City (Before) | City (After Update) |
+|----------|---------------|----------------------|
+| John     | Pune          | Mumbai               |
+
+After update → **City = Mumbai** (Old value lost)
+
+---
+
+# 3️⃣ SCD Type 2 — Full History Tracking (Most Important)
+
+Stores **complete history** by creating a **new row** for every change.
+
+### SCD Type 2 typically includes:
+- Surrogate key  
+- Business key  
+- Start date  
+- End date  
+- Current flag (Y/N)  
+
+### ✔ Example  
+Customer moves from **Pune → Mumbai**
+
+| SK | Cust_ID | City   | Start_Date   | End_Date     | Current_Flag |
+|----|---------|--------|--------------|--------------|--------------|
+| 1  | 1001    | Pune   | 2019-01-01   | 2024-05-01   | N            |
+| 2  | 1001    | Mumbai | 2024-05-02   | NULL         | Y            |
+
+---
+
+# 4️⃣ SCD Type 3 — Limited History Tracking
+
+Stores **only limited history**, usually only the **previous value**.
+
+### ✔ Example
+
+| Customer | Current_City | Previous_City |
+|----------|--------------|----------------|
+| John     | Mumbai       | Pune           |
 
 ---
 

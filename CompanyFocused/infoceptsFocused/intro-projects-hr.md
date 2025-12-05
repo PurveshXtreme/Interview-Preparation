@@ -200,7 +200,7 @@ LLMs are built using transformer architecture, which uses attention mechanisms t
 **Reason:** Encoder-only models read input bidirectionally and are excellent for comprehension.
 
 ### ⭐ 2. Decoder-Only Models  
-**Examples:** GPT, LLaMA, Gemini (partially)  
+**Examples:** GPT(Generative Pretrained Transformer), LLaMA, Gemini (partially)  
 **Purpose:** Text generation (chatbots, stories, code generation)  
 **Reason:** They generate text one token at a time using previous context.
 

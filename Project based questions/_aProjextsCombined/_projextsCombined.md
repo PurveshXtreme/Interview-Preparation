@@ -6,7 +6,6 @@
 - [How Is Your Project Different from Existing Solutions?](#how-is-your-project-different-from-existing-solutions)
 - [If Given More Time, What Would You Improve?](#if-given-more-time-what-would-you-improve)
 
-
 ---
 
 # LearnPlay – Project Documentation
@@ -26,6 +25,8 @@ My contribution to this project was mainly on the backend. I worked with Spring 
 
 Through this project, I learned how to build a secure backend system, integrate a React frontend with a Spring Boot API, and follow clean, modular coding practices.
 
+[Back to Table of Contents](#learnplay--project-documentation)
+
 ---
 
 ## Challenges Faced in the Project
@@ -35,6 +36,8 @@ One of the main challenges I faced was implementing JWT authentication correctly
 To solve this, I first went through the official Spring Security and JWT documentation to understand the workflow clearly. I also discussed a few parts with seniors and batchmates to validate my approach and make sure I was following the right structure.
 
 After that, I broke the implementation into smaller steps—token creation, token validation, filters, and endpoint security—and tested each part individually. This step-by-step approach helped me implement JWT in a clean and reliable way.
+
+[Back to Table of Contents](#learnplay--project-documentation)
 
 ---
 
@@ -51,6 +54,8 @@ It works because the token is digitally signed, making it tamper-proof.
 
 In my Spring Boot project, I used dependencies like `jjwt-api`, `jjwt-impl`, and `jjwt-jackson` to generate and validate tokens.
 
+[Back to Table of Contents](#learnplay--project-documentation)
+
 ---
 
 ## Why These Technologies?
@@ -59,6 +64,8 @@ In my Spring Boot project, I used dependencies like `jjwt-api`, `jjwt-impl`, and
 **Spring Boot** – Ideal for secure, production-ready backend applications; simplifies REST API creation.  
 **MySQL** – Stable, relational database for structured data such as users, quizzes, and scores.  
 **Gemini API** – Integrates well with Spring AI and allowed dynamic quiz generation based on topics.
+
+[Back to Table of Contents](#learnplay--project-documentation)
 
 ---
 
@@ -71,6 +78,8 @@ Another key difference is the use of the **Gemini API**, which generates quiz qu
 This means learners get **fresh, personalized questions** every time instead of fixed question sets.
 
 The combination of **gamified learning**, **dynamic AI-generated quizzes**, and a **simple, engaging UI** sets LearnPlay apart from traditional platforms.
+
+[Back to Table of Contents](#learnplay--project-documentation)
 
 ---
 
@@ -85,9 +94,6 @@ If given more time, I would work on:
 
 These improvements would make the platform more personalized, engaging, and user-friendly.
 
+[Back to Table of Contents](#learnplay--project-documentation)
+
 ---
----
-
-
-
-

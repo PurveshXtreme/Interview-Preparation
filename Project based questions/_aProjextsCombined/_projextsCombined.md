@@ -32,6 +32,17 @@
 - [If Given More Time, What Would You Improve?](#if-given-more-time-what-would-you-improve)
 
 ---
+
+# Zync – Project Documentation
+
+- [Zync – Chat and Social Feed Platform](#zync--chat-and-social-feed-platform)
+- [Challenges Faced](#challenges-faced)
+- [How Is Your Project Different from Existing Solutions?](#how-is-your-project-different-from-existing-solutions)
+- [If Given More Time, What Would You Improve?](#if-given-more-time-what-would-you-improve)
+
+
+
+---
 ---
 
 # LearnPlay – Project Documentation
@@ -414,6 +425,86 @@ If given more time, I would focus on:
 - Creating a mobile-friendly layout  
 
 These improvements would make the platform more interactive, scalable, and closer to a real-world social/chat application.
+
+[Back to TOC](#table-of-contents)
+
+---
+---
+
+# ZapUI – React Component Library
+
+## Table of Contents
+- [ZapUI – React Component Library](#zapui--react-component-library)
+- [Challenges Faced](#challenges-faced)
+- [How Is Your Project Different from Existing Solutions?](#how-is-your-project-different-from-existing-solutions)
+- [If Given More Time, What Would You Improve?](#if-given-more-time-what-would-you-improve)
+
+---
+
+## ZapUI – React Component Library
+
+**ZapUI is a React component library published as an npm package.  
+It provides reusable components like Avatar, Button, Input, Browser components, etc.  
+The library is built using plain CSS to keep it lightweight and framework-independent.**
+
+My contribution to this project included:
+
+- Developing core components such as **Button**, **Avatar**, etc.  
+- Handling the **npm workflow** — publishing the package, updating versions, and ensuring smooth installation for other developers through:
+
+```bash
+npm install zapui
+```
+
+From this project, I learned how to build reusable UI components, maintain consistent styling with plain CSS, and manage the full **npm publishing workflow**, including versioning and distribution.
+
+[Back to TOC](#table-of-contents)
+
+---
+
+## Challenges Faced
+
+One of the main challenges I faced was **publishing updated versions of the library to npm**.  
+Whenever I made new changes or added new components, the publish command would fail with an error.
+
+After checking documentation and discussing the issue with seniors/batchmates, I realized that npm **does not allow publishing the same version twice**.  
+Every time the package is updated, the **version number in `package.json` must be incremented**.
+
+Once I understood this, I followed proper semantic versioning (like 1.0.1 → 1.0.2 → 1.1.0), and the publishing workflow became smooth.
+
+[Back to TOC](#table-of-contents)
+
+---
+
+## How Is Your Project Different from Existing Solutions?
+
+ZapUI is designed to be **lightweight and minimal**, unlike many large UI libraries that come with heavy styling frameworks or too many components.
+
+Key differences:
+
+- Built using **plain CSS**, making the library framework-independent and easy to customize  
+- Lightweight and simple — ideal for beginners or small projects  
+- Components are intentionally minimal so developers can style them based on their own projects  
+- Published as an **npm package**, so it can be installed and used like any professional library  
+
+The focus was on learning **component reusability**, **package distribution**, and **version management**, rather than building a large-scale UI system.
+
+[Back to TOC](#table-of-contents)
+
+---
+
+## If Given More Time, What Would You Improve?
+
+If given more time, I would focus on:
+
+- Adding more components like modals, dropdowns, tooltips, and form groups  
+- Improving documentation with live examples and a full demo site  
+- Adding TypeScript support for better developer experience  
+- Introducing a consistent design system with themes (light/dark)  
+- Creating automated tests to ensure components work across different projects  
+- Improving accessibility (ARIA roles, keyboard navigation, etc.)
+
+These additions would make ZapUI more complete, more developer-friendly, and more scalable.
 
 [Back to TOC](#table-of-contents)
 

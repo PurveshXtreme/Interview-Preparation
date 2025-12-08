@@ -24,6 +24,14 @@
 - [Attention Mechanism](#attention-mechanism)
 
 ---
+
+# Zync – Project Documentation
+- [Zync – Chat and Social Feed Platform](#zync--chat-and-social-feed-platform)
+- [Challenges Faced](#challenges-faced)
+- [How Is Your Project Different from Existing Solutions?](#how-is-your-project-different-from-existing-solutions)
+- [If Given More Time, What Would You Improve?](#if-given-more-time-what-would-you-improve)
+
+---
 ---
 
 # LearnPlay – Project Documentation
@@ -323,6 +331,89 @@ This makes it faster, more accurate, and better at understanding context.”
 ### ⭐ What is Attention Mechanism? (Short & Simple)
 **“Attention is the method transformers use to understand which words in a sentence are important.  
 Instead of treating all words equally, attention lets the model ‘focus’ on the right words while reading or generating text.”**
+
+[Back to TOC](#table-of-contents)
+
+---
+---
+
+# Zync – Project Documentation
+
+## Table of Contents
+- [Zync – Chat and Social Feed Platform](#zync--chat-and-social-feed-platform)
+- [Challenges Faced](#challenges-faced)
+- [How Is Your Project Different from Existing Solutions?](#how-is-your-project-different-from-existing-solutions)
+- [If Given More Time, What Would You Improve?](#if-given-more-time-what-would-you-improve)
+
+---
+
+## Zync – Chat and Social Feed Platform
+
+**Zync is a simple chat and social feed platform where users can post updates and view messages in a clean interface.  
+The aim of the project was to create a basic communication system with a structured backend and an organized frontend.**
+
+The tech stack includes **Spring Boot** for the backend and **React with Redux** for the frontend.
+
+- **Spring Boot** handles APIs for users, posts, and chat-related data.  
+- **React** manages the UI.  
+- **Redux** is used to keep the state consistent across the application, especially for posts, user data, and chat messages.
+
+My contribution to this project was mainly on the **backend and frontend integration**.
+
+- On the backend, I worked with Spring Boot to build **REST APIs** for users, posts, and chat data.  
+- On the frontend, I used **React + Redux** to manage application state and display the data smoothly.
+
+From this project, I learned how to design **clean REST APIs**, connect them with a React frontend, and use **Redux** to manage shared state.  
+It also helped me understand **how data flows in a social platform** and how to structure both backend and frontend for smooth interaction.
+
+[Back to TOC](#table-of-contents)
+
+---
+
+## Challenges Faced
+
+One of the main challenges I faced was **managing state properly** when handling both chat messages and social feed posts.  
+Initially, using only React state caused inconsistencies across components—for example, when new messages were added, some UI sections weren’t updating correctly.
+
+To solve this, I researched Redux and also discussed the approach with a few seniors and batchmates to confirm if Redux was the right choice for global state management.  
+After understanding the Redux workflow (actions → reducers → store), I implemented it step-by-step and the data flow became much more organized and predictable.
+
+Another challenge was structuring the backend APIs cleanly. I looked at standard REST patterns, took suggestions from peers, and then redesigned the API routes to make the backend more readable and scalable.
+
+[Back to TOC](#table-of-contents)
+
+---
+
+## How Is Your Project Different from Existing Solutions?
+
+Most chat or social feed platforms are built with heavy frameworks and focus on many advanced features.  
+**Zync is intentionally minimal and lightweight**, designed mainly for learning backend–frontend communication and real-time interactions.
+
+Key differences:
+
+- It combines **both** a social feed and chat in one simple interface  
+- The frontend uses **Redux** to ensure consistent and predictable state management  
+- The backend is structured cleanly with **simple, modular Spring Boot APIs**  
+- It focuses on clarity and maintainability rather than large-scale complexity  
+
+This makes Zync a great example of how to build a communication platform from scratch with clean architecture.
+
+[Back to TOC](#table-of-contents)
+
+---
+
+## If Given More Time, What Would You Improve?
+
+If given more time, I would focus on:
+
+- Adding **real-time messaging** using WebSockets instead of static API updates  
+- Improving the UI/UX for smoother chat interactions  
+- Implementing **user authentication** and roles  
+- Adding features like likes, comments, and notifications  
+- Improving database structure for scalability  
+- Creating a mobile-friendly layout  
+
+These improvements would make the platform more interactive, scalable, and closer to a real-world social/chat application.
 
 [Back to TOC](#table-of-contents)
 

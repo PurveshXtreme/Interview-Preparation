@@ -40,6 +40,15 @@
 - [How Is Your Project Different from Existing Solutions?](#how-is-your-project-different-from-existing-solutions)
 - [If Given More Time, What Would You Improve?](#if-given-more-time-what-would-you-improve)
 
+---
+
+# AtLease – Decentralized Warehouse Leasing Platform
+
+- [AtLease – Decentralized Warehouse Leasing Platform](#atlease--decentralized-warehouse-leasing-platform)
+- [Challenges Faced](#challenges-faced)
+- [How Is Your Project Different from Existing Solutions?](#how-is-your-project-different-from-existing-solutions)
+- [If Given More Time, What Would You Improve?](#if-given-more-time-what-would-you-improve)
+
 
 ---
 ---
@@ -504,6 +513,89 @@ If given more time, I would focus on:
 - Improving accessibility (ARIA roles, keyboard navigation, etc.)
 
 These additions would make ZapUI more complete, more developer-friendly, and more scalable.
+
+[Back to TOC](#table-of-contents)
+
+---
+---
+
+# AtLease – Decentralized Warehouse Leasing Platform
+
+## Table of Contents
+- [AtLease – Decentralized Warehouse Leasing Platform](#atlease--decentralized-warehouse-leasing-platform)
+- [Challenges Faced](#challenges-faced)
+- [How Is Your Project Different from Existing Solutions?](#how-is-your-project-different-from-existing-solutions)
+- [If Given More Time, What Would You Improve?](#if-given-more-time-what-would-you-improve)
+
+---
+
+**AtLease** is a decentralized platform designed to simplify and secure the process of leasing warehouses using **blockchain technology**. It combines **React** for the frontend, **Spring Boot** for authentication and backend operations, and **Python** for handling blockchain logic and smart contract functionalities.
+
+## 🛠️ Tech Stack
+- **Frontend:** React.js  
+- **Backend:** Spring Boot (Java 17)  
+- **Blockchain:** Python  
+- **Authentication:** OAuth 2.0 (Google Login)  
+- **Database:** MySQL  
+
+## 🚧 Project Status
+Currently **in progress** — the backend models and authentication features have been implemented. The project is in the integration phase, where blockchain and backend services are being connected.
+
+## 💡 My Contribution
+I worked on the **Spring Boot backend**, where I:
+- Implemented **OAuth 2.0 authentication** using **Google Login**.  
+- Designed **data models** for users, including renters and warehouse owners.  
+- Built **CRUD operations** for managing user and warehouse data.  
+
+## 🎯 Learning Outcomes
+- Learned to integrate **OAuth 2.0 authentication** in Spring Boot.  
+- Strengthened understanding of **backend design** and **data modeling**.  
+- Gained exposure to **blockchain integration** concepts in full-stack applications.
+
+[Back to TOC](#table-of-contents)
+
+---
+
+## Challenges Faced
+
+One of the main challenges I faced in AtLease was setting up **OAuth 2.0 authentication** correctly in Spring Boot.  
+Initially, configuring Google Login, redirect URIs, and security filters was confusing.
+
+I looked through official Spring Security documentation and also discussed certain configurations with seniors and batchmates to ensure I followed the right approach. Breaking the setup into smaller steps—Google credentials, Spring Security config, and custom user service—helped me implement it cleanly.
+
+Another challenge was understanding how blockchain integration would communicate with the backend. To solve this, I discussed possible approaches with peers and explored how Python services could interact with Java-based APIs, which gave me clarity on the integration flow.
+
+[Back to TOC](#table-of-contents)
+
+---
+
+## How Is Your Project Different from Existing Solutions?
+
+AtLease is different from traditional warehouse leasing systems because:
+
+- It uses **blockchain technology** for transparency and security.  
+- All leasing transactions can be stored in a **tamper-proof ledger**, reducing disputes and fraud.  
+- The platform supports **OAuth 2.0 login**, making onboarding easier and more secure.  
+- The architecture is split across **React + Spring Boot + Python blockchain**, giving it flexibility and modularity.  
+
+Most existing platforms rely on central databases only. AtLease introduces **decentralization**, which adds trust and clarity to the leasing process.
+
+[Back to TOC](#table-of-contents)
+
+---
+
+## If Given More Time, What Would You Improve?
+
+If given more time, I would focus on:
+
+- Completing the integration between blockchain services and Spring Boot  
+- Adding a **transaction history dashboard** for both owners and renters  
+- Building smart contracts to automate leasing agreements  
+- Implementing **role-based features** for owners and renters  
+- Adding detailed warehouse analytics and availability insights  
+- Improving UI/UX for better user onboarding and lease management  
+
+These improvements would help make AtLease a complete, production-ready warehouse leasing platform.
 
 [Back to TOC](#table-of-contents)
 

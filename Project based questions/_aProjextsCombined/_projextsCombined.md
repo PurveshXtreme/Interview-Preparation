@@ -33,13 +33,12 @@
 
 ---
 
-# Zync – Project Documentation
+# ZapUI – React Component Library
 
-- [Zync – Chat and Social Feed Platform](#zync--chat-and-social-feed-platform)
+- [ZapUI – React Component Library](#zapui--react-component-library)
 - [Challenges Faced](#challenges-faced)
 - [How Is Your Project Different from Existing Solutions?](#how-is-your-project-different-from-existing-solutions)
 - [If Given More Time, What Would You Improve?](#if-given-more-time-what-would-you-improve)
-
 
 
 ---
